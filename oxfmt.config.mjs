@@ -1,0 +1,22 @@
+/** @type {import('oxfmt').Config} */
+export default {
+  printWidth: 100,
+  tabWidth: 2,
+  useTabs: false,
+  semi: true,
+  singleQuote: true,
+  quoteProps: "as-needed",
+  jsxSingleQuote: true,
+  trailingComma: "all",
+  bracketSpacing: true,
+  bracketSameLine: false,
+  arrowParens: "always",
+  insertFinalNewline: true,
+  proseWrap: "preserve",
+  htmlWhitespaceSensitivity: "css",
+  vueIndentScriptAndStyle: false,
+  endOfLine: "lf",
+  embeddedLanguageFormatting: "auto",
+  singleAttributePerLine: false,
+  plugins: ["oxc"],
+};

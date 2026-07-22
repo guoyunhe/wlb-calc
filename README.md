@@ -13,4 +13,3 @@ Test if your job is good enough for a healthy life.
 - Communication outside work hours
 
 ## Algorithm
-
