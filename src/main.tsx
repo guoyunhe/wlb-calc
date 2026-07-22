@@ -6,11 +6,7 @@ import App from "./App.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <MantineProvider
-      defaultColorScheme="light"
-      theme={{
-      }}
-    >
+    <MantineProvider defaultColorScheme="light" theme={{}}>
       <App />
     </MantineProvider>
   </StrictMode>,
