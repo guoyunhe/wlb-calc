@@ -48,5 +48,10 @@
   "language": {
     "zh": "中文",
     "en": "English"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "auto": "System"
   }
 }

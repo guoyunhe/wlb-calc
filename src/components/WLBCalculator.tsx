@@ -11,12 +11,33 @@ import {
   Space,
   Flex,
   Button,
+  useMantineColorScheme,
 } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { useTranslation } from "react-i18next";
 import calc, { IDEAL_VALUES } from "../calc";
 import type { CalcParams } from "../calc";
 import { useMemo } from "react";
+
+const SunIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="5" />
+    <line x1="12" y1="1" x2="12" y2="3" />
+    <line x1="12" y1="21" x2="12" y2="23" />
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+    <line x1="1" y1="12" x2="3" y2="12" />
+    <line x1="21" y1="12" x2="23" y2="12" />
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+  </svg>
+);
+
+const MoonIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+  </svg>
+);
 
 const SLIDER_CONFIG: {
   key: keyof CalcParams;
@@ -35,6 +56,7 @@ const SLIDER_CONFIG: {
 
 export default function WLBCalculator() {
   const { t, i18n } = useTranslation();
+  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const form = useForm<CalcParams>({
     initialValues: {
       dailyWorkingHours: 8,
@@ -65,6 +87,32 @@ export default function WLBCalculator() {
     return t("score.poor");
   };
 
+  const getScoreCardBg = (s: number) => {
+    if (colorScheme === "dark") {
+      if (s >= 80) return "#0f172a";
+      if (s >= 60) return "#1e1b4b";
+      if (s >= 40) return "#431407";
+      return "#450a0a";
+    }
+    if (s >= 80) return "#ecfdf5";
+    if (s >= 60) return "#fefce8";
+    if (s >= 40) return "#fff7ed";
+    return "#fef2f2";
+  };
+
+  const getScoreColorValue = (s: number) => {
+    if (colorScheme === "dark") {
+      if (s >= 80) return "#4ade80";
+      if (s >= 60) return "#fbbf24";
+      if (s >= 40) return "#fb923c";
+      return "#f87171";
+    }
+    if (s >= 80) return "#059669";
+    if (s >= 60) return "#d97706";
+    if (s >= 40) return "#ea580c";
+    return "#dc2626";
+  };
+
   const toggleLanguage = () => {
     i18n.changeLanguage(i18n.language === "zh" ? "en" : "zh");
   };
@@ -78,6 +126,14 @@ export default function WLBCalculator() {
           </Title>
           <Button size="sm" variant="outline" onClick={toggleLanguage}>
             {t(`language.${i18n.language}`)}
+          </Button>
+          <Button
+            size="sm"
+            variant="outline"
+            onClick={() => toggleColorScheme()}
+            title={t(`theme.${colorScheme}`)}
+          >
+            {colorScheme === "dark" ? <SunIcon /> : <MoonIcon />}
           </Button>
         </Flex>
         <Text color="dimmed" size="lg">
@@ -129,15 +185,7 @@ export default function WLBCalculator() {
 
         <Grid.Col span={{ md: 4, sm: 12 }}>
           <Card
-            bg={
-              score >= 80
-                ? "#ecfdf5"
-                : score >= 60
-                  ? "#fefce8"
-                  : score >= 40
-                    ? "#fff7ed"
-                    : "#fef2f2"
-            }
+            bg={getScoreCardBg(score)}
             p="xl"
             radius="lg"
             shadow="md"
@@ -152,14 +200,7 @@ export default function WLBCalculator() {
                   fontSize: "72px",
                   fontWeight: 700,
                   lineHeight: 1,
-                  color:
-                    score >= 80
-                      ? "#059669"
-                      : score >= 60
-                        ? "#d97706"
-                        : score >= 40
-                          ? "#ea580c"
-                          : "#dc2626",
+                  color: getScoreColorValue(score),
                 }}
                 mb="sm"
               >
