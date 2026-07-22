@@ -47,26 +47,17 @@ const SLIDER_CONFIG: {
 }[] = [
   { key: "dailyWorkingHours", min: 1, max: 16, step: 0.5 },
   { key: "dailyCommuteHours", min: 0, max: 5, step: 0.5 },
-  { key: "weeklyWorkingHours", min: 10, max: 80, step: 1 },
-  { key: "weeklyWorkingDays", min: 1, max: 7, step: 1 },
+  { key: "weeklyWorkingDays", min: 0.5, max: 7, step: 0.5 },
   { key: "paidLeaveDaysPerYear", min: 0, max: 60, step: 1 },
   { key: "paidSickLeaveDaysPerYear", min: 0, max: 30, step: 1 },
-  { key: "communicationOutsideWorkHours", min: 0, max: 10, step: 0.5 },
+  { key: "dailyCommunicationOutsideWorkHours", min: 0, max: 10, step: 0.5 },
 ];
 
 export default function WLBCalculator() {
   const { t, i18n } = useTranslation();
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const form = useForm<CalcParams>({
-    initialValues: {
-      dailyWorkingHours: 8,
-      dailyCommuteHours: 1,
-      weeklyWorkingHours: 40,
-      weeklyWorkingDays: 5,
-      paidLeaveDaysPerYear: 15,
-      paidSickLeaveDaysPerYear: 5,
-      communicationOutsideWorkHours: 1,
-    },
+    initialValues: IDEAL_VALUES,
   });
 
   const score = useMemo(() => {
@@ -143,10 +134,6 @@ export default function WLBCalculator() {
 
       <Grid gap="lg">
         <Grid.Col span={{ md: 8, sm: 12 }}>
-          <Title order={2} size="h3" mb="lg">
-            {t("params")}
-          </Title>
-          <Space h="md" />
           {SLIDER_CONFIG.map((config) => (
             <Box key={config.key} mb="lg">
               <Group justify="space-between" mb="sm">

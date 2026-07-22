@@ -5,24 +5,22 @@ describe("calc", () => {
     const result = calc({
       dailyWorkingHours: 8,
       dailyCommuteHours: 2,
-      weeklyWorkingHours: 40,
       weeklyWorkingDays: 5,
       paidLeaveDaysPerYear: 10,
       paidSickLeaveDaysPerYear: 5,
-      communicationOutsideWorkHours: 2,
+      dailyCommunicationOutsideWorkHours: 2,
     });
-    expect(result).toBe(64);
+    expect(result).toBe(50);
   });
 
   it("should return 100 for ideal work-life balance", () => {
     const result = calc({
       dailyWorkingHours: 8,
       dailyCommuteHours: 0,
-      weeklyWorkingHours: 40,
       weeklyWorkingDays: 5,
       paidLeaveDaysPerYear: 20,
       paidSickLeaveDaysPerYear: 5,
-      communicationOutsideWorkHours: 0,
+      dailyCommunicationOutsideWorkHours: 0,
     });
     expect(result).toBe(100);
   });
@@ -31,11 +29,10 @@ describe("calc", () => {
     const result = calc({
       dailyWorkingHours: 12,
       dailyCommuteHours: 2,
-      weeklyWorkingHours: 60,
       weeklyWorkingDays: 6,
       paidLeaveDaysPerYear: 5,
       paidSickLeaveDaysPerYear: 3,
-      communicationOutsideWorkHours: 5,
+      dailyCommunicationOutsideWorkHours: 5,
     });
     expect(result).toBeLessThan(50);
   });
@@ -44,22 +41,20 @@ describe("calc", () => {
     const highScore = calc({
       dailyWorkingHours: 8,
       dailyCommuteHours: 0,
-      weeklyWorkingHours: 35,
       weeklyWorkingDays: 4,
       paidLeaveDaysPerYear: 30,
       paidSickLeaveDaysPerYear: 10,
-      communicationOutsideWorkHours: 0,
+      dailyCommunicationOutsideWorkHours: 0,
     });
     expect(highScore).toBe(100);
 
     const lowScore = calc({
       dailyWorkingHours: 20,
       dailyCommuteHours: 5,
-      weeklyWorkingHours: 100,
       weeklyWorkingDays: 7,
       paidLeaveDaysPerYear: 0,
       paidSickLeaveDaysPerYear: 0,
-      communicationOutsideWorkHours: 20,
+      dailyCommunicationOutsideWorkHours: 20,
     });
     expect(lowScore).toBe(0);
   });

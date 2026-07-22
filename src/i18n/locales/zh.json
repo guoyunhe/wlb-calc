@@ -10,10 +10,6 @@
     "label": "每日通勤时长",
     "unit": "小时"
   },
-  "weeklyWorkingHours": {
-    "label": "每周工作时长",
-    "unit": "小时"
-  },
   "weeklyWorkingDays": {
     "label": "每周工作天数",
     "unit": "天"
@@ -26,7 +22,7 @@
     "label": "每年带薪病假",
     "unit": "天"
   },
-  "communicationOutsideWorkHours": {
+  "dailyCommunicationOutsideWorkHours": {
     "label": "工作外沟通时长",
     "unit": "小时/天"
   },

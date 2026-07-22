@@ -10,10 +10,6 @@
     "label": "Daily Commute Hours",
     "unit": "hours"
   },
-  "weeklyWorkingHours": {
-    "label": "Weekly Working Hours",
-    "unit": "hours"
-  },
   "weeklyWorkingDays": {
     "label": "Weekly Working Days",
     "unit": "days"
@@ -26,7 +22,7 @@
     "label": "Annual Paid Sick Leave",
     "unit": "days"
   },
-  "communicationOutsideWorkHours": {
+  "dailyCommunicationOutsideWorkHours": {
     "label": "After-Hours Communication",
     "unit": "hours/day"
   },
