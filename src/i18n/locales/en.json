@@ -1,0 +1,52 @@
+{
+  "title": "Work-Life Balance Calculator",
+  "subtitle": "Enter your work parameters to calculate your work-life balance score in real-time",
+  "params": "Parameter Settings",
+  "dailyWorkingHours": {
+    "label": "Daily Working Hours",
+    "unit": "hours"
+  },
+  "dailyCommuteHours": {
+    "label": "Daily Commute Hours",
+    "unit": "hours"
+  },
+  "weeklyWorkingHours": {
+    "label": "Weekly Working Hours",
+    "unit": "hours"
+  },
+  "weeklyWorkingDays": {
+    "label": "Weekly Working Days",
+    "unit": "days"
+  },
+  "paidLeaveDaysPerYear": {
+    "label": "Annual Paid Leave",
+    "unit": "days"
+  },
+  "paidSickLeaveDaysPerYear": {
+    "label": "Annual Paid Sick Leave",
+    "unit": "days"
+  },
+  "communicationOutsideWorkHours": {
+    "label": "After-Hours Communication",
+    "unit": "hours/day"
+  },
+  "ideal": "Ideal",
+  "score": {
+    "title": "Your Work-Life Balance Score",
+    "excellent": "Excellent",
+    "good": "Good",
+    "average": "Average",
+    "poor": "Poor"
+  },
+  "guide": {
+    "title": "Score Guide",
+    "excellent": "80-100: Excellent - Good work-life balance",
+    "good": "60-79: Good - Basic balance with slight pressure",
+    "average": "40-59: Average - Need to pay attention to workload",
+    "poor": "0-39: Poor - Suggest adjusting work status"
+  },
+  "language": {
+    "zh": "中文",
+    "en": "English"
+  }
+}

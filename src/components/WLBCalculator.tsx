@@ -8,40 +8,33 @@ import {
   Box,
   Badge,
   Grid,
-  Paper,
   Space,
   Flex,
+  Button,
 } from "@mantine/core";
 import { useForm } from "@mantine/form";
+import { useTranslation } from "react-i18next";
 import calc, { IDEAL_VALUES } from "../calc";
 import type { CalcParams } from "../calc";
 import { useMemo } from "react";
 
 const SLIDER_CONFIG: {
   key: keyof CalcParams;
-  label: string;
   min: number;
   max: number;
   step: number;
-  unit: string;
 }[] = [
-  { key: "dailyWorkingHours", label: "每日工作时长", min: 1, max: 16, step: 0.5, unit: "小时" },
-  { key: "dailyCommuteHours", label: "每日通勤时长", min: 0, max: 5, step: 0.5, unit: "小时" },
-  { key: "weeklyWorkingHours", label: "每周工作时长", min: 10, max: 80, step: 1, unit: "小时" },
-  { key: "weeklyWorkingDays", label: "每周工作天数", min: 1, max: 7, step: 1, unit: "天" },
-  { key: "paidLeaveDaysPerYear", label: "每年带薪休假", min: 0, max: 60, step: 1, unit: "天" },
-  { key: "paidSickLeaveDaysPerYear", label: "每年带薪病假", min: 0, max: 30, step: 1, unit: "天" },
-  {
-    key: "communicationOutsideWorkHours",
-    label: "工作外沟通时长",
-    min: 0,
-    max: 10,
-    step: 0.5,
-    unit: "小时/天",
-  },
+  { key: "dailyWorkingHours", min: 1, max: 16, step: 0.5 },
+  { key: "dailyCommuteHours", min: 0, max: 5, step: 0.5 },
+  { key: "weeklyWorkingHours", min: 10, max: 80, step: 1 },
+  { key: "weeklyWorkingDays", min: 1, max: 7, step: 1 },
+  { key: "paidLeaveDaysPerYear", min: 0, max: 60, step: 1 },
+  { key: "paidSickLeaveDaysPerYear", min: 0, max: 30, step: 1 },
+  { key: "communicationOutsideWorkHours", min: 0, max: 10, step: 0.5 },
 ];
 
 export default function WLBCalculator() {
+  const { t, i18n } = useTranslation();
   const form = useForm<CalcParams>({
     initialValues: {
       dailyWorkingHours: 8,
@@ -66,37 +59,46 @@ export default function WLBCalculator() {
   };
 
   const getScoreLabel = (s: number) => {
-    if (s >= 80) return "优秀";
-    if (s >= 60) return "良好";
-    if (s >= 40) return "一般";
-    return "较差";
+    if (s >= 80) return t("score.excellent");
+    if (s >= 60) return t("score.good");
+    if (s >= 40) return t("score.average");
+    return t("score.poor");
+  };
+
+  const toggleLanguage = () => {
+    i18n.changeLanguage(i18n.language === "zh" ? "en" : "zh");
   };
 
   return (
     <Container size="md" py="xl">
       <Box mb="xl" style={{ textAlign: "center" }}>
-        <Title order={1} size="h1" mb="sm">
-          工作生活平衡计算器
-        </Title>
+        <Flex justify="center" gap="md" align="center" mb="sm">
+          <Title order={1} size="h1">
+            {t("title")}
+          </Title>
+          <Button size="sm" variant="outline" onClick={toggleLanguage}>
+            {t(`language.${i18n.language}`)}
+          </Button>
+        </Flex>
         <Text color="dimmed" size="lg">
-          输入你的工作参数，实时计算工作与生活平衡得分
+          {t("subtitle")}
         </Text>
       </Box>
 
       <Grid gap="lg">
         <Grid.Col span={{ md: 8, sm: 12 }}>
           <Title order={2} size="h3" mb="lg">
-            参数设置
+            {t("params")}
           </Title>
           <Space h="md" />
           {SLIDER_CONFIG.map((config) => (
             <Box key={config.key} mb="lg">
               <Group justify="space-between" mb="sm">
                 <Text fw={500} size="sm">
-                  {config.label}
+                  {t(`${config.key}.label`)}
                 </Text>
                 <Badge variant="outline" color="purple">
-                  {form.values[config.key]} {config.unit}
+                  {form.values[config.key]} {t(`${config.key}.unit`)}
                 </Badge>
               </Group>
               <Slider
@@ -104,7 +106,7 @@ export default function WLBCalculator() {
                 min={config.min}
                 max={config.max}
                 step={config.step}
-                label={(val) => `${val}${config.unit}`}
+                label={(val) => `${val}${t(`${config.key}.unit`)}`}
                 w="100%"
                 marks={(() => {
                   const idealVal = IDEAL_VALUES[config.key];
@@ -113,7 +115,7 @@ export default function WLBCalculator() {
                     { value: config.max, label: `${config.max}` },
                   ];
                   if (idealVal > config.min && idealVal < config.max) {
-                    marks.push({ value: idealVal, label: `理想: ${idealVal}` });
+                    marks.push({ value: idealVal, label: `${t("ideal")}: ${idealVal}` });
                   }
                   return marks;
                 })()}
@@ -142,7 +144,7 @@ export default function WLBCalculator() {
           >
             <Flex justify="center" direction="column" align="center">
               <Text size="sm" color="dimmed" mb="xs">
-                你的工作生活平衡得分
+                {t("score.title")}
               </Text>
               <Box
                 component="div"
@@ -171,20 +173,20 @@ export default function WLBCalculator() {
             <Space h="xl" />
 
             <Title order={3} size="h5" mb="md">
-              评分说明
+              {t("guide.title")}
             </Title>
             <Box>
               <Text size="xs" color="green.6" mb="sm">
-                <strong>80-100分：优秀</strong> - 工作生活平衡良好
+                <strong>{t("guide.excellent")}</strong>
               </Text>
               <Text size="xs" color="yellow.6" mb="sm">
-                <strong>60-79分：良好</strong> - 基本平衡，略有压力
+                <strong>{t("guide.good")}</strong>
               </Text>
               <Text size="xs" color="orange.6" mb="sm">
-                <strong>40-59分：一般</strong> - 需要关注工作负荷
+                <strong>{t("guide.average")}</strong>
               </Text>
               <Text size="xs" color="red.6">
-                <strong>0-39分：较差</strong> - 建议调整工作状态
+                <strong>{t("guide.poor")}</strong>
               </Text>
             </Box>
           </Card>

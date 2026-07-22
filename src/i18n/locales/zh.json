@@ -1,0 +1,52 @@
+{
+  "title": "工作生活平衡计算器",
+  "subtitle": "输入你的工作参数，实时计算工作与生活平衡得分",
+  "params": "参数设置",
+  "dailyWorkingHours": {
+    "label": "每日工作时长",
+    "unit": "小时"
+  },
+  "dailyCommuteHours": {
+    "label": "每日通勤时长",
+    "unit": "小时"
+  },
+  "weeklyWorkingHours": {
+    "label": "每周工作时长",
+    "unit": "小时"
+  },
+  "weeklyWorkingDays": {
+    "label": "每周工作天数",
+    "unit": "天"
+  },
+  "paidLeaveDaysPerYear": {
+    "label": "每年带薪休假",
+    "unit": "天"
+  },
+  "paidSickLeaveDaysPerYear": {
+    "label": "每年带薪病假",
+    "unit": "天"
+  },
+  "communicationOutsideWorkHours": {
+    "label": "工作外沟通时长",
+    "unit": "小时/天"
+  },
+  "ideal": "理想",
+  "score": {
+    "title": "你的工作生活平衡得分",
+    "excellent": "优秀",
+    "good": "良好",
+    "average": "一般",
+    "poor": "较差"
+  },
+  "guide": {
+    "title": "评分说明",
+    "excellent": "80-100分：优秀 - 工作生活平衡良好",
+    "good": "60-79分：良好 - 基本平衡，略有压力",
+    "average": "40-59分：一般 - 需要关注工作负荷",
+    "poor": "0-39分：较差 - 建议调整工作状态"
+  },
+  "language": {
+    "zh": "中文",
+    "en": "English"
+  }
+}
