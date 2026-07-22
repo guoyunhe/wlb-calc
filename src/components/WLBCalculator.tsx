@@ -4,7 +4,6 @@ import {
   Title,
   Text,
   Slider,
-  NumberInput,
   Group,
   Box,
   Badge,
@@ -90,8 +89,7 @@ export default function WLBCalculator() {
                       {form.values[config.key]} {config.unit}
                     </Badge>
                   </Group>
-                  <Group gap="md" align="center">
-                    <Slider
+                  <Slider
                       {...form.getInputProps(config.key)}
                       min={config.min}
                       max={config.max}
@@ -113,15 +111,6 @@ export default function WLBCalculator() {
                         markLabel: { fontSize: "0.6rem" },
                       }}
                     />
-                    <NumberInput
-                      {...form.getInputProps(config.key)}
-                      min={config.min}
-                      max={config.max}
-                      step={config.step}
-                      w={70}
-                      size="sm"
-                    />
-                  </Group>
                 </Box>
               ))}
             </Paper>
