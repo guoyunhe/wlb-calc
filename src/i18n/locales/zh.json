@@ -27,6 +27,10 @@
     "unit": "小时/天"
   },
   "ideal": "理想",
+  "unit": {
+    "hour": "{{hour}} 小时",
+    "day": "{{day}} 天"
+   },
   "score": {
     "title": "你的工作生活平衡得分",
     "excellent": "优秀",

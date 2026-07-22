@@ -27,6 +27,10 @@
     "unit": "hours/day"
   },
   "ideal": "Ideal",
+  "unit": {
+    "hour": "{{hour}} hours",
+    "day": "{{day}} days"
+   },
   "score": {
     "title": "Your Work-Life Balance Score",
     "excellent": "Excellent",

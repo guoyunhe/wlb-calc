@@ -1,54 +1,25 @@
-export interface CalcParams {
-  dailyWorkingHours: number;
-  dailyCommuteHours: number;
-  dailyCommunicationOutsideWorkHours: number;
-  weeklyWorkingDays: number;
-  paidLeaveDaysPerYear: number;
-  paidSickLeaveDaysPerYear: number;
-}
+import type { CalcParams } from "./config";
+import { CALC_CONFIG } from "./config";
 
-export const IDEAL_VALUES: CalcParams = {
-  dailyWorkingHours: 8,
-  dailyCommuteHours: 1,
-  weeklyWorkingDays: 5,
-  paidLeaveDaysPerYear: 20,
-  paidSickLeaveDaysPerYear: 5,
-  dailyCommunicationOutsideWorkHours: 0,
-};
-
-export const PENALTY_WEIGHTS: Record<keyof CalcParams, number> = {
-  dailyWorkingHours: 10,
-  dailyCommuteHours: 10,
-  dailyCommunicationOutsideWorkHours: 5,
-  weeklyWorkingDays: 40,
-  paidLeaveDaysPerYear: 2,
-  paidSickLeaveDaysPerYear: 4,
-};
-
-export default function calc({
-  dailyWorkingHours,
-  dailyCommuteHours,
-  weeklyWorkingDays,
-  paidLeaveDaysPerYear,
-  paidSickLeaveDaysPerYear,
-  dailyCommunicationOutsideWorkHours,
-}: CalcParams) {
+export default function calc(params: CalcParams) {
   let score = 100;
 
-  score -=
-    Math.max(0, dailyWorkingHours - IDEAL_VALUES.dailyWorkingHours) *
-    PENALTY_WEIGHTS.dailyWorkingHours;
-  score -= dailyCommuteHours * PENALTY_WEIGHTS.dailyCommuteHours;
-  score -=
-    Math.max(0, weeklyWorkingDays - IDEAL_VALUES.weeklyWorkingDays) *
-    PENALTY_WEIGHTS.weeklyWorkingDays;
-  score -=
-    Math.max(0, IDEAL_VALUES.paidLeaveDaysPerYear - paidLeaveDaysPerYear) *
-    PENALTY_WEIGHTS.paidLeaveDaysPerYear;
-  score -=
-    Math.max(0, IDEAL_VALUES.paidSickLeaveDaysPerYear - paidSickLeaveDaysPerYear) *
-    PENALTY_WEIGHTS.paidSickLeaveDaysPerYear;
-  score -= dailyCommunicationOutsideWorkHours * PENALTY_WEIGHTS.dailyCommunicationOutsideWorkHours;
+  for (let i = 0; i < CALC_CONFIG.length; i++) {
+    const config = CALC_CONFIG[i];
+    const value = params[config.key];
+
+    switch (config.penaltyType) {
+      case "excess":
+        score -= Math.max(0, value - config.ideal) * config.penaltyWeight;
+        break;
+      case "deficit":
+        score -= Math.max(0, config.ideal - value) * config.penaltyWeight;
+        break;
+      case "direct":
+        score -= value * config.penaltyWeight;
+        break;
+    }
+  }
 
   return Math.max(0, Math.min(100, Math.round(score)));
 }
