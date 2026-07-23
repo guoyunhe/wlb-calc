@@ -33,17 +33,19 @@
    },
   "score": {
     "title": "Your Work-Life Balance Score",
-    "excellent": "Excellent",
-    "good": "Good",
-    "average": "Average",
-    "poor": "Poor"
+    "a": "A - Excellent",
+    "b": "B - Good",
+    "c": "C - Average",
+    "d": "D - Poor",
+    "e": "E - Very Poor"
   },
   "guide": {
     "title": "Score Guide",
-    "excellent": "80-100: Excellent - Good work-life balance",
-    "good": "60-79: Good - Basic balance with slight pressure",
-    "average": "40-59: Average - Need to pay attention to workload",
-    "poor": "0-39: Poor - Suggest adjusting work status"
+    "a": "90-100: A - Excellent - Perfect work-life balance",
+    "b": "80-89: B - Good - Basic balance with slight pressure",
+    "c": "60-79: C - Average - Need to pay attention to workload",
+    "d": "40-59: D - Poor - Suggest adjusting work status",
+    "e": "0-39: E - Very Poor - Run! Please run!"
   },
   "language": {
     "zh": "中文",

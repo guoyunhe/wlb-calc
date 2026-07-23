@@ -25,7 +25,7 @@ export interface ParamConfig {
 export const CALC_CONFIG: ParamConfig[] = [
   {
     key: "dailyWorkingHours",
-    ideal: 8,
+    ideal: 7,
     penaltyWeight: 10,
     penaltyType: "excess",
     unit: "hour",
@@ -56,7 +56,7 @@ export const CALC_CONFIG: ParamConfig[] = [
   {
     key: "weeklyWorkingDays",
     ideal: 5,
-    penaltyWeight: 30,
+    penaltyWeight: 40,
     penaltyType: "excess",
     unit: "day",
     min: 0,
@@ -117,9 +117,22 @@ export interface ScoreLevel {
 
 export const SCORE_LEVELS: ScoreLevel[] = [
   {
+    minScore: 90,
+    color: "green",
+    labelKey: "score.a",
+    bg: {
+      light: "#ecfdf5",
+      dark: "#0f172a",
+    },
+    textColor: {
+      light: "#059669",
+      dark: "#4ade80",
+    },
+  },
+  {
     minScore: 80,
     color: "green",
-    labelKey: "score.excellent",
+    labelKey: "score.b",
     bg: {
       light: "#ecfdf5",
       dark: "#0f172a",
@@ -132,7 +145,7 @@ export const SCORE_LEVELS: ScoreLevel[] = [
   {
     minScore: 60,
     color: "yellow",
-    labelKey: "score.good",
+    labelKey: "score.c",
     bg: {
       light: "#fefce8",
       dark: "#1e1b4b",
@@ -145,7 +158,7 @@ export const SCORE_LEVELS: ScoreLevel[] = [
   {
     minScore: 40,
     color: "orange",
-    labelKey: "score.average",
+    labelKey: "score.d",
     bg: {
       light: "#fff7ed",
       dark: "#431407",
@@ -158,7 +171,7 @@ export const SCORE_LEVELS: ScoreLevel[] = [
   {
     minScore: 0,
     color: "red",
-    labelKey: "score.poor",
+    labelKey: "score.e",
     bg: {
       light: "#fef2f2",
       dark: "#450a0a",
@@ -186,7 +199,7 @@ export const PRESETS: Preset[] = [
       dailyCommunicationOutsideWorkHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
-      annualPaidSickLeaveDays: 10,
+      annualPaidSickLeaveDays: 0,
     },
   },
   {
@@ -197,8 +210,8 @@ export const PRESETS: Preset[] = [
       dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0,
       weeklyWorkingDays: 5,
-      annualPaidLeaveDays: 20,
-      annualPaidSickLeaveDays: 10,
+      annualPaidLeaveDays: 15,
+      annualPaidSickLeaveDays: 0,
     },
   },
   {
@@ -209,8 +222,8 @@ export const PRESETS: Preset[] = [
       dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
-      annualPaidLeaveDays: 10,
-      annualPaidSickLeaveDays: 5,
+      annualPaidLeaveDays: 7,
+      annualPaidSickLeaveDays: 0,
     },
   },
   {
@@ -221,7 +234,7 @@ export const PRESETS: Preset[] = [
       dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 1,
       weeklyWorkingDays: 5.5,
-      annualPaidLeaveDays: 10,
+      annualPaidLeaveDays: 7,
       annualPaidSickLeaveDays: 0,
     },
   },
@@ -233,7 +246,7 @@ export const PRESETS: Preset[] = [
       dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 2,
       weeklyWorkingDays: 6,
-      annualPaidLeaveDays: 10,
+      annualPaidLeaveDays: 7,
       annualPaidSickLeaveDays: 0,
     },
   },
