@@ -1,15 +1,23 @@
 import { SimpleGrid, Text, Space, Container, Select, Box } from "@mantine/core";
 import { useTranslation } from "react-i18next";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { BuildingIcon } from "@phosphor-icons/react";
 import { COMPANIES, REGIONS } from "../companies";
 import calc from "../calc";
 import CompanyCard from "./CompanyCard";
 
 export default function CompanyList() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [selectedRegion, setSelectedRegion] = useState<string>("");
   const [selectedCity, setSelectedCity] = useState<string>("");
+
+  useEffect(() => {
+    if (i18n.language === "zh") {
+      setSelectedRegion("CN");
+    } else {
+      setSelectedRegion("US");
+    }
+  }, [i18n.language]);
 
   const filteredCompanies = useMemo(() => {
     return COMPANIES.filter((company) => {
@@ -53,13 +61,10 @@ export default function CompanyList() {
               {t("companyList.filter.region")}
             </Text>
             <Select
-              data={[
-                { value: "", label: t("companyList.filter.all") },
-                ...REGIONS.map((region) => ({
-                  value: region.code,
-                  label: t(region.labelKey),
-                })),
-              ]}
+              data={REGIONS.map((region) => ({
+                value: region.code,
+                label: t(region.labelKey),
+              }))}
               value={selectedRegion}
               onChange={handleRegionChange}
               size="md"
@@ -87,11 +92,7 @@ export default function CompanyList() {
 
       <SimpleGrid cols={{ sm: 1, md: 2, lg: 4 }} spacing="md">
         {filteredCompanies.map((company) => (
-          <CompanyCard
-            key={company.id}
-            company={company}
-            score={calc(company.params)}
-          />
+          <CompanyCard key={company.id} company={company} score={calc(company.params)} />
         ))}
       </SimpleGrid>
 
