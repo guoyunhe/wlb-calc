@@ -46,7 +46,7 @@ export default function WLBCalculator() {
       <Space h="lg" />
 
       <Grid gap="lg">
-        <Grid.Col span={{ md: 8, sm: 12 }}>
+        <Grid.Col span={{ md: 7, sm: 12 }}>
           {CALC_CONFIG.map((config) => (
             <ParamSlider
               key={config.key}
@@ -56,7 +56,7 @@ export default function WLBCalculator() {
           ))}
         </Grid.Col>
 
-        <Grid.Col span={{ md: 4, sm: 12 }}>
+        <Grid.Col span={{ md: 5, sm: 12 }}>
           <ScoreCard score={score} />
         </Grid.Col>
       </Grid>
