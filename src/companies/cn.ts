@@ -53,23 +53,6 @@ export const CN_COMPANIES: Company[] = [
     },
   },
   {
-    id: "ibm-cn",
-    name: {
-      en: "IBM China",
-      zh: "IBM中国",
-    },
-    region: "CN",
-    city: "Beijing",
-    params: {
-      dailyWorkingHours: 7.5,
-      dailyCommuteHours: 0.5,
-      dailyCommunicationOutsideWorkHours: 0.5,
-      weeklyWorkingDays: 5,
-      annualPaidLeaveDays: 20,
-      annualPaidSickLeaveDays: 15,
-    },
-  },
-  {
     id: "oracle-cn",
     name: {
       en: "Oracle China",
