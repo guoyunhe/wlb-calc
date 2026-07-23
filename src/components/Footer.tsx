@@ -1,6 +1,6 @@
 import { Text, Anchor, Flex, Box } from "@mantine/core";
 import { useTranslation } from "react-i18next";
-import { GithubLogo } from "@phosphor-icons/react";
+import { GithubLogoIcon } from "@phosphor-icons/react";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -14,14 +14,14 @@ export default function Footer() {
         </Text>
         <Box />
         <Anchor
-          href="https://github.com"
+          href="https://github.com/guoyunhe/wlb-calc"
           target="_blank"
           rel="noopener noreferrer"
           color="dimmed"
           size="sm"
           style={{ display: "flex", alignItems: "center", gap: "4px" }}
         >
-          <GithubLogo size={18} />
+          <GithubLogoIcon size={18} />
           GitHub
         </Anchor>
       </Flex>
