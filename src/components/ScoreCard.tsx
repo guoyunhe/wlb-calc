@@ -1,4 +1,5 @@
 import { Card, Text, Badge, Box, Flex, Title, Space, useMantineColorScheme } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 import { useTranslation } from "react-i18next";
 import { getScoreLevel } from "../calc";
 import { SCORE_LEVELS } from "../config";
@@ -10,8 +11,9 @@ interface ScoreCardProps {
 export default function ScoreCard({ score }: ScoreCardProps) {
   const { t } = useTranslation();
   const { colorScheme } = useMantineColorScheme();
+  const systemDark = useMediaQuery("(prefers-color-scheme: dark)");
   const level = getScoreLevel(score);
-  const isDark = colorScheme === "dark";
+  const isDark = colorScheme === "dark" || (colorScheme === "auto" && systemDark);
 
   return (
     <Card
