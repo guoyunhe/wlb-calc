@@ -30,14 +30,14 @@ export const CALC_CONFIG: ParamConfig[] = [
     penaltyType: "excess",
     unit: "hour",
     min: 0,
-    max: 16,
+    max: 12,
     step: 0.5,
   },
   {
     key: "dailyCommuteHours",
     ideal: 1,
-    penaltyWeight: 10,
-    penaltyType: "deficit",
+    penaltyWeight: 5,
+    penaltyType: "excess",
     unit: "hour",
     min: 0,
     max: 6,
@@ -66,7 +66,7 @@ export const CALC_CONFIG: ParamConfig[] = [
   {
     key: "annualPaidLeaveDays",
     ideal: 20,
-    penaltyWeight: 2,
+    penaltyWeight: 0.5,
     penaltyType: "deficit",
     unit: "day",
     min: 0,
@@ -76,7 +76,7 @@ export const CALC_CONFIG: ParamConfig[] = [
   {
     key: "annualPaidSickLeaveDays",
     ideal: 10,
-    penaltyWeight: 4,
+    penaltyWeight: 0.5,
     penaltyType: "deficit",
     unit: "day",
     min: 0,
@@ -178,6 +178,18 @@ export interface Preset {
 
 export const PRESETS: Preset[] = [
   {
+    name: "955",
+    color: "green",
+    params: {
+      dailyWorkingHours: 7,
+      dailyCommuteHours: 1,
+      dailyCommunicationOutsideWorkHours: 0,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 10,
+    },
+  },
+  {
     name: "965",
     color: "green",
     params: {
@@ -193,9 +205,9 @@ export const PRESETS: Preset[] = [
     name: "995",
     color: "orange",
     params: {
-      dailyWorkingHours: 12,
+      dailyWorkingHours: 11,
       dailyCommuteHours: 1,
-      dailyCommunicationOutsideWorkHours: 1.5,
+      dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
       annualPaidSickLeaveDays: 5,
@@ -205,24 +217,24 @@ export const PRESETS: Preset[] = [
     name: "大小周",
     color: "red",
     params: {
-      dailyWorkingHours: 8,
+      dailyWorkingHours: 11,
       dailyCommuteHours: 1,
-      dailyCommunicationOutsideWorkHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 1,
       weeklyWorkingDays: 5.5,
-      annualPaidLeaveDays: 15,
-      annualPaidSickLeaveDays: 10,
+      annualPaidLeaveDays: 10,
+      annualPaidSickLeaveDays: 0,
     },
   },
   {
     name: "996",
     color: "red",
     params: {
-      dailyWorkingHours: 12,
+      dailyWorkingHours: 11,
       dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 2,
       weeklyWorkingDays: 6,
-      annualPaidLeaveDays: 5,
-      annualPaidSickLeaveDays: 5,
+      annualPaidLeaveDays: 10,
+      annualPaidSickLeaveDays: 0,
     },
   },
 ];
