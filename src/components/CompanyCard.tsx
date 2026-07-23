@@ -1,6 +1,7 @@
 import { Card, Badge, Anchor, Text } from "@mantine/core";
 import { MapPinIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
+import i18n from "../i18n";
 import type { Company } from "../companies";
 import { getScoreLevel } from "../calc";
 
@@ -40,7 +41,7 @@ export default function CompanyCard({ company, score }: CompanyCardProps) {
     >
       <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.75rem" }}>
         <Anchor href="#" underline="never" style={{ fontWeight: "600", fontSize: "1.125rem" }}>
-          {company.name}
+          {i18n.language === "zh" && company.name.zh ? company.name.zh : company.name.en}
         </Anchor>
         <Badge color={getRegionBadgeColor(company.region)} variant="light" size="xs">
           {t(`region.${company.region}`)}

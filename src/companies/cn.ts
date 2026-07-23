@@ -3,7 +3,10 @@ import type { Company } from "./types";
 export const CN_COMPANIES: Company[] = [
   {
     id: "apple-cn",
-    name: "Apple China",
+    name: {
+      en: "Apple China",
+      zh: "苹果中国",
+    },
     region: "CN",
     city: "Shanghai",
     params: {
@@ -17,7 +20,10 @@ export const CN_COMPANIES: Company[] = [
   },
   {
     id: "amazon-cn",
-    name: "Amazon China",
+    name: {
+      en: "Amazon China",
+      zh: "亚马逊中国",
+    },
     region: "CN",
     city: "Beijing",
     params: {
@@ -31,7 +37,10 @@ export const CN_COMPANIES: Company[] = [
   },
   {
     id: "intel-cn",
-    name: "Intel China",
+    name: {
+      en: "Intel China",
+      zh: "英特尔中国",
+    },
     region: "CN",
     city: "Beijing",
     params: {
@@ -45,7 +54,10 @@ export const CN_COMPANIES: Company[] = [
   },
   {
     id: "ibm-cn",
-    name: "IBM China",
+    name: {
+      en: "IBM China",
+      zh: "IBM中国",
+    },
     region: "CN",
     city: "Beijing",
     params: {
@@ -59,7 +71,10 @@ export const CN_COMPANIES: Company[] = [
   },
   {
     id: "oracle-cn",
-    name: "Oracle China",
+    name: {
+      en: "Oracle China",
+      zh: "甲骨文中国",
+    },
     region: "CN",
     city: "Beijing",
     params: {
@@ -73,7 +88,10 @@ export const CN_COMPANIES: Company[] = [
   },
   {
     id: "morgan-stanley-cn",
-    name: "Morgan Stanley China",
+    name: {
+      en: "Morgan Stanley China",
+      zh: "摩根士丹利中国",
+    },
     region: "CN",
     city: "Shanghai",
     params: {

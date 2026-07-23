@@ -3,7 +3,10 @@ import type { Company } from "./types";
 export const US_COMPANIES: Company[] = [
   {
     id: "google",
-    name: "Google",
+    name: {
+      en: "Google",
+      zh: "谷歌",
+    },
     region: "US",
     city: "Mountain View",
     params: {
@@ -17,7 +20,10 @@ export const US_COMPANIES: Company[] = [
   },
   {
     id: "microsoft",
-    name: "Microsoft",
+    name: {
+      en: "Microsoft",
+      zh: "微软",
+    },
     region: "US",
     city: "Redmond",
     params: {
@@ -31,7 +37,10 @@ export const US_COMPANIES: Company[] = [
   },
   {
     id: "netflix",
-    name: "Netflix",
+    name: {
+      en: "Netflix",
+      zh: "网飞",
+    },
     region: "US",
     city: "Los Gatos",
     params: {
@@ -45,7 +54,10 @@ export const US_COMPANIES: Company[] = [
   },
   {
     id: "salesforce",
-    name: "Salesforce",
+    name: {
+      en: "Salesforce",
+      zh: "Salesforce",
+    },
     region: "US",
     city: "San Francisco",
     params: {
@@ -59,7 +71,10 @@ export const US_COMPANIES: Company[] = [
   },
   {
     id: "adobe",
-    name: "Adobe",
+    name: {
+      en: "Adobe",
+      zh: "奥多比",
+    },
     region: "US",
     city: "San Jose",
     params: {
@@ -73,7 +88,10 @@ export const US_COMPANIES: Company[] = [
   },
   {
     id: "github",
-    name: "GitHub",
+    name: {
+      en: "GitHub",
+      zh: "GitHub",
+    },
     region: "US",
     city: "San Francisco",
     params: {

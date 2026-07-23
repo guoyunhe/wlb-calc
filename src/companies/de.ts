@@ -3,7 +3,10 @@ import type { Company } from "./types";
 export const DE_COMPANIES: Company[] = [
   {
     id: "sap",
-    name: "SAP",
+    name: {
+      en: "SAP",
+      zh: "SAP",
+    },
     region: "DE",
     city: "Walldorf",
     params: {

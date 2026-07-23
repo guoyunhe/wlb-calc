@@ -3,7 +3,10 @@ import type { Company } from "./types";
 export const CA_COMPANIES: Company[] = [
   {
     id: "shopify",
-    name: "Shopify",
+    name: {
+      en: "Shopify",
+      zh: "Shopify",
+    },
     region: "CA",
     city: "Ottawa",
     params: {

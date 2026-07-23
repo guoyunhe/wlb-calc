@@ -3,7 +3,10 @@ import type { Company } from "./types";
 export const AU_COMPANIES: Company[] = [
   {
     id: "atlassian",
-    name: "Atlassian",
+    name: {
+      en: "Atlassian",
+      zh: "Atlassian",
+    },
     region: "AU",
     city: "Sydney",
     params: {

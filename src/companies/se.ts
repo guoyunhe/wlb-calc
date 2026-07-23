@@ -3,7 +3,10 @@ import type { Company } from "./types";
 export const SE_COMPANIES: Company[] = [
   {
     id: "spotify",
-    name: "Spotify",
+    name: {
+      en: "Spotify",
+      zh: "Spotify",
+    },
     region: "SE",
     city: "Stockholm",
     params: {
