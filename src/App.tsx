@@ -10,6 +10,9 @@ function App() {
     <>
       <Helmet>
         <title>{t("title")}</title>
+        <meta name="description" content={t("description")} />
+        <meta property="og:title" content={t("title")} />
+        <meta property="og:description" content={t("description")} />
       </Helmet>
       <WLBCalculator />
       <Footer />
