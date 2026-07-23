@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
-import WLBCalculator from "./components/WLBCalculator";
+import Calculator from "./components/Calculator";
 import Footer from "./components/Footer";
 import CompanyList from "./components/CompanyList";
 
@@ -15,7 +15,7 @@ function App() {
         <meta property="og:title" content={t("title")} />
         <meta property="og:description" content={t("description")} />
       </Helmet>
-      <WLBCalculator />
+      <Calculator />
       <CompanyList />
       <Footer />
     </>

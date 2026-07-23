@@ -9,7 +9,7 @@ import Header from "./Header";
 import ParamSlider from "./ParamSlider";
 import ScoreCard from "./ScoreCard";
 
-export default function WLBCalculator() {
+export default function Calculator() {
   const form = useForm<CalcParams>({
     initialValues: IDEAL_VALUES,
   });
