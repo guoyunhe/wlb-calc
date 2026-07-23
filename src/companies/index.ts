@@ -4,6 +4,7 @@ import { SE_COMPANIES } from "./se";
 import { AU_COMPANIES } from "./au";
 import { DE_COMPANIES } from "./de";
 import { CA_COMPANIES } from "./ca";
+import { CN_COMPANIES } from "./cn";
 
 export type { Company, Region };
 
@@ -13,6 +14,7 @@ export const COMPANIES: Company[] = [
   ...AU_COMPANIES,
   ...DE_COMPANIES,
   ...CA_COMPANIES,
+  ...CN_COMPANIES,
 ];
 
 export const REGIONS: Region[] = COMPANIES.reduce((acc, company) => {

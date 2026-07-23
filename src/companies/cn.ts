@@ -1,0 +1,88 @@
+import type { Company } from "./types";
+
+export const CN_COMPANIES: Company[] = [
+  {
+    id: "apple-cn",
+    name: "Apple China",
+    region: "CN",
+    city: "Shanghai",
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "amazon-cn",
+    name: "Amazon China",
+    region: "CN",
+    city: "Beijing",
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 18,
+      annualPaidSickLeaveDays: 10,
+    },
+  },
+  {
+    id: "intel-cn",
+    name: "Intel China",
+    region: "CN",
+    city: "Beijing",
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "ibm-cn",
+    name: "IBM China",
+    region: "CN",
+    city: "Beijing",
+    params: {
+      dailyWorkingHours: 7.5,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "oracle-cn",
+    name: "Oracle China",
+    region: "CN",
+    city: "Beijing",
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 18,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "morgan-stanley-cn",
+    name: "Morgan Stanley China",
+    region: "CN",
+    city: "Shanghai",
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+];

@@ -27,6 +27,7 @@ export default function CompanyCard({ company, score }: CompanyCardProps) {
       SE: "indigo",
       DE: "indigo",
       AU: "emerald",
+      CN: "red",
     };
     return colorMap[region] || "gray";
   };
