@@ -2,7 +2,7 @@ import { SimpleGrid, Text, Space, Container, Select, Box } from "@mantine/core";
 import { useTranslation } from "react-i18next";
 import { useState, useMemo, useEffect } from "react";
 import { BuildingIcon } from "@phosphor-icons/react";
-import { COMPANIES, REGIONS } from "../companies";
+import { COMPANIES, REGIONS, companyHasCity, localizedLabel, cityKey } from "../companies";
 import calc from "../calc";
 import CompanyCard from "./CompanyCard";
 
@@ -23,7 +23,7 @@ export default function CompanyList() {
     return COMPANIES.filter((company) => {
       const scorePass = calc(company.params) > 80;
       const regionPass = !selectedRegion || company.region === selectedRegion;
-      const cityPass = !selectedCity || company.city === selectedCity;
+      const cityPass = !selectedCity || companyHasCity(company, selectedCity);
       return scorePass && regionPass && cityPass;
     });
   }, [selectedRegion, selectedCity]);
@@ -35,6 +35,17 @@ export default function CompanyList() {
     const region = REGIONS.find((r) => r.code === selectedRegion);
     return region ? region.cities : [];
   }, [selectedRegion]);
+
+  const citySelectOptions = useMemo(() => {
+    return [...citiesForRegion]
+      .sort((a, b) =>
+        localizedLabel(a, i18n.language).localeCompare(localizedLabel(b, i18n.language), i18n.language),
+      )
+      .map((city) => ({
+        value: cityKey(city),
+        label: localizedLabel(city, i18n.language),
+      }));
+  }, [citiesForRegion, i18n.language]);
 
   const handleRegionChange = (value: string | null) => {
     setSelectedRegion(value || "");
@@ -78,7 +89,7 @@ export default function CompanyList() {
             <Select
               data={[
                 { value: "", label: t("companyList.filter.all") },
-                ...citiesForRegion.map((city) => ({ value: city, label: city })),
+                ...citySelectOptions,
               ]}
               value={selectedCity}
               onChange={(value) => setSelectedCity(value || "")}

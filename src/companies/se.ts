@@ -8,7 +8,7 @@ export const SE_COMPANIES: Company[] = [
       zh: "Spotify",
     },
     region: "SE",
-    city: "Stockholm",
+    cities: [{ en: "Stockholm" }],
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0.5,

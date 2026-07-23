@@ -8,7 +8,7 @@ export const US_COMPANIES: Company[] = [
       zh: "谷歌",
     },
     region: "US",
-    city: "Mountain View",
+    cities: [{ en: "Mountain View" }, { en: "New York" }, { en: "Seattle" }],
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -25,7 +25,7 @@ export const US_COMPANIES: Company[] = [
       zh: "微软",
     },
     region: "US",
-    city: "Redmond",
+    cities: [{ en: "Redmond" }],
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -42,7 +42,7 @@ export const US_COMPANIES: Company[] = [
       zh: "网飞",
     },
     region: "US",
-    city: "Los Gatos",
+    cities: [{ en: "Los Gatos" }],
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0.5,
@@ -59,7 +59,7 @@ export const US_COMPANIES: Company[] = [
       zh: "Salesforce",
     },
     region: "US",
-    city: "San Francisco",
+    cities: [{ en: "San Francisco" }],
     params: {
       dailyWorkingHours: 7.5,
       dailyCommuteHours: 0.5,
@@ -76,7 +76,7 @@ export const US_COMPANIES: Company[] = [
       zh: "奥多比",
     },
     region: "US",
-    city: "San Jose",
+    cities: [{ en: "San Jose" }],
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -93,7 +93,7 @@ export const US_COMPANIES: Company[] = [
       zh: "GitHub",
     },
     region: "US",
-    city: "San Francisco",
+    cities: [{ en: "San Francisco" }],
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0.3,

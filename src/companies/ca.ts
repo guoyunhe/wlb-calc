@@ -8,7 +8,7 @@ export const CA_COMPANIES: Company[] = [
       zh: "Shopify",
     },
     region: "CA",
-    city: "Ottawa",
+    cities: [{ en: "Ottawa" }],
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0.5,

@@ -8,7 +8,7 @@ export const AU_COMPANIES: Company[] = [
       zh: "Atlassian",
     },
     region: "AU",
-    city: "Sydney",
+    cities: [{ en: "Sydney" }],
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0.5,

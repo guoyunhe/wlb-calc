@@ -1,7 +1,8 @@
-import { Card, Badge, Anchor, Text } from "@mantine/core";
+import { Card, Anchor, Text } from "@mantine/core";
 import { MapPinIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
 import type { Company } from "../companies";
+import { localizedLabel } from "../companies";
 import { getScoreLevel } from "../calc";
 
 interface CompanyCardProps {
@@ -58,7 +59,9 @@ export default function CompanyCard({ company, score }: CompanyCardProps) {
         }}
       >
         <MapPinIcon size={14} />
-        <Text size="xs">{company.city}</Text>
+        <Text size="xs">
+          {company.cities.map((city) => localizedLabel(city, i18n.language)).join(", ")}
+        </Text>
       </div>
     </Card>
   );

@@ -8,7 +8,7 @@ export const DE_COMPANIES: Company[] = [
       zh: "SAP",
     },
     region: "DE",
-    city: "Walldorf",
+    cities: [{ en: "Walldorf" }],
     params: {
       dailyWorkingHours: 7.5,
       dailyCommuteHours: 0.5,
