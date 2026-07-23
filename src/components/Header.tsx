@@ -1,36 +1,39 @@
-import { Title, Text, Button, Flex, Box, useMantineColorScheme } from "@mantine/core";
+import { Title, Text, Flex, Box, useMantineColorScheme, SegmentedControl } from "@mantine/core";
 import { useTranslation } from "react-i18next";
-import { Sun, Moon } from "@phosphor-icons/react";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
-
-  const toggleLanguage = () => {
-    i18n.changeLanguage(i18n.language === "zh" ? "en" : "zh");
-  };
+  const { colorScheme, setColorScheme } = useMantineColorScheme();
 
   return (
     <Box mb="xl" style={{ textAlign: "center" }}>
-      <Flex justify="center" gap="md" align="center" mb="sm">
-        <Title order={1} size="h1">
-          {t("title")}
-        </Title>
-        <Button size="sm" variant="outline" onClick={toggleLanguage}>
-          {t(`language.${i18n.language}`)}
-        </Button>
-        <Button
-          size="sm"
-          variant="outline"
-          onClick={() => toggleColorScheme()}
-          title={t(`theme.${colorScheme}`)}
-        >
-          {colorScheme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
-        </Button>
-      </Flex>
-      <Text color="dimmed" size="lg">
+      <Title order={1} size="h1" mb="sm">
+        {t("title")}
+      </Title>
+      <Text color="dimmed" size="lg" mb="sm">
         {t("subtitle")}
       </Text>
+      <Flex justify="center" gap="md" align="center" wrap="wrap">
+        <SegmentedControl
+          value={i18n.language}
+          onChange={(value) => i18n.changeLanguage(value)}
+          data={[
+            { value: "zh", label: t("language.zh") },
+            { value: "en", label: t("language.en") },
+          ]}
+          size="sm"
+        />
+        <SegmentedControl
+          value={colorScheme}
+          onChange={(value) => setColorScheme(value as "light" | "dark" | "auto")}
+          data={[
+            { value: "light", label: t("theme.light") },
+            { value: "dark", label: t("theme.dark") },
+            { value: "auto", label: t("theme.auto") },
+          ]}
+          size="sm"
+        />
+      </Flex>
     </Box>
   );
 }
