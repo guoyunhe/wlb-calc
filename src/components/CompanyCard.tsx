@@ -34,20 +34,7 @@ export default function CompanyCard({ company, score }: CompanyCardProps) {
   return (
     <Card
       onClick={handleClick}
-      style={{
-        cursor: "pointer",
-        transition: "transform 0.2s, box-shadow 0.2s",
-      }}
-      onMouseEnter={(e) => {
-        const target = e.currentTarget as HTMLElement;
-        target.style.transform = "translateY(-4px)";
-        target.style.boxShadow = "0 10px 40px rgba(0, 0, 0, 0.1)";
-      }}
-      onMouseLeave={(e) => {
-        const target = e.currentTarget as HTMLElement;
-        target.style.transform = "";
-        target.style.boxShadow = "";
-      }}
+      className="company-card"
       padding="lg"
     >
       <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.75rem" }}>

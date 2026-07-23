@@ -1,0 +1,88 @@
+import type { Company } from "./types";
+
+export const US_COMPANIES: Company[] = [
+  {
+    id: "google",
+    name: "Google",
+    region: "US",
+    city: "Mountain View",
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 25,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "microsoft",
+    name: "Microsoft",
+    region: "US",
+    city: "Redmond",
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 10,
+    },
+  },
+  {
+    id: "netflix",
+    name: "Netflix",
+    region: "US",
+    city: "Los Gatos",
+    params: {
+      dailyWorkingHours: 7,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 30,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "salesforce",
+    name: "Salesforce",
+    region: "US",
+    city: "San Francisco",
+    params: {
+      dailyWorkingHours: 7.5,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 25,
+      annualPaidSickLeaveDays: 10,
+    },
+  },
+  {
+    id: "adobe",
+    name: "Adobe",
+    region: "US",
+    city: "San Jose",
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "github",
+    name: "GitHub",
+    region: "US",
+    city: "San Francisco",
+    params: {
+      dailyWorkingHours: 7,
+      dailyCommuteHours: 0.3,
+      dailyCommunicationOutsideWorkHours: 0,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 30,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+];
