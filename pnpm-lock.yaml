@@ -39,6 +39,9 @@ importers:
         specifier: ^17.0.10
         version: 17.0.10(i18next@26.3.6(typescript@6.0.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@6.0.3)
     devDependencies:
+      '@guoyunhe/oxfmt-config':
+        specifier: ^1.1.0
+        version: 1.1.0
       '@types/node':
         specifier: ^24.13.2
         version: 24.13.3
@@ -108,6 +111,9 @@ packages:
 
   '@floating-ui/utils@0.2.12':
     resolution: {integrity: sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww==}
+
+  '@guoyunhe/oxfmt-config@1.1.0':
+    resolution: {integrity: sha512-sCb69VSHLpRfOiHr7Q4THMS2eTVxLbRm44tpL8PYy0VIf7qL632ZoIIGze+am4NMbBAznIGz4wk29Qwhn53Tjw==}
 
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
@@ -1121,6 +1127,8 @@ snapshots:
       tabbable: 6.5.0
 
   '@floating-ui/utils@0.2.12': {}
+
+  '@guoyunhe/oxfmt-config@1.1.0': {}
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
