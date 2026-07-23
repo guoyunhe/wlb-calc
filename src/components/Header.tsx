@@ -1,4 +1,5 @@
 import { Title, Text, Flex, Box, useMantineColorScheme, SegmentedControl } from "@mantine/core";
+import { SunIcon, MoonIcon, MonitorIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
 
 export default function Header() {
@@ -18,8 +19,8 @@ export default function Header() {
           value={i18n.language}
           onChange={(value) => i18n.changeLanguage(value)}
           data={[
-            { value: "zh", label: t("language.zh") },
-            { value: "en", label: t("language.en") },
+            { value: "zh", label: '🇨🇳 中文' },
+            { value: "en", label: '🇬🇧 English' },
           ]}
           size="sm"
         />
@@ -27,9 +28,9 @@ export default function Header() {
           value={colorScheme}
           onChange={(value) => setColorScheme(value as "light" | "dark" | "auto")}
           data={[
-            { value: "light", label: t("theme.light") },
-            { value: "dark", label: t("theme.dark") },
-            { value: "auto", label: t("theme.auto") },
+            { value: "light", label: <Flex align="center" gap="xs"><SunIcon /> {t("theme.light")}</Flex> },
+            { value: "dark", label: <Flex align="center" gap="xs"><MoonIcon /> {t("theme.dark")}</Flex> },
+            { value: "auto", label: <Flex align="center" gap="xs"><MonitorIcon /> {t("theme.auto")}</Flex> },
           ]}
           size="sm"
         />
