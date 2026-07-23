@@ -14,11 +14,11 @@
     "label": "每周工作天数",
     "unit": "天"
   },
-  "paidLeaveDaysPerYear": {
+  "annualPaidLeaveDays": {
     "label": "每年带薪休假",
     "unit": "天"
   },
-  "paidSickLeaveDaysPerYear": {
+  "annualPaidSickLeaveDays": {
     "label": "每年带薪病假",
     "unit": "天"
   },

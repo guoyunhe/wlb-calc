@@ -1,7 +1,7 @@
-import { Container, Grid } from "@mantine/core";
+import { Container, Grid, Button, Space } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import calc from "../calc";
-import { IDEAL_VALUES, CALC_CONFIG } from "../config";
+import { IDEAL_VALUES, CALC_CONFIG, PRESETS } from "../config";
 import type { CalcParams } from "../config";
 import { useMemo } from "react";
 import Header from "./Header";
@@ -17,9 +17,33 @@ export default function WLBCalculator() {
     return calc(form.values);
   }, [form.values]);
 
+  const handlePresetClick = (params: CalcParams) => {
+    form.setValues(params);
+  };
+
   return (
     <Container size="md" py="xl">
       <Header />
+
+      <Space h="md" />
+
+      <div>
+        {PRESETS.map((preset) => (
+          <Button
+            key={preset.name}
+            color={preset.color}
+            variant="outline"
+            size="md"
+            mr="sm"
+            mb="sm"
+            onClick={() => handlePresetClick(preset.params)}
+          >
+            {preset.name}
+          </Button>
+        ))}
+      </div>
+
+      <Space h="lg" />
 
       <Grid gap="lg">
         <Grid.Col span={{ md: 8, sm: 12 }}>

@@ -3,8 +3,8 @@ export interface CalcParams {
   dailyCommuteHours: number;
   dailyCommunicationOutsideWorkHours: number;
   weeklyWorkingDays: number;
-  paidLeaveDaysPerYear: number;
-  paidSickLeaveDaysPerYear: number;
+  annualPaidLeaveDays: number;
+  annualPaidSickLeaveDays: number;
 }
 
 export type PenaltyType = "excess" | "deficit" | "direct";
@@ -64,7 +64,7 @@ export const CALC_CONFIG: ParamConfig[] = [
     step: 0.5,
   },
   {
-    key: "paidLeaveDaysPerYear",
+    key: "annualPaidLeaveDays",
     ideal: 20,
     penaltyWeight: 2,
     penaltyType: "deficit",
@@ -74,7 +74,7 @@ export const CALC_CONFIG: ParamConfig[] = [
     step: 1,
   },
   {
-    key: "paidSickLeaveDaysPerYear",
+    key: "annualPaidSickLeaveDays",
     ideal: 10,
     penaltyWeight: 4,
     penaltyType: "deficit",
@@ -166,6 +166,51 @@ export const SCORE_LEVELS: ScoreLevel[] = [
     textColor: {
       light: "#dc2626",
       dark: "#f87171",
+    },
+  },
+];
+
+export interface Preset {
+  name: string;
+  color: string;
+  params: CalcParams;
+}
+
+export const PRESETS: Preset[] = [
+  {
+    name: "965",
+    color: "green",
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 1,
+      dailyCommunicationOutsideWorkHours: 0,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 10,
+    },
+  },
+  {
+    name: "大小周",
+    color: "orange",
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 1,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5.5,
+      annualPaidLeaveDays: 15,
+      annualPaidSickLeaveDays: 10,
+    },
+  },
+  {
+    name: "996",
+    color: "red",
+    params: {
+      dailyWorkingHours: 12,
+      dailyCommuteHours: 1,
+      dailyCommunicationOutsideWorkHours: 2,
+      weeklyWorkingDays: 6,
+      annualPaidLeaveDays: 5,
+      annualPaidSickLeaveDays: 5,
     },
   },
 ];

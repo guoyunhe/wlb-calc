@@ -6,8 +6,8 @@ describe("calc", () => {
       dailyWorkingHours: 8,
       dailyCommuteHours: 2,
       weeklyWorkingDays: 5,
-      paidLeaveDaysPerYear: 10,
-      paidSickLeaveDaysPerYear: 5,
+      annualPaidLeaveDays: 10,
+      annualPaidSickLeaveDays: 5,
       dailyCommunicationOutsideWorkHours: 2,
     });
     expect(result).toBe(50);
@@ -18,8 +18,8 @@ describe("calc", () => {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0,
       weeklyWorkingDays: 5,
-      paidLeaveDaysPerYear: 20,
-      paidSickLeaveDaysPerYear: 5,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 5,
       dailyCommunicationOutsideWorkHours: 0,
     });
     expect(result).toBe(100);
@@ -30,8 +30,8 @@ describe("calc", () => {
       dailyWorkingHours: 12,
       dailyCommuteHours: 2,
       weeklyWorkingDays: 6,
-      paidLeaveDaysPerYear: 5,
-      paidSickLeaveDaysPerYear: 3,
+      annualPaidLeaveDays: 5,
+      annualPaidSickLeaveDays: 3,
       dailyCommunicationOutsideWorkHours: 5,
     });
     expect(result).toBeLessThan(50);
@@ -42,8 +42,8 @@ describe("calc", () => {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0,
       weeklyWorkingDays: 4,
-      paidLeaveDaysPerYear: 30,
-      paidSickLeaveDaysPerYear: 10,
+      annualPaidLeaveDays: 30,
+      annualPaidSickLeaveDays: 10,
       dailyCommunicationOutsideWorkHours: 0,
     });
     expect(highScore).toBe(100);
@@ -52,8 +52,8 @@ describe("calc", () => {
       dailyWorkingHours: 20,
       dailyCommuteHours: 5,
       weeklyWorkingDays: 7,
-      paidLeaveDaysPerYear: 0,
-      paidSickLeaveDaysPerYear: 0,
+      annualPaidLeaveDays: 0,
+      annualPaidSickLeaveDays: 0,
       dailyCommunicationOutsideWorkHours: 20,
     });
     expect(lowScore).toBe(0);

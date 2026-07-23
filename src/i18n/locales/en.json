@@ -14,11 +14,11 @@
     "label": "Weekly Working Days",
     "unit": "days"
   },
-  "paidLeaveDaysPerYear": {
+  "annualPaidLeaveDays": {
     "label": "Annual Paid Leave",
     "unit": "days"
   },
-  "paidSickLeaveDaysPerYear": {
+  "annualPaidSickLeaveDays": {
     "label": "Annual Paid Sick Leave",
     "unit": "days"
   },
