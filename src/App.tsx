@@ -1,7 +1,13 @@
 import WLBCalculator from "./components/WLBCalculator";
+import Footer from "./components/Footer";
 
 function App() {
-  return <WLBCalculator />;
+  return (
+    <>
+      <WLBCalculator />
+      <Footer />
+    </>
+  );
 }
 
 export default App;

@@ -1,5 +1,5 @@
 {
-  "title": "工作生活平衡计算器",
+  "title": "WLB 计算器",
   "subtitle": "输入你的工作参数，实时计算工作与生活平衡得分",
   "params": "参数设置",
   "dailyWorkingHours": {
@@ -55,5 +55,6 @@
     "light": "亮色",
     "dark": "暗色",
     "auto": "跟随系统"
-  }
+  },
+  "footer": "© {{year}} Guo Yunhe"
 }
