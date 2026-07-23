@@ -1,6 +1,6 @@
 import { Title, Text, Button, Flex, Box, useMantineColorScheme } from "@mantine/core";
 import { useTranslation } from "react-i18next";
-import { SunIcon, MoonIcon } from "./icons";
+import { Sun, Moon } from "@phosphor-icons/react";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
@@ -25,7 +25,7 @@ export default function Header() {
           onClick={() => toggleColorScheme()}
           title={t(`theme.${colorScheme}`)}
         >
-          {colorScheme === "dark" ? <SunIcon /> : <MoonIcon />}
+          {colorScheme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
         </Button>
       </Flex>
       <Text color="dimmed" size="lg">
