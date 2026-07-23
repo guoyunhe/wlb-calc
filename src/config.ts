@@ -37,7 +37,7 @@ export const CALC_CONFIG: ParamConfig[] = [
     key: "dailyCommuteHours",
     ideal: 1,
     penaltyWeight: 10,
-    penaltyType: "direct",
+    penaltyType: "deficit",
     unit: "hour",
     min: 0,
     max: 6,
