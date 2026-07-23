@@ -85,20 +85,17 @@ export const CALC_CONFIG: ParamConfig[] = [
   },
 ];
 
-export const IDEAL_VALUES: CalcParams = CALC_CONFIG.reduce(
-  (acc, config) => {
-    acc[config.key] = config.ideal;
-    return acc;
-  },
-  {} as CalcParams
-);
+export const IDEAL_VALUES: CalcParams = CALC_CONFIG.reduce((acc, config) => {
+  acc[config.key] = config.ideal;
+  return acc;
+}, {} as CalcParams);
 
 export const PENALTY_WEIGHTS: Record<keyof CalcParams, number> = CALC_CONFIG.reduce(
   (acc, config) => {
     acc[config.key] = config.penaltyWeight;
     return acc;
   },
-  {} as Record<keyof CalcParams, number>
+  {} as Record<keyof CalcParams, number>,
 );
 
 export interface ScoreLevel {

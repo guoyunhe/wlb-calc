@@ -1,15 +1,15 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import zh from './locales/zh.json';
-import en from './locales/en.json';
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+import zh from "./locales/zh.json";
+import en from "./locales/en.json";
 
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    lng: 'zh',
-    fallbackLng: 'zh',
+    lng: "zh",
+    fallbackLng: "zh",
     interpolation: {
       escapeValue: false,
     },
@@ -18,7 +18,7 @@ i18n
       en: { translation: en },
     },
     detection: {
-      caches: ['localStorage'],
+      caches: ["localStorage"],
     },
   });
 

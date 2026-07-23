@@ -35,7 +35,10 @@ export default function ParamSlider({ config, inputProps }: ParamSliderProps) {
             { value: config.max, label: t(`unit.${config.unit}`, { [config.unit]: config.max }) },
           ];
           if (idealVal > config.min && idealVal < config.max) {
-            marks.push({ value: idealVal, label: t(`unit.${config.unit}`, { [config.unit]: idealVal }) });
+            marks.push({
+              value: idealVal,
+              label: t(`unit.${config.unit}`, { [config.unit]: idealVal }),
+            });
           }
           return marks;
         })()}

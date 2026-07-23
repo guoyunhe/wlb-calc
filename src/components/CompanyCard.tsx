@@ -1,7 +1,6 @@
 import { Card, Badge, Anchor, Text } from "@mantine/core";
 import { MapPinIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
-import i18n from "../i18n";
 import type { Company } from "../companies";
 import { getScoreLevel } from "../calc";
 
@@ -11,7 +10,7 @@ interface CompanyCardProps {
 }
 
 export default function CompanyCard({ company, score }: CompanyCardProps) {
-  const { t } = useTranslation();
+  const { i18n } = useTranslation();
   const scoreLevel = getScoreLevel(score);
 
   const handleClick = () => {
@@ -21,31 +20,14 @@ export default function CompanyCard({ company, score }: CompanyCardProps) {
     window.dispatchEvent(new PopStateEvent("popstate"));
   };
 
-  const getRegionBadgeColor = (region: string) => {
-    const colorMap: Record<string, string> = {
-      US: "blue",
-      CA: "blue",
-      SE: "indigo",
-      DE: "indigo",
-      AU: "emerald",
-      CN: "red",
-    };
-    return colorMap[region] || "gray";
-  };
-
   return (
-    <Card
-      onClick={handleClick}
-      className="company-card"
-      padding="lg"
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.75rem" }}>
+    <Card onClick={handleClick} className="company-card" padding="lg">
+      <div
+        style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.75rem" }}
+      >
         <Anchor href="#" underline="never" style={{ fontWeight: "600", fontSize: "1.125rem" }}>
           {i18n.language === "zh" && company.name.zh ? company.name.zh : company.name.en}
         </Anchor>
-        <Badge color={getRegionBadgeColor(company.region)} variant="light" size="xs">
-          {t(`region.${company.region}`)}
-        </Badge>
       </div>
 
       <div
@@ -67,7 +49,14 @@ export default function CompanyCard({ company, score }: CompanyCardProps) {
         </Text>
       </div>
 
-      <div style={{ display: "flex", alignItems: "center", gap: "0.25rem", color: "var(--mantine-color-dimmed)" }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "0.25rem",
+          color: "var(--mantine-color-dimmed)",
+        }}
+      >
         <MapPinIcon size={14} />
         <Text size="xs">{company.city}</Text>
       </div>

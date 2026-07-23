@@ -16,12 +16,7 @@ export default function ScoreCard({ score }: ScoreCardProps) {
   const isDark = colorScheme === "dark" || (colorScheme === "auto" && systemDark);
 
   return (
-    <Card
-      bg={level.bg[isDark ? "dark" : "light"]}
-      p="xl"
-      radius="lg"
-      shadow="md"
-    >
+    <Card bg={level.bg[isDark ? "dark" : "light"]} p="xl" radius="lg" shadow="md">
       <Flex justify="center" direction="column" align="center">
         <Text size="sm" color="dimmed" mb="xs">
           {t("score.title")}

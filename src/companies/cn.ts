@@ -4,8 +4,8 @@ export const CN_COMPANIES: Company[] = [
   {
     id: "apple-cn",
     name: {
-      en: "Apple China",
-      zh: "苹果中国",
+      en: "Apple",
+      zh: "苹果",
     },
     region: "CN",
     city: "Shanghai",
@@ -21,8 +21,8 @@ export const CN_COMPANIES: Company[] = [
   {
     id: "amazon-cn",
     name: {
-      en: "Amazon China",
-      zh: "亚马逊中国",
+      en: "Amazon",
+      zh: "亚马逊",
     },
     region: "CN",
     city: "Beijing",
@@ -38,8 +38,8 @@ export const CN_COMPANIES: Company[] = [
   {
     id: "intel-cn",
     name: {
-      en: "Intel China",
-      zh: "英特尔中国",
+      en: "Intel",
+      zh: "英特尔",
     },
     region: "CN",
     city: "Beijing",
@@ -55,8 +55,8 @@ export const CN_COMPANIES: Company[] = [
   {
     id: "oracle-cn",
     name: {
-      en: "Oracle China",
-      zh: "甲骨文中国",
+      en: "Oracle",
+      zh: "甲骨文",
     },
     region: "CN",
     city: "Beijing",
@@ -72,8 +72,8 @@ export const CN_COMPANIES: Company[] = [
   {
     id: "morgan-stanley-cn",
     name: {
-      en: "Morgan Stanley China",
-      zh: "摩根士丹利中国",
+      en: "Morgan Stanley",
+      zh: "摩根士丹利",
     },
     region: "CN",
     city: "Shanghai",

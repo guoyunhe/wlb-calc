@@ -35,7 +35,11 @@ export default function WLBCalculator() {
           }
         }
         searchParams.delete("company");
-        window.history.pushState({}, "", `${window.location.pathname}${searchParams.toString() ? "?" + searchParams.toString() : ""}`);
+        window.history.pushState(
+          {},
+          "",
+          `${window.location.pathname}${searchParams.toString() ? "?" + searchParams.toString() : ""}`,
+        );
       }
     };
 

@@ -15,14 +15,14 @@ Test if your job is good enough for a healthy life.
 
 The score starts at 100 and is deducted based on the following rules:
 
-| Parameter | Ideal Value | Penalty Weight | Penalty Type |
-|-----------|-------------|----------------|--------------|
-| Daily Working Hours | 7 hours | 10 | excess |
-| Daily Commute Hours | 1 hour | 5 | excess |
-| After-Hours Communication | 0 hours | 5 | direct |
-| Weekly Working Days | 5 days | 40 | excess |
-| Annual Paid Leave | 20 days | 0.5 | deficit |
-| Annual Sick Leave | 10 days | 0.5 | deficit |
+| Parameter                 | Ideal Value | Penalty Weight | Penalty Type |
+| ------------------------- | ----------- | -------------- | ------------ |
+| Daily Working Hours       | 7 hours     | 10             | excess       |
+| Daily Commute Hours       | 1 hour      | 5              | excess       |
+| After-Hours Communication | 0 hours     | 5              | direct       |
+| Weekly Working Days       | 5 days      | 40             | excess       |
+| Annual Paid Leave         | 20 days     | 0.5            | deficit      |
+| Annual Sick Leave         | 10 days     | 0.5            | deficit      |
 
 ### Penalty Types
 
@@ -34,13 +34,13 @@ The final score is clamped between 0 and 100.
 
 ## Score Levels
 
-| Grade | Score Range | Description |
-|-------|-------------|-------------|
-| **A** | 90-100 | Excellent - Perfect work-life balance |
-| **B** | 80-89 | Good - Basic balance with slight pressure |
-| **C** | 60-79 | Average - Need to pay attention to workload |
-| **D** | 40-59 | Poor - Suggest adjusting work status |
-| **E** | 0-39 | Very Poor - Run! Please run! |
+| Grade | Score Range | Description                                 |
+| ----- | ----------- | ------------------------------------------- |
+| **A** | 90-100      | Excellent - Perfect work-life balance       |
+| **B** | 80-89       | Good - Basic balance with slight pressure   |
+| **C** | 60-79       | Average - Need to pay attention to workload |
+| **D** | 40-59       | Poor - Suggest adjusting work status        |
+| **E** | 0-39        | Very Poor - Run! Please run!                |
 
 ## Presets
 

@@ -25,5 +25,7 @@ export default function calc(params: CalcParams) {
 }
 
 export const getScoreLevel = (score: number): ScoreLevel => {
-  return SCORE_LEVELS.find((level) => score >= level.minScore) || SCORE_LEVELS[SCORE_LEVELS.length - 1];
+  return (
+    SCORE_LEVELS.find((level) => score >= level.minScore) || SCORE_LEVELS[SCORE_LEVELS.length - 1]
+  );
 };

@@ -19,8 +19,8 @@ export default function Header() {
           value={i18n.language}
           onChange={(value) => i18n.changeLanguage(value)}
           data={[
-            { value: "zh", label: '🇨🇳 中文' },
-            { value: "en", label: '🇬🇧 English' },
+            { value: "zh", label: "🇨🇳 中文" },
+            { value: "en", label: "🇬🇧 English" },
           ]}
           size="sm"
         />
@@ -28,9 +28,30 @@ export default function Header() {
           value={colorScheme}
           onChange={(value) => setColorScheme(value as "light" | "dark" | "auto")}
           data={[
-            { value: "light", label: <Flex align="center" gap="xs"><SunIcon /> {t("theme.light")}</Flex> },
-            { value: "dark", label: <Flex align="center" gap="xs"><MoonIcon /> {t("theme.dark")}</Flex> },
-            { value: "auto", label: <Flex align="center" gap="xs"><MonitorIcon /> {t("theme.auto")}</Flex> },
+            {
+              value: "light",
+              label: (
+                <Flex align="center" gap="xs">
+                  <SunIcon /> {t("theme.light")}
+                </Flex>
+              ),
+            },
+            {
+              value: "dark",
+              label: (
+                <Flex align="center" gap="xs">
+                  <MoonIcon /> {t("theme.dark")}
+                </Flex>
+              ),
+            },
+            {
+              value: "auto",
+              label: (
+                <Flex align="center" gap="xs">
+                  <MonitorIcon /> {t("theme.auto")}
+                </Flex>
+              ),
+            },
           ]}
           size="sm"
         />
