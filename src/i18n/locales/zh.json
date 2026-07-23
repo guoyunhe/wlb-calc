@@ -57,5 +57,22 @@
     "dark": "暗色",
     "auto": "跟随系统"
   },
-  "footer": "© {{year}} Guo Yunhe"
+  "footer": "© {{year}} Guo Yunhe",
+  "companyList": {
+    "title": "公司 WLB 参考",
+    "subtitle": "点击公司卡片，查看其工作生活平衡评分",
+    "filter": {
+      "region": "地区",
+      "city": "城市",
+      "all": "全部"
+    },
+    "empty": "暂无符合条件的公司"
+  },
+  "region": {
+    "US": "美国",
+    "CA": "加拿大",
+    "SE": "瑞典",
+    "DE": "德国",
+    "AU": "澳大利亚"
+  }
 }

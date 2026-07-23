@@ -57,5 +57,22 @@
     "dark": "Dark",
     "auto": "System"
   },
-  "footer": "© {{year}} Guo Yunhe"
+  "footer": "© {{year}} Guo Yunhe",
+  "companyList": {
+    "title": "Company WLB Reference",
+    "subtitle": "Click a company card to view its work-life balance score",
+    "filter": {
+      "region": "Region",
+      "city": "City",
+      "all": "All"
+    },
+    "empty": "No companies match the criteria"
+  },
+  "region": {
+    "US": "United States",
+    "CA": "Canada",
+    "SE": "Sweden",
+    "DE": "Germany",
+    "AU": "Australia"
+  }
 }

@@ -1,9 +1,10 @@
 import { Container, Grid, Button, Space } from "@mantine/core";
 import { useForm } from "@mantine/form";
+import { useEffect } from "react";
 import calc from "../calc";
 import { IDEAL_VALUES, CALC_CONFIG, PRESETS } from "../config";
 import type { CalcParams } from "../config";
-import { useMemo } from "react";
+import { COMPANIES } from "../companies";
 import Header from "./Header";
 import ParamSlider from "./ParamSlider";
 import ScoreCard from "./ScoreCard";
@@ -13,16 +14,39 @@ export default function WLBCalculator() {
     initialValues: IDEAL_VALUES,
   });
 
-  const score = useMemo(() => {
-    return calc(form.values);
-  }, [form.values]);
+  const score = calc(form.values);
 
   const handlePresetClick = (params: CalcParams) => {
     form.setValues(params);
   };
 
+  useEffect(() => {
+    const handlePopState = () => {
+      const searchParams = new URLSearchParams(window.location.search);
+      const companyId = searchParams.get("company");
+
+      if (companyId) {
+        const company = COMPANIES.find((c) => c.id === companyId);
+        if (company) {
+          form.setValues(company.params);
+          const calculatorElement = document.getElementById("wlb-calculator");
+          if (calculatorElement) {
+            calculatorElement.scrollIntoView({ behavior: "smooth" });
+          }
+        }
+        searchParams.delete("company");
+        window.history.pushState({}, "", `${window.location.pathname}${searchParams.toString() ? "?" + searchParams.toString() : ""}`);
+      }
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+    };
+  }, [form]);
+
   return (
-    <Container size="md" py="xl">
+    <Container id="wlb-calculator" size="md" py="xl">
       <Header />
 
       <Space h="md" />
