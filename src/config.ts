@@ -190,8 +190,20 @@ export const PRESETS: Preset[] = [
     },
   },
   {
-    name: "大小周",
+    name: "995",
     color: "orange",
+    params: {
+      dailyWorkingHours: 12,
+      dailyCommuteHours: 1,
+      dailyCommunicationOutsideWorkHours: 1.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 10,
+      annualPaidSickLeaveDays: 5,
+    },
+  },
+  {
+    name: "大小周",
+    color: "red",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 1,
