@@ -104,4 +104,55 @@ export const CN_COMPANIES: Company[] = [
       annualPaidSickLeaveDays: 10,
     },
   },
+  {
+    id: "zalando-cn",
+    name: {
+      en: "Zalando",
+      zh: "嘉兰朵",
+    },
+    region: "CN",
+    cities: [C.shenzhen],
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 12,
+      annualPaidSickLeaveDays: 10,
+    },
+  },
+  {
+    id: "flexport-cn",
+    name: {
+      en: "Flexport",
+      zh: "飞协博",
+    },
+    region: "CN",
+    cities: [C.shenzhen],
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 12,
+      annualPaidSickLeaveDays: 10,
+    },
+  },
+  {
+    id: "qualcomm-cn",
+    name: {
+      en: "Qualcomm",
+      zh: "高通",
+    },
+    region: "CN",
+    cities: [C.beijing, C.shanghai, C.shenzhen, C.xian, C.wuxi],
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 15,
+      annualPaidSickLeaveDays: 12,
+    },
+  },
 ];

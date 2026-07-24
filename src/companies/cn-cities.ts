@@ -8,4 +8,6 @@ export const CN_CITIES = {
   guangzhou: { en: "Guangzhou", zh: "广州" },
   chengdu: { en: "Chengdu", zh: "成都" },
   suzhou: { en: "Suzhou", zh: "苏州" },
+  xian: { en: "Xian", zh: "西安" },
+  wuxi: { en: "Wuxi", zh: "无锡" },
 } as const satisfies Record<string, LocalizedName>;
