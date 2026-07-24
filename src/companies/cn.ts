@@ -155,4 +155,55 @@ export const CN_COMPANIES: Company[] = [
       annualPaidSickLeaveDays: 12,
     },
   },
+  {
+    id: "siemens-cn",
+    name: {
+      en: "Siemens",
+      zh: "西门子",
+    },
+    region: "CN",
+    cities: [C.beijing, C.shanghai, C.shenzhen],
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "philips-cn",
+    name: {
+      en: "Philips",
+      zh: "飞利浦",
+    },
+    region: "CN",
+    cities: [C.beijing, C.shanghai, C.shenzhen],
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "schneider-cn",
+    name: {
+      en: "Schneider",
+      zh: "施耐德",
+    },
+    region: "CN",
+    cities: [C.beijing, C.shanghai, C.shenzhen],
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
 ];
