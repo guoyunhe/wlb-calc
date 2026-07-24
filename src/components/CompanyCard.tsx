@@ -1,9 +1,10 @@
-import { Card, Anchor, Text } from "@mantine/core";
+import { Card, Anchor, Text, useMantineColorScheme } from "@mantine/core";
 import { MapPinIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
 import type { Company } from "../companies";
 import { localizedLabel } from "../companies";
 import { getScoreLevel } from "../calc";
+import { useMediaQuery } from "@mantine/hooks";
 
 interface CompanyCardProps {
   company: Company;
@@ -13,6 +14,9 @@ interface CompanyCardProps {
 export default function CompanyCard({ company, score }: CompanyCardProps) {
   const { i18n } = useTranslation();
   const scoreLevel = getScoreLevel(score);
+  const { colorScheme } = useMantineColorScheme();
+  const systemDark = useMediaQuery("(prefers-color-scheme: dark)");
+  const isDark = colorScheme === "dark" || (colorScheme === "auto" && systemDark);
 
   const handleClick = () => {
     const url = new URL(window.location.href);
@@ -22,33 +26,32 @@ export default function CompanyCard({ company, score }: CompanyCardProps) {
   };
 
   return (
-    <Card onClick={handleClick} className="company-card" padding="lg">
-      <div
-        style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.75rem" }}
+    <Card
+      variant="bordered"
+      onClick={handleClick}
+      className="company-card"
+      shadow="sm"
+      padding="lg"
+      withBorder
+    >
+      <Text
+        mb="md"
+        fw="bold"
       >
-        <Anchor href="#" underline="never" style={{ fontWeight: "600", fontSize: "1.125rem" }}>
-          {i18n.language === "zh" && company.name.zh ? company.name.zh : company.name.en}
-        </Anchor>
-      </div>
+        {i18n.language === "zh" && company.name.zh ? company.name.zh : company.name.en}
+      </Text>
 
-      <div
+      <Text
+        size="xl"
+        ta="center"
+        fw="bold"
+        mb="md"
         style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          padding: "0.75rem",
-          borderRadius: "0.5rem",
-          backgroundColor: scoreLevel.bg.light,
-          marginBottom: "0.75rem",
+          color: isDark ? scoreLevel.textColor.dark : scoreLevel.textColor.light,
         }}
       >
-        <Text size="sm" fw="500" style={{ color: scoreLevel.textColor.light }}>
-          WLB Score
-        </Text>
-        <Text size="xl" fw="bold" style={{ color: scoreLevel.textColor.light }}>
-          {score}
-        </Text>
-      </div>
+        {score}
+      </Text>
 
       <div
         style={{
