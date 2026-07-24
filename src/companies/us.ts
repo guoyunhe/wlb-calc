@@ -1,4 +1,18 @@
 import type { Company } from "./types";
+import type { LocalizedName } from "./types";
+
+const US_CITIES = {
+  mountainView: { en: "Mountain View", zh: "山景城" },
+  newYork: { en: "New York", zh: "纽约" },
+  seattle: { en: "Seattle", zh: "西雅图" },
+  redmond: { en: "Redmond", zh: "雷德蒙德" },
+  losGatos: { en: "Los Gatos", zh: "洛斯加托斯" },
+  sanFrancisco: { en: "San Francisco", zh: "旧金山" },
+  sanJose: { en: "San Jose", zh: "圣何塞" },
+  remote: { en: "Remote", zh: "远程" },
+} as const satisfies Record<string, LocalizedName>;
+
+const C = US_CITIES;
 
 export const US_COMPANIES: Company[] = [
   {
@@ -8,7 +22,7 @@ export const US_COMPANIES: Company[] = [
       zh: "谷歌",
     },
     region: "US",
-    cities: [{ en: "Mountain View" }, { en: "New York" }, { en: "Seattle" }],
+    cities: [C.mountainView, C.newYork, C.seattle],
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -25,7 +39,7 @@ export const US_COMPANIES: Company[] = [
       zh: "微软",
     },
     region: "US",
-    cities: [{ en: "Redmond" }],
+    cities: [C.redmond],
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -42,7 +56,7 @@ export const US_COMPANIES: Company[] = [
       zh: "网飞",
     },
     region: "US",
-    cities: [{ en: "Los Gatos" }],
+    cities: [C.losGatos],
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0.5,
@@ -59,7 +73,7 @@ export const US_COMPANIES: Company[] = [
       zh: "Salesforce",
     },
     region: "US",
-    cities: [{ en: "San Francisco" }],
+    cities: [C.sanFrancisco],
     params: {
       dailyWorkingHours: 7.5,
       dailyCommuteHours: 0.5,
@@ -76,7 +90,7 @@ export const US_COMPANIES: Company[] = [
       zh: "奥多比",
     },
     region: "US",
-    cities: [{ en: "San Jose" }],
+    cities: [C.sanJose],
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -93,7 +107,7 @@ export const US_COMPANIES: Company[] = [
       zh: "GitHub",
     },
     region: "US",
-    cities: [{ en: "San Francisco" }],
+    cities: [C.sanFrancisco],
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0.3,

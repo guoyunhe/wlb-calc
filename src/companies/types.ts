@@ -11,6 +11,8 @@ export interface Company {
   region: string;
   cities: LocalizedName[];
   params: CalcParams;
+  website: string;
+  linkedin: string;
 }
 
 export interface CityWithCompanyCount extends LocalizedName {

@@ -1,5 +1,5 @@
-import { Card, Flex, Text } from "@mantine/core";
-import { MapPinIcon } from "@phosphor-icons/react";
+import { Badge, Button, Card, Flex, Text } from "@mantine/core";
+import { GlobeIcon, MapPinIcon, LinkedinLogoIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
 import type { Company } from "../companies";
 import { localizedLabel } from "../companies";
@@ -36,32 +36,53 @@ export default function CompanyCard({ company, score }: CompanyCardProps) {
       shadow="sm"
       withBorder
     >
-      <Card.Section
-        withBorder
-        display="flex"
-        w="4.5rem"
-        style={{
-          justifyContent: "center",
-          textAlign: "center",
-          alignItems: "center",
-          color: isDark ? scoreLevel.textColor.dark : scoreLevel.textColor.light,
-        }}
-      >
-        <Text size="2rem">{score}</Text>
-      </Card.Section>
+      <Card.Section inheritPadding p="sm" withBorder flex={1}>
+        <Flex align="center" gap="xs" mb="xs">
+          <Badge
+            variant="outline"
+            color={isDark ? scoreLevel.textColor.dark : scoreLevel.textColor.light}
+          >
+            {score}
+          </Badge>
+          <Text fw="bold">
+            {i18n.language === "zh" && company.name.zh ? company.name.zh : company.name.en}
+          </Text>
+        </Flex>
 
-      <Card.Section inheritPadding p="sm">
-        <Text mb="xs" fw="bold">
-          {i18n.language === "zh" && company.name.zh ? company.name.zh : company.name.en}
-        </Text>
-
-        <Flex align="center">
-          <MapPinIcon size={14} />
-          <Text size="xs">
+        <Flex align="start" ml="-.1rem">
+          <MapPinIcon size="1rem" />
+          <Text size="xs" ml="0.1rem">
             {company.cities.map((city) => localizedLabel(city, i18n.language)).join(", ")}
           </Text>
         </Flex>
       </Card.Section>
+
+      <Button.Group orientation="vertical">
+        <Button
+          flex={1}
+          radius={0}
+          variant="subtle"
+          size="xs"
+          component="a"
+          href={company.website}
+          target="_blank"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <GlobeIcon size="1rem" />
+        </Button>
+        <Button
+          flex={1}
+          radius={0}
+          variant="subtle"
+          size="xs"
+          component="a"
+          href={company.linkedin}
+          target="_blank"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <LinkedinLogoIcon size="1rem" />
+        </Button>
+      </Button.Group>
     </Card>
   );
 }
