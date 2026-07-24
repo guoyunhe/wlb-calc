@@ -31,24 +31,24 @@ export default function Header() {
             {
               value: "light",
               label: (
-                <Flex align="center" gap="xs">
-                  <SunIcon /> {t("theme.light")}
+                <Flex align="center">
+                  <SunIcon />&nbsp;{t("theme.light")}
                 </Flex>
               ),
             },
             {
               value: "dark",
               label: (
-                <Flex align="center" gap="xs">
-                  <MoonIcon /> {t("theme.dark")}
+                <Flex align="center">
+                  <MoonIcon/>&nbsp;{t("theme.dark")}
                 </Flex>
               ),
             },
             {
               value: "auto",
               label: (
-                <Flex align="center" gap="xs">
-                  <MonitorIcon /> {t("theme.auto")}
+                <Flex align="center">
+                  <MonitorIcon />&nbsp;{t("theme.auto")}
                 </Flex>
               ),
             },
