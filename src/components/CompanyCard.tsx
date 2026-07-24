@@ -1,4 +1,4 @@
-import { Badge, Button, Card, Flex, Text } from "@mantine/core";
+import { Badge, Button, Card, Divider, Flex, Text } from "@mantine/core";
 import { GlobeIcon, MapPinIcon, LinkedinLogoIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
 import type { Company } from "../companies";
@@ -36,7 +36,7 @@ export default function CompanyCard({ company, score }: CompanyCardProps) {
       shadow="sm"
       withBorder
     >
-      <Card.Section inheritPadding p="sm" withBorder flex={1}>
+      <Card.Section inheritPadding px="sm" withBorder flex={1}>
         <Flex align="center" gap="xs" mb="xs">
           <Badge
             variant="outline"
@@ -59,10 +59,11 @@ export default function CompanyCard({ company, score }: CompanyCardProps) {
 
       <Card.Section onClick={(e) => e.stopPropagation()}>
         <Button.Group orientation="vertical">
-          <Button radius={0} component="a" href={company.website} target="_blank">
+          <Button variant="transparent" color="default" component="a" href={company.website} target="_blank">
             <GlobeIcon size="1rem" />
           </Button>
-          <Button radius={0} component="a" href={company.linkedin} target="_blank">
+          <Divider />
+          <Button variant="transparent" color="default" component="a" href={company.linkedin} target="_blank">
             <LinkedinLogoIcon size="1rem" />
           </Button>
         </Button.Group>
