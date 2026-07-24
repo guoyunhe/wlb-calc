@@ -1,0 +1,191 @@
+import type { Company } from "./types";
+
+export const REMOTE_COMPANIES: Company[] = [
+  {
+    id: "whatnot",
+    name: {
+      en: "Whatnot",
+      zh: "Whatnot",
+    },
+    region: "REMOTE",
+    cities: [{ en: "Remote", zh: "远程" }],
+    params: {
+      dailyWorkingHours: 7,
+      dailyCommuteHours: 0,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 25,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "goodnotes",
+    name: {
+      en: "GoodNotes",
+      zh: "GoodNotes",
+    },
+    region: "REMOTE",
+    cities: [{ en: "Remote", zh: "远程" }],
+    params: {
+      dailyWorkingHours: 7,
+      dailyCommuteHours: 0,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 25,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "linear",
+    name: {
+      en: "Linear",
+      zh: "Linear",
+    },
+    region: "REMOTE",
+    cities: [{ en: "Remote", zh: "远程" }],
+    params: {
+      dailyWorkingHours: 7,
+      dailyCommuteHours: 0,
+      dailyCommunicationOutsideWorkHours: 0,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 30,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "notion",
+    name: {
+      en: "Notion",
+      zh: "Notion",
+    },
+    region: "REMOTE",
+    cities: [{ en: "Remote", zh: "远程" }],
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 25,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "figma",
+    name: {
+      en: "Figma",
+      zh: "Figma",
+    },
+    region: "REMOTE",
+    cities: [{ en: "Remote", zh: "远程" }],
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 25,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "stripe",
+    name: {
+      en: "Stripe",
+      zh: "Stripe",
+    },
+    region: "REMOTE",
+    cities: [{ en: "Remote", zh: "远程" }],
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 25,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "github",
+    name: {
+      en: "GitHub",
+      zh: "GitHub",
+    },
+    region: "REMOTE",
+    cities: [{ en: "Remote", zh: "远程" }],
+    params: {
+      dailyWorkingHours: 7,
+      dailyCommuteHours: 0,
+      dailyCommunicationOutsideWorkHours: 0,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 30,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "gitlab",
+    name: {
+      en: "GitLab",
+      zh: "GitLab",
+    },
+    region: "REMOTE",
+    cities: [{ en: "Remote", zh: "远程" }],
+    params: {
+      dailyWorkingHours: 7,
+      dailyCommuteHours: 0,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 30,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "automattic",
+    name: {
+      en: "Automattic",
+      zh: "Automattic",
+    },
+    region: "REMOTE",
+    cities: [{ en: "Remote", zh: "远程" }],
+    params: {
+      dailyWorkingHours: 7,
+      dailyCommuteHours: 0,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 30,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "buffer",
+    name: {
+      en: "Buffer",
+      zh: "Buffer",
+    },
+    region: "REMOTE",
+    cities: [{ en: "Remote", zh: "远程" }],
+    params: {
+      dailyWorkingHours: 7,
+      dailyCommuteHours: 0,
+      dailyCommunicationOutsideWorkHours: 0,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 25,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "basecamp",
+    name: {
+      en: "Basecamp",
+      zh: "Basecamp",
+    },
+    region: "REMOTE",
+    cities: [{ en: "Remote", zh: "远程" }],
+    params: {
+      dailyWorkingHours: 7,
+      dailyCommuteHours: 0,
+      dailyCommunicationOutsideWorkHours: 0,
+      weeklyWorkingDays: 4,
+      annualPaidLeaveDays: 30,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+];

@@ -5,6 +5,7 @@ import { AU_COMPANIES } from "./au";
 import { DE_COMPANIES } from "./de";
 import { CA_COMPANIES } from "./ca";
 import { CN_COMPANIES } from "./cn";
+import { REMOTE_COMPANIES } from "./remote";
 
 export type { Company, Region, LocalizedName };
 export { localizedLabel, cityKey, companyHasCity } from "./locale";
@@ -16,6 +17,7 @@ export const COMPANIES: Company[] = [
   ...DE_COMPANIES,
   ...CA_COMPANIES,
   ...CN_COMPANIES,
+  ...REMOTE_COMPANIES,
 ];
 
 export const REGIONS: Region[] = COMPANIES.reduce((acc, company) => {
@@ -44,3 +46,5 @@ export const REGIONS: Region[] = COMPANIES.reduce((acc, company) => {
 REGIONS.forEach((region) => {
   region.cities.sort((a, b) => b.companyCount - a.companyCount);
 });
+
+REGIONS.sort((a, b) => b.companyCount - a.companyCount);

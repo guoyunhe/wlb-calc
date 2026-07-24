@@ -29,7 +29,7 @@ export const CN_COMPANIES: Company[] = [
       zh: "苹果",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai, C.shenzhen],
+    cities: [C.beijing, C.shanghai, C.shenzhen, { en: "Remote", zh: "远程" }],
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
