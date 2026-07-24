@@ -128,7 +128,7 @@ export const CN_COMPANIES: Company[] = [
       zh: "飞协博",
     },
     region: "CN",
-    cities: [C.shenzhen],
+    cities: [C.shanghai, C.shenzhen],
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,

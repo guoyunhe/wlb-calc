@@ -25,7 +25,7 @@ export default function CompanyList() {
       const regionPass = !selectedRegion || company.region === selectedRegion;
       const cityPass = !selectedCity || companyHasCity(company, selectedCity);
       return scorePass && regionPass && cityPass;
-    });
+    }).sort((a, b) => calc(b.params) - calc(a.params));
   }, [selectedRegion, selectedCity]);
 
   const citiesForRegion = useMemo(() => {
