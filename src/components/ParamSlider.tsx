@@ -16,7 +16,7 @@ export default function ParamSlider({ config, inputProps }: ParamSliderProps) {
         <Text fw={500} size="sm">
           {t(`${config.key}.label`)}
         </Text>
-        <Badge variant="outline" color="purple">
+        <Badge>
           {t(`unit.${config.unit}`, { [config.unit]: inputProps.value })}
         </Badge>
       </Group>
