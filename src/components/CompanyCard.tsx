@@ -57,32 +57,16 @@ export default function CompanyCard({ company, score }: CompanyCardProps) {
         </Flex>
       </Card.Section>
 
-      <Button.Group orientation="vertical">
-        <Button
-          flex={1}
-          radius={0}
-          variant="subtle"
-          size="xs"
-          component="a"
-          href={company.website}
-          target="_blank"
-          onClick={(e) => e.stopPropagation()}
-        >
-          <GlobeIcon size="1rem" />
-        </Button>
-        <Button
-          flex={1}
-          radius={0}
-          variant="subtle"
-          size="xs"
-          component="a"
-          href={company.linkedin}
-          target="_blank"
-          onClick={(e) => e.stopPropagation()}
-        >
-          <LinkedinLogoIcon size="1rem" />
-        </Button>
-      </Button.Group>
+      <Card.Section onClick={(e) => e.stopPropagation()}>
+        <Button.Group orientation="vertical">
+          <Button radius={0} component="a" href={company.website} target="_blank">
+            <GlobeIcon size="1rem" />
+          </Button>
+          <Button radius={0} component="a" href={company.linkedin} target="_blank">
+            <LinkedinLogoIcon size="1rem" />
+          </Button>
+        </Button.Group>
+      </Card.Section>
     </Card>
   );
 }
