@@ -72,7 +72,7 @@ export default function CompanyList() {
             <Select
               data={REGIONS.map((region) => ({
                 value: region.code,
-                label: t(region.labelKey),
+                label: `${t(region.labelKey)} (${region.companyCount})`,
               }))}
               value={selectedRegion}
               onChange={handleRegionChange}
@@ -86,7 +86,7 @@ export default function CompanyList() {
             </Text>
             <Select
               data={[
-                { value: "", label: t("companyList.filter.all") },
+                { value: "", label: `${t("companyList.filter.all")} (${citiesForRegion.reduce((sum, city) => sum + city.companyCount, 0)})` },
                 ...citySelectOptions,
               ]}
               value={selectedCity}
