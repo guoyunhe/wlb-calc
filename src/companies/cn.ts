@@ -17,6 +17,7 @@ const CN_CITIES = {
   xiamen: { en: "Xiamen", zh: "厦门" },
   dalian: { en: "Dalian", zh: "大连" },
   hongkong: { en: "Hong Kong", zh: "香港" },
+  remote: { en: "Remote", zh: "远程" },
 } as const satisfies Record<string, LocalizedName>;
 
 const C = CN_CITIES;
@@ -29,7 +30,7 @@ export const CN_COMPANIES: Company[] = [
       zh: "苹果",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai, C.shenzhen, { en: "Remote", zh: "远程" }],
+    cities: [C.beijing, C.shanghai, C.shenzhen, C.remote],
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
