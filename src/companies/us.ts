@@ -2,7 +2,7 @@ import type { Company } from "./types";
 
 export const US_COMPANIES: Company[] = [
   {
-    id: "google",
+    id: "google-us",
     name: {
       en: "Google",
       zh: "谷歌",
@@ -19,7 +19,7 @@ export const US_COMPANIES: Company[] = [
     },
   },
   {
-    id: "microsoft",
+    id: "microsoft-us",
     name: {
       en: "Microsoft",
       zh: "微软",
@@ -36,7 +36,7 @@ export const US_COMPANIES: Company[] = [
     },
   },
   {
-    id: "netflix",
+    id: "netflix-us",
     name: {
       en: "Netflix",
       zh: "网飞",
@@ -53,7 +53,7 @@ export const US_COMPANIES: Company[] = [
     },
   },
   {
-    id: "salesforce",
+    id: "salesforce-us",
     name: {
       en: "Salesforce",
       zh: "Salesforce",
@@ -70,7 +70,7 @@ export const US_COMPANIES: Company[] = [
     },
   },
   {
-    id: "adobe",
+    id: "adobe-us",
     name: {
       en: "Adobe",
       zh: "奥多比",
@@ -87,7 +87,7 @@ export const US_COMPANIES: Company[] = [
     },
   },
   {
-    id: "github",
+    id: "github-us",
     name: {
       en: "GitHub",
       zh: "GitHub",

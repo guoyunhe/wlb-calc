@@ -37,10 +37,9 @@ export default function CompanyCard({ company, score }: CompanyCardProps) {
       withBorder
     >
       <Card.Section
-        inheritPadding
         withBorder
         display="flex"
-        px="lg"
+        w="4.5rem"
         style={{
           justifyContent: "center",
           textAlign: "center",
