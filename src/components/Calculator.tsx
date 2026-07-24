@@ -1,4 +1,4 @@
-import { Container, Grid, Button, Space } from "@mantine/core";
+import { Container, Grid, Button, Space, Flex } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { useEffect } from "react";
 import calc from "../calc";
@@ -50,28 +50,22 @@ export default function Calculator() {
   }, [form]);
 
   return (
-    <Container id="wlb-calculator" size="md" py="xl" style={{ overflow: "hidden" }}>
+    <Container id="wlb-calculator" size="md" py="md" style={{ overflow: "hidden" }}>
       <Header />
 
-      <Space h="md" />
-
-      <div>
+      <Flex justify="center" wrap="wrap" gap="sm" mb="lg">
         {PRESETS.map((preset) => (
           <Button
             key={preset.name}
             color={preset.color}
             variant="outline"
-            size="md"
-            mr="sm"
-            mb="sm"
+            size="xs"
             onClick={() => handlePresetClick(preset.params)}
           >
             {preset.name}
           </Button>
         ))}
-      </div>
-
-      <Space h="lg" />
+      </Flex>
 
       <Grid gap="lg">
         <Grid.Col span={{ md: 7, sm: 12 }}>

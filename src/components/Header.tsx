@@ -7,14 +7,14 @@ export default function Header() {
   const { colorScheme, setColorScheme } = useMantineColorScheme();
 
   return (
-    <Box mb="xl" style={{ textAlign: "center" }}>
+    <Box mb="md" style={{ textAlign: "center" }}>
       <Title order={1} size="h1" mb="sm">
         {t("title")}
       </Title>
-      <Text color="dimmed" size="lg" mb="sm">
+      <Text color="dimmed" size="md" mb="sm">
         {t("subtitle")}
       </Text>
-      <Flex justify="center" gap="md" align="center" wrap="wrap">
+      <Flex justify="center" gap="xs" align="center" wrap="wrap">
         <SegmentedControl
           value={i18n.language}
           onChange={(value) => i18n.changeLanguage(value)}
@@ -22,7 +22,7 @@ export default function Header() {
             { value: "zh", label: "🇨🇳 中文" },
             { value: "en", label: "🇬🇧 English" },
           ]}
-          size="sm"
+          size="xs"
         />
         <SegmentedControl
           value={colorScheme}
@@ -53,7 +53,7 @@ export default function Header() {
               ),
             },
           ]}
-          size="sm"
+          size="xs"
         />
       </Flex>
     </Box>
