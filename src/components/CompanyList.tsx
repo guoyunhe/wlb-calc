@@ -99,7 +99,7 @@ export default function CompanyList() {
         </div>
       </Box>
 
-      <SimpleGrid cols={{ sm: 1, md: 2, lg: 4 }} spacing="md">
+      <SimpleGrid cols={{ sm: 2, md: 3 }} spacing="md">
         {filteredCompanies.map((company) => (
           <CompanyCard key={company.id} company={company} score={calc(company.params)} />
         ))}

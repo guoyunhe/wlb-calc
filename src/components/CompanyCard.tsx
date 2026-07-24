@@ -1,4 +1,4 @@
-import { Card, Text } from "@mantine/core";
+import { Card, Flex, Text } from "@mantine/core";
 import { MapPinIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
 import type { Company } from "../companies";
@@ -31,42 +31,38 @@ export default function CompanyCard({ company, score }: CompanyCardProps) {
       variant="bordered"
       onClick={handleClick}
       className="company-card"
+      orientation="horizontal"
+      padding="sm"
       shadow="sm"
-      padding="lg"
       withBorder
     >
-      <Text
-        mb="md"
-        fw="bold"
-      >
-        {i18n.language === "zh" && company.name.zh ? company.name.zh : company.name.en}
-      </Text>
-
-      <Text
-        size="xl"
-        ta="center"
-        fw="bold"
-        mb="md"
+      <Card.Section
+        inheritPadding
+        withBorder
+        display="flex"
+        px="lg"
         style={{
+          justifyContent: "center",
+          textAlign: "center",
+          alignItems: "center",
           color: isDark ? scoreLevel.textColor.dark : scoreLevel.textColor.light,
         }}
       >
-        {score}
-      </Text>
+        <Text size="2rem">{score}</Text>
+      </Card.Section>
 
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "0.25rem",
-          color: "var(--mantine-color-dimmed)",
-        }}
-      >
-        <MapPinIcon size={14} />
-        <Text size="xs">
-          {company.cities.map((city) => localizedLabel(city, i18n.language)).join(", ")}
+      <Card.Section inheritPadding p="sm">
+        <Text mb="xs" fw="bold">
+          {i18n.language === "zh" && company.name.zh ? company.name.zh : company.name.en}
         </Text>
-      </div>
+
+        <Flex align="center">
+          <MapPinIcon size={14} />
+          <Text size="xs">
+            {company.cities.map((city) => localizedLabel(city, i18n.language)).join(", ")}
+          </Text>
+        </Flex>
+      </Card.Section>
     </Card>
   );
 }
