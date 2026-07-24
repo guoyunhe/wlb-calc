@@ -38,12 +38,10 @@ export default function CompanyList() {
 
   const citySelectOptions = useMemo(() => {
     return [...citiesForRegion]
-      .sort((a, b) =>
-        localizedLabel(a, i18n.language).localeCompare(localizedLabel(b, i18n.language), i18n.language),
-      )
+      .sort((a, b) => b.companyCount - a.companyCount)
       .map((city) => ({
         value: cityKey(city),
-        label: localizedLabel(city, i18n.language),
+        label: `${localizedLabel(city, i18n.language)} (${city.companyCount})`,
       }));
   }, [citiesForRegion, i18n.language]);
 
