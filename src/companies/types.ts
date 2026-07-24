@@ -13,8 +13,13 @@ export interface Company {
   params: CalcParams;
 }
 
+export interface CityWithCompanyCount extends LocalizedName {
+  companyCount: number;
+}
+
 export interface Region {
   code: string;
   labelKey: string;
-  cities: LocalizedName[];
+  cities: CityWithCompanyCount[];
+  companyCount: number;
 }

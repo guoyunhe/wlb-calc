@@ -19,19 +19,28 @@ export const COMPANIES: Company[] = [
 ];
 
 export const REGIONS: Region[] = COMPANIES.reduce((acc, company) => {
-  const existingRegion = acc.find((r) => r.code === company.region);
+  let existingRegion = acc.find((r) => r.code === company.region);
   if (existingRegion) {
+    existingRegion.companyCount++;
     for (const city of company.cities) {
-      if (!existingRegion.cities.some((c) => c.en === city.en)) {
-        existingRegion.cities.push(city);
+      const existingCity = existingRegion.cities.find((c) => c.en === city.en);
+      if (existingCity) {
+        existingCity.companyCount++;
+      } else {
+        existingRegion.cities.push({ ...city, companyCount: 1 });
       }
     }
   } else {
     acc.push({
       code: company.region,
       labelKey: `region.${company.region}`,
-      cities: [...company.cities],
+      cities: company.cities.map((city) => ({ ...city, companyCount: 1 })),
+      companyCount: 1,
     });
   }
   return acc;
-}, [] as Region[]);
+}, [] as Region[]).sort((a, b) => b.companyCount - a.companyCount);
+
+REGIONS.forEach((region) => {
+  region.cities.sort((a, b) => b.companyCount - a.companyCount);
+});

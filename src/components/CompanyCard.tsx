@@ -1,10 +1,11 @@
-import { Card, Anchor, Text, useMantineColorScheme } from "@mantine/core";
+import { Card, Text } from "@mantine/core";
 import { MapPinIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
 import type { Company } from "../companies";
 import { localizedLabel } from "../companies";
 import { getScoreLevel } from "../calc";
 import { useMediaQuery } from "@mantine/hooks";
+import { useMantineColorScheme } from "@mantine/core";
 
 interface CompanyCardProps {
   company: Company;

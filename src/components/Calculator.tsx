@@ -50,7 +50,7 @@ export default function Calculator() {
   }, [form]);
 
   return (
-    <Container id="wlb-calculator" size="md" py="xl">
+    <Container id="wlb-calculator" size="md" py="xl" style={{ overflow: "hidden" }}>
       <Header />
 
       <Space h="md" />
