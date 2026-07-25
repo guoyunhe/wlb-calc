@@ -30,8 +30,8 @@ export const CN_COMPANIES: Company[] = [
       zh: "苹果",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai, C.shenzhen, C.remote],
-    website: "https://www.apple.com",
+    cities: [C.beijing, C.shanghai, C.shenzhen, C.suzhou, C.chengdu, C.remote],
+    website: "https://jobs.apple.com/zh-cn/search?location=china-CHNC",
     linkedin: "https://www.linkedin.com/company/apple",
     params: {
       dailyWorkingHours: 8,
@@ -49,8 +49,8 @@ export const CN_COMPANIES: Company[] = [
       zh: "亚马逊",
     },
     region: "CN",
-    cities: [C.beijing, C.guangzhou, C.shanghai, C.shenzhen],
-    website: "https://www.amazon.com",
+    cities: [C.shanghai, C.shenzhen, C.beijing, C.chengdu, C.dalian],
+    website: "https://www.amazon.jobs/en/search?country[]=CHN",
     linkedin: "https://www.linkedin.com/company/amazon",
     params: {
       dailyWorkingHours: 8,
