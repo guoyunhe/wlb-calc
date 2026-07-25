@@ -2549,5 +2549,43 @@ export const CN_COMPANIES: Company[] = [
       annualPaidLeaveDays: 20,
       annualPaidSickLeaveDays: 15,
     },
+  },
+  {
+    id: 'mastercard-cn',
+    name: {
+      en: 'Mastercard',
+      zh: '万事达',
+    },
+    region: 'CN',
+    cities: [C.shanghai, C.beijing],
+    website: 'https://www.mastercard.com',
+    linkedin: 'https://www.linkedin.com/company/mastercard',
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: 'visa-cn',
+    name: {
+      en: 'Visa',
+      zh: '维萨',
+    },
+    region: 'CN',
+    cities: [C.shanghai, C.beijing],
+    website: 'https://www.visa.com',
+    linkedin: 'https://www.linkedin.com/company/visa',
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0.5,
+      dailyCommunicationOutsideWorkHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 15,
+    },
   }
 ]
