@@ -68,8 +68,8 @@ export const CN_COMPANIES: Company[] = [
       zh: "英特尔",
     },
     region: "CN",
-    cities: [C.beijing, C.chengdu, C.shanghai, C.shenzhen],
-    website: "https://www.intel.com",
+    cities: [C.beijing, C.chengdu, C.shanghai, C.xiamen],
+    website: "https://jobs.intel.cn/intel/position/index?recruitmentType=SOCIALRECRUITMENT&keyword=&baseProvinceCity=",
     linkedin: "https://www.linkedin.com/company/intel",
     params: {
       dailyWorkingHours: 8,
