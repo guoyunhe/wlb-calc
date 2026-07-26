@@ -1354,16 +1354,17 @@ export const CN_COMPANIES: Company[] = [
       zh: "星巴克",
     },
     region: "CN",
-    cities: [C.shanghai],
-    careerWebsite: "https://www.starbucks.com",
+    cities: [C.shanghai, C.shenzhen],
+    careerWebsite:
+      "https://starbucks.zhiye.com/social/jobs?1=%5B%7B%22id%22%3A%223%22%2C%22label%22%3A%22%E8%81%8C%E8%83%BD%E6%94%AF%E6%8C%81%22%7D%5D",
     linkedin: "starbucks",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0,
       weeklyWorkingDays: 5,
-      annualPaidLeaveDays: 20,
-      annualPaidSickLeaveDays: 15,
+      annualPaidLeaveDays: 10,
+      annualPaidSickLeaveDays: 10,
     },
   },
   {
