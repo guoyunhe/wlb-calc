@@ -10,7 +10,7 @@ export const REMOTE_COMPANIES: Company[] = [
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
     website: "https://www.whatnot.com",
-    linkedin: "https://www.linkedin.com/company/whatnot",
+    linkedin: "whatnot",
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0,
@@ -29,7 +29,7 @@ export const REMOTE_COMPANIES: Company[] = [
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
     website: "https://www.goodnotes.com",
-    linkedin: "https://www.linkedin.com/company/goodnotes",
+    linkedin: "goodnotes",
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0,
@@ -48,7 +48,7 @@ export const REMOTE_COMPANIES: Company[] = [
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
     website: "https://www.linear.com",
-    linkedin: "https://www.linkedin.com/company/linear",
+    linkedin: "linear",
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0,
@@ -67,7 +67,7 @@ export const REMOTE_COMPANIES: Company[] = [
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
     website: "https://www.notion.com",
-    linkedin: "https://www.linkedin.com/company/notion",
+    linkedin: "notion",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0,
@@ -86,7 +86,7 @@ export const REMOTE_COMPANIES: Company[] = [
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
     website: "https://www.figma.com",
-    linkedin: "https://www.linkedin.com/company/figma",
+    linkedin: "figma",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0,
@@ -105,7 +105,7 @@ export const REMOTE_COMPANIES: Company[] = [
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
     website: "https://www.stripe.com",
-    linkedin: "https://www.linkedin.com/company/stripe",
+    linkedin: "stripe",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0,
@@ -124,7 +124,7 @@ export const REMOTE_COMPANIES: Company[] = [
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
     website: "https://www.github.com",
-    linkedin: "https://www.linkedin.com/company/github",
+    linkedin: "github",
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0,
@@ -143,7 +143,7 @@ export const REMOTE_COMPANIES: Company[] = [
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
     website: "https://www.gitlab.com",
-    linkedin: "https://www.linkedin.com/company/gitlab",
+    linkedin: "gitlab",
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0,
@@ -162,7 +162,7 @@ export const REMOTE_COMPANIES: Company[] = [
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
     website: "https://www.automattic.com",
-    linkedin: "https://www.linkedin.com/company/automattic",
+    linkedin: "automattic",
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0,
@@ -181,7 +181,7 @@ export const REMOTE_COMPANIES: Company[] = [
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
     website: "https://www.buffer.com",
-    linkedin: "https://www.linkedin.com/company/buffer",
+    linkedin: "buffer",
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0,
@@ -200,7 +200,7 @@ export const REMOTE_COMPANIES: Company[] = [
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
     website: "https://www.basecamp.com",
-    linkedin: "https://www.linkedin.com/company/basecamp",
+    linkedin: "basecamp",
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0,

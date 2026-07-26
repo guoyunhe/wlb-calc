@@ -10,7 +10,7 @@ export const AU_COMPANIES: Company[] = [
     region: "AU",
     cities: [{ en: "Sydney" }],
     website: "https://www.atlassian.com",
-    linkedin: "https://www.linkedin.com/company/atlassian",
+    linkedin: "atlassian",
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0.5,

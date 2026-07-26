@@ -1,3 +1,5 @@
+export const GITHUB_URL = 'https://github.com/guoyunhe/wlb-calc';
+
 export interface CalcParams {
   dailyWorkingHours: number;
   dailyCommuteHours: number;

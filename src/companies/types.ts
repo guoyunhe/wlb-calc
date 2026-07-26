@@ -13,6 +13,7 @@ export interface Company {
   params: CalcParams;
   website: string;
   linkedin: string;
+  discussion?: number;
 }
 
 export interface CityWithCompanyCount extends LocalizedName {

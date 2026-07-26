@@ -1,11 +1,12 @@
 import { Badge, Button, Card, Divider, Flex, Text } from "@mantine/core";
-import { GlobeIcon, MapPinIcon, LinkedinLogoIcon } from "@phosphor-icons/react";
+import { GlobeIcon, MapPinIcon, LinkedinLogoIcon, ChatIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
 import type { Company } from "../companies";
 import { localizedLabel } from "../companies";
 import { getScoreLevel } from "../calc";
 import { useMediaQuery } from "@mantine/hooks";
 import { useMantineColorScheme } from "@mantine/core";
+import { GITHUB_URL } from "../config";
 
 interface CompanyCardProps {
   company: Company;
@@ -63,9 +64,18 @@ export default function CompanyCard({ company, score }: CompanyCardProps) {
             <GlobeIcon size="1rem" />
           </Button>
           <Divider />
-          <Button variant="transparent" color="default" component="a" href={company.linkedin} target="_blank">
+          <Button variant="transparent" color="default" component="a" href={`https://www.linkedin.com/company/${company.linkedin}/jobs`} target="_blank">
             <LinkedinLogoIcon size="1rem" />
           </Button>
+          <Divider />
+          {!!company.discussion && (
+            <>
+              <Divider />
+              <Button variant="transparent" color="default" component="a" href={`${GITHUB_URL}/discussions/${company.discussion}`} target="_blank">
+                <ChatIcon size="1rem" />
+              </Button>
+            </>
+          )}
         </Button.Group>
       </Card.Section>
     </Card>

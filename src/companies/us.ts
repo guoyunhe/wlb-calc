@@ -24,7 +24,7 @@ export const US_COMPANIES: Company[] = [
     region: "US",
     cities: [C.mountainView, C.newYork, C.seattle],
     website: "https://www.google.com",
-    linkedin: "https://www.linkedin.com/company/google",
+    linkedin: "google",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -43,7 +43,7 @@ export const US_COMPANIES: Company[] = [
     region: "US",
     cities: [C.redmond],
     website: "https://www.microsoft.com",
-    linkedin: "https://www.linkedin.com/company/microsoft",
+    linkedin: "microsoft",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -62,7 +62,7 @@ export const US_COMPANIES: Company[] = [
     region: "US",
     cities: [C.losGatos],
     website: "https://www.netflix.com",
-    linkedin: "https://www.linkedin.com/company/netflix",
+    linkedin: "netflix",
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0.5,
@@ -81,7 +81,7 @@ export const US_COMPANIES: Company[] = [
     region: "US",
     cities: [C.sanFrancisco],
     website: "https://www.salesforce.com",
-    linkedin: "https://www.linkedin.com/company/salesforce",
+    linkedin: "salesforce",
     params: {
       dailyWorkingHours: 7.5,
       dailyCommuteHours: 0.5,
@@ -100,7 +100,7 @@ export const US_COMPANIES: Company[] = [
     region: "US",
     cities: [C.sanJose],
     website: "https://www.adobe.com",
-    linkedin: "https://www.linkedin.com/company/adobe",
+    linkedin: "adobe",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -119,7 +119,7 @@ export const US_COMPANIES: Company[] = [
     region: "US",
     cities: [C.sanFrancisco],
     website: "https://www.github.com",
-    linkedin: "https://www.linkedin.com/company/github",
+    linkedin: "github",
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0.3,

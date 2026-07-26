@@ -10,7 +10,7 @@ export const SE_COMPANIES: Company[] = [
     region: "SE",
     cities: [{ en: "Stockholm" }],
     website: "https://www.spotify.com",
-    linkedin: "https://www.linkedin.com/company/spotify",
+    linkedin: "spotify",
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0.5,

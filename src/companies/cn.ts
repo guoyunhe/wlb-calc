@@ -32,7 +32,8 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.suzhou, C.chengdu, C.remote],
     website: "https://jobs.apple.com/zh-cn/search?location=china-CHNC",
-    linkedin: "https://www.linkedin.com/company/apple",
+    linkedin: "apple",
+    discussion: 2,
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -51,7 +52,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.shenzhen, C.beijing, C.chengdu, C.dalian],
     website: "https://www.amazon.jobs/en/search?country[]=CHN",
-    linkedin: "https://www.linkedin.com/company/amazon",
+    linkedin: "amazon",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -70,7 +71,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.chengdu, C.shanghai, C.xiamen],
     website: "https://jobs.intel.cn/intel/position/index?recruitmentType=SOCIALRECRUITMENT&keyword=&baseProvinceCity=",
-    linkedin: "https://www.linkedin.com/company/intel",
+    linkedin: "intel",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -89,7 +90,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.chengdu, C.guangzhou, C.shanghai, C.shenzhen],
     website: "https://www.oracle.com",
-    linkedin: "https://www.linkedin.com/company/oracle",
+    linkedin: "oracle",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -108,7 +109,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai],
     website: "https://www.morganstanley.com",
-    linkedin: "https://www.linkedin.com/company/morgan-stanley",
+    linkedin: "morgan-stanley",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -127,7 +128,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.suzhou],
     website: "https://www.microsoft.com",
-    linkedin: "https://www.linkedin.com/company/microsoft",
+    linkedin: "microsoft",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -146,7 +147,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shenzhen],
     website: "https://www.zalando.com",
-    linkedin: "https://www.linkedin.com/company/zalando",
+    linkedin: "zalando",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -165,7 +166,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.shenzhen],
     website: "https://www.flexport.com",
-    linkedin: "https://www.linkedin.com/company/flexport",
+    linkedin: "flexport",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -184,7 +185,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.xian, C.wuxi],
     website: "https://www.qualcomm.com",
-    linkedin: "https://www.linkedin.com/company/qualcomm",
+    linkedin: "qualcomm",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -203,7 +204,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen],
     website: "https://www.siemens.com",
-    linkedin: "https://www.linkedin.com/company/siemens",
+    linkedin: "siemens",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -222,7 +223,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen],
     website: "https://www.philips.com",
-    linkedin: "https://www.linkedin.com/company/philips",
+    linkedin: "philips",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -241,7 +242,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen],
     website: "https://www.schneiderelectric.com",
-    linkedin: "https://www.linkedin.com/company/schneider-electric",
+    linkedin: "schneider-electric",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -260,7 +261,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.afterpay.com",
-    linkedin: "https://www.linkedin.com/company/afterpay",
+    linkedin: "afterpay",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -279,7 +280,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing],
     website: "https://www.airbnb.com",
-    linkedin: "https://www.linkedin.com/company/airbnb",
+    linkedin: "airbnb",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -298,7 +299,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.amd.com",
-    linkedin: "https://www.linkedin.com/company/amd",
+    linkedin: "amd",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -317,7 +318,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.hangzhou],
     website: "https://www.arcsoft.com",
-    linkedin: "https://www.linkedin.com/company/arcsoft",
+    linkedin: "arcsoft",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -336,7 +337,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.arm.com",
-    linkedin: "https://www.linkedin.com/company/arm",
+    linkedin: "arm",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -355,7 +356,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai],
     website: "https://www.autodesk.com",
-    linkedin: "https://www.linkedin.com/company/autodesk",
+    linkedin: "autodesk",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -374,7 +375,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.booking.com",
-    linkedin: "https://www.linkedin.com/company/booking",
+    linkedin: "booking",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -393,7 +394,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.suzhou, C.wuxi],
     website: "https://www.boschgroup.com",
-    linkedin: "https://www.linkedin.com/company/bosch-group",
+    linkedin: "bosch-group",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -412,7 +413,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.nanjing],
     website: "https://www.calix.com",
-    linkedin: "https://www.linkedin.com/company/calix",
+    linkedin: "calix",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -431,7 +432,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.wuhan],
     website: "https://www.canva.com",
-    linkedin: "https://www.linkedin.com/company/canva",
+    linkedin: "canva",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -450,7 +451,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai, C.hangzhou, C.suzhou, C.shenzhen],
     website: "https://www.cisco.com",
-    linkedin: "https://www.linkedin.com/company/cisco",
+    linkedin: "cisco",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -469,7 +470,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.nanjing],
     website: "https://www.citrix.com",
-    linkedin: "https://www.linkedin.com/company/citrix",
+    linkedin: "citrix",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -488,7 +489,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.hefei],
     website: "https://www.continentalag.com",
-    linkedin: "https://www.linkedin.com/company/continental-ag",
+    linkedin: "continental-ag",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -507,7 +508,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shenzhen],
     website: "https://www.coolapk.com",
-    linkedin: "https://www.linkedin.com/company/coolapk",
+    linkedin: "coolapk",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -526,7 +527,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai],
     website: "https://www.coupang.com",
-    linkedin: "https://www.linkedin.com/company/coupang",
+    linkedin: "coupang",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -545,7 +546,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.cstc.com",
-    linkedin: "https://www.linkedin.com/company/cstc",
+    linkedin: "cstc",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -564,7 +565,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.dell.com",
-    linkedin: "https://www.linkedin.com/company/dell",
+    linkedin: "dell",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -583,7 +584,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing],
     website: "https://www.douban.com",
-    linkedin: "https://www.linkedin.com/company/douban",
+    linkedin: "douban",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -602,7 +603,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing],
     website: "https://www.duolingo.com",
-    linkedin: "https://www.linkedin.com/company/duolingo",
+    linkedin: "duolingo",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -621,7 +622,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.ebay.com",
-    linkedin: "https://www.linkedin.com/company/ebay",
+    linkedin: "ebay",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -640,7 +641,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.xiamen],
     website: "https://www.ehealth.com",
-    linkedin: "https://www.linkedin.com/company/ehealth",
+    linkedin: "ehealth",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -659,7 +660,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.electronicarts.com",
-    linkedin: "https://www.linkedin.com/company/electronic-arts",
+    linkedin: "electronic-arts",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -678,7 +679,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.emc.com",
-    linkedin: "https://www.linkedin.com/company/emc",
+    linkedin: "emc",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -697,7 +698,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.shenzhen, C.suzhou, C.chengdu],
     website: "https://www.epamsystems.com",
-    linkedin: "https://www.linkedin.com/company/epam-systems",
+    linkedin: "epam-systems",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -716,7 +717,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.ericsson.com",
-    linkedin: "https://www.linkedin.com/company/ericsson",
+    linkedin: "ericsson",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -735,7 +736,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing],
     website: "https://www.freewheel.com",
-    linkedin: "https://www.linkedin.com/company/freewheel",
+    linkedin: "freewheel",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -754,7 +755,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.ge.com",
-    linkedin: "https://www.linkedin.com/company/ge",
+    linkedin: "ge",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -773,7 +774,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai],
     website: "https://www.google.com",
-    linkedin: "https://www.linkedin.com/company/google",
+    linkedin: "google",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -792,7 +793,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing],
     website: "https://www.grab.com",
-    linkedin: "https://www.linkedin.com/company/grab",
+    linkedin: "grab",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -811,7 +812,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.guangzhou],
     website: "https://www.honeywell.com",
-    linkedin: "https://www.linkedin.com/company/honeywell",
+    linkedin: "honeywell",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -830,7 +831,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.hp.com",
-    linkedin: "https://www.linkedin.com/company/hp",
+    linkedin: "hp",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -849,7 +850,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.guangzhou, C.xian],
     website: "https://www.hsbc.com",
-    linkedin: "https://www.linkedin.com/company/hsbc",
+    linkedin: "hsbc",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -868,7 +869,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing],
     website: "https://www.hulu.com",
-    linkedin: "https://www.linkedin.com/company/hulu",
+    linkedin: "hulu",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -887,7 +888,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai],
     website: "https://www.ibm.com",
-    linkedin: "https://www.linkedin.com/company/ibm",
+    linkedin: "ibm",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -906,7 +907,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.iherb.com",
-    linkedin: "https://www.linkedin.com/company/iherb",
+    linkedin: "iherb",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -925,7 +926,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai],
     website: "https://www.jetbrains.com",
-    linkedin: "https://www.linkedin.com/company/jetbrains",
+    linkedin: "jetbrains",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -944,7 +945,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.kong.com",
-    linkedin: "https://www.linkedin.com/company/kong",
+    linkedin: "kong",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -963,7 +964,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.leetcode.com",
-    linkedin: "https://www.linkedin.com/company/leetcode",
+    linkedin: "leetcode",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -982,7 +983,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.legogroup.com",
-    linkedin: "https://www.linkedin.com/company/lego-group",
+    linkedin: "lego-group",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1001,7 +1002,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing],
     website: "https://www.linkedin.com",
-    linkedin: "https://www.linkedin.com/company/linkedin",
+    linkedin: "linkedin",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1020,7 +1021,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.microfocus.com",
-    linkedin: "https://www.linkedin.com/company/micro-focus",
+    linkedin: "micro-focus",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1039,7 +1040,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.hangzhou],
     website: "https://www.microstrategy.com",
-    linkedin: "https://www.linkedin.com/company/microstrategy",
+    linkedin: "microstrategy",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1058,7 +1059,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.nationalinstruments.com",
-    linkedin: "https://www.linkedin.com/company/national-instruments",
+    linkedin: "national-instruments",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1077,7 +1078,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.nike.com",
-    linkedin: "https://www.linkedin.com/company/nike",
+    linkedin: "nike",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1096,7 +1097,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.nanjing, C.hangzhou],
     website: "https://www.nokia.com",
-    linkedin: "https://www.linkedin.com/company/nokia",
+    linkedin: "nokia",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1115,7 +1116,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.chengdu, C.hangzhou, C.hongkong],
     website: "https://www.nvidia.com",
-    linkedin: "https://www.linkedin.com/company/nvidia",
+    linkedin: "nvidia",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1134,7 +1135,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.optiver.com",
-    linkedin: "https://www.linkedin.com/company/optiver",
+    linkedin: "optiver",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1153,7 +1154,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.paypal.com",
-    linkedin: "https://www.linkedin.com/company/paypal",
+    linkedin: "paypal",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1172,7 +1173,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai],
     website: "https://www.pivotal.com",
-    linkedin: "https://www.linkedin.com/company/pivotal",
+    linkedin: "pivotal",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1191,7 +1192,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.dalian],
     website: "https://www.rakuten.com",
-    linkedin: "https://www.linkedin.com/company/rakuten",
+    linkedin: "rakuten",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1210,7 +1211,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.xian],
     website: "https://www.redhat.com",
-    linkedin: "https://www.linkedin.com/company/red-hat",
+    linkedin: "red-hat",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1229,7 +1230,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.xiamen, C.hangzhou, C.hongkong],
     website: "https://www.ringcentral.com",
-    linkedin: "https://www.linkedin.com/company/ringcentral",
+    linkedin: "ringcentral",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1248,7 +1249,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai],
     website: "https://www.rippling.com",
-    linkedin: "https://www.linkedin.com/company/rippling",
+    linkedin: "rippling",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1267,7 +1268,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.sandisk.com",
-    linkedin: "https://www.linkedin.com/company/sandisk",
+    linkedin: "sandisk",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1286,7 +1287,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.beijing],
     website: "https://www.sap.com",
-    linkedin: "https://www.linkedin.com/company/sap",
+    linkedin: "sap",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1305,7 +1306,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai],
     website: "https://www.smartnews.com",
-    linkedin: "https://www.linkedin.com/company/smartnews",
+    linkedin: "smartnews",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1324,7 +1325,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shenzhen],
     website: "https://www.snap.com",
-    linkedin: "https://www.linkedin.com/company/snap",
+    linkedin: "snap",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1343,7 +1344,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.starbucks.com",
-    linkedin: "https://www.linkedin.com/company/starbucks",
+    linkedin: "starbucks",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1362,7 +1363,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.hangzhou],
     website: "https://www.statestreet.com",
-    linkedin: "https://www.linkedin.com/company/state-street",
+    linkedin: "state-street",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1381,7 +1382,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.xian],
     website: "https://www.suse.com",
-    linkedin: "https://www.linkedin.com/company/suse",
+    linkedin: "suse",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1400,7 +1401,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.shenzhen],
     website: "https://www.thetradedesk.com",
-    linkedin: "https://www.linkedin.com/company/the-trade-desk",
+    linkedin: "the-trade-desk",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1419,7 +1420,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.xian, C.beijing, C.shenzhen, C.chengdu, C.wuhan, C.shanghai, C.hongkong],
     website: "https://www.thoughtworks.com",
-    linkedin: "https://www.linkedin.com/company/thoughtworks",
+    linkedin: "thoughtworks",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1438,7 +1439,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.nanjing],
     website: "https://www.trendmicro.com",
-    linkedin: "https://www.linkedin.com/company/trend-micro",
+    linkedin: "trend-micro",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1457,7 +1458,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing],
     website: "https://www.tubi.com",
-    linkedin: "https://www.linkedin.com/company/tubi",
+    linkedin: "tubi",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1476,7 +1477,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai],
     website: "https://www.tusimple.com",
-    linkedin: "https://www.linkedin.com/company/tusimple",
+    linkedin: "tusimple",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1495,7 +1496,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.twosigma.com",
-    linkedin: "https://www.linkedin.com/company/two-sigma",
+    linkedin: "two-sigma",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1514,7 +1515,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.ubisoft.com",
-    linkedin: "https://www.linkedin.com/company/ubisoft",
+    linkedin: "ubisoft",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1533,7 +1534,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.unity.com",
-    linkedin: "https://www.linkedin.com/company/unity",
+    linkedin: "unity",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1552,7 +1553,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.vipshop.com",
-    linkedin: "https://www.linkedin.com/company/vipshop",
+    linkedin: "vipshop",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1571,7 +1572,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai],
     website: "https://www.vmware.com",
-    linkedin: "https://www.linkedin.com/company/vmware",
+    linkedin: "vmware",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1590,7 +1591,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.wework.com",
-    linkedin: "https://www.linkedin.com/company/wework",
+    linkedin: "wework",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1609,7 +1610,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.wish.com",
-    linkedin: "https://www.linkedin.com/company/wish",
+    linkedin: "wish",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1628,7 +1629,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.worksapplications.com",
-    linkedin: "https://www.linkedin.com/company/works-applications",
+    linkedin: "works-applications",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1647,7 +1648,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shenzhen],
     website: "https://www.xmind.com",
-    linkedin: "https://www.linkedin.com/company/xmind",
+    linkedin: "xmind",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1666,7 +1667,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing],
     website: "https://www.zhihu.com",
-    linkedin: "https://www.linkedin.com/company/zhihu",
+    linkedin: "zhihu",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1685,7 +1686,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.hefei, C.hangzhou, C.suzhou],
     website: "https://www.zoom.com",
-    linkedin: "https://www.linkedin.com/company/zoom",
+    linkedin: "zoom",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1704,7 +1705,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.guangzhou],
     website: "https://www.chinalife.com",
-    linkedin: "https://www.linkedin.com/company/china-life",
+    linkedin: "china-life",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1723,7 +1724,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.xian],
     website: "https://www.samsungelectronics.com",
-    linkedin: "https://www.linkedin.com/company/samsung-electronics",
+    linkedin: "samsung-electronics",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1742,7 +1743,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.guangzhou, C.wuhan],
     website: "https://www.dongfengnissan.com",
-    linkedin: "https://www.linkedin.com/company/dongfeng-nissan",
+    linkedin: "dongfeng-nissan",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1761,7 +1762,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.guangzhou],
     website: "https://www.proctergamble.com",
-    linkedin: "https://www.linkedin.com/company/procter--gamble",
+    linkedin: "procter--gamble",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1780,7 +1781,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.guangzhou, C.shenzhen],
     website: "https://www.watsons.com",
-    linkedin: "https://www.linkedin.com/company/watsons",
+    linkedin: "watsons",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1799,7 +1800,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.guangzhou],
     website: "https://www.gachonda.com",
-    linkedin: "https://www.linkedin.com/company/gac-honda",
+    linkedin: "gac-honda",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1818,7 +1819,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.guangzhou],
     website: "https://www.kimberlyclark.com",
-    linkedin: "https://www.linkedin.com/company/kimberlyclark",
+    linkedin: "kimberlyclark",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1837,7 +1838,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.guangzhou],
     website: "https://www.colgate.com",
-    linkedin: "https://www.linkedin.com/company/colgate",
+    linkedin: "colgate",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1856,7 +1857,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.guangzhou],
     website: "https://www.mentholatum.com",
-    linkedin: "https://www.linkedin.com/company/mentholatum",
+    linkedin: "mentholatum",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1875,7 +1876,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.beijing],
     website: "https://www.mars.com",
-    linkedin: "https://www.linkedin.com/company/mars",
+    linkedin: "mars",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1894,7 +1895,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.generalmills.com",
-    linkedin: "https://www.linkedin.com/company/general-mills",
+    linkedin: "general-mills",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1913,7 +1914,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.beijing, C.guangzhou],
     website: "https://www.astrazeneca.com",
-    linkedin: "https://www.linkedin.com/company/astrazeneca",
+    linkedin: "astrazeneca",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1932,7 +1933,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai],
     website: "https://www.firmenich.com",
-    linkedin: "https://www.linkedin.com/company/firmenich",
+    linkedin: "firmenich",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1951,7 +1952,7 @@ export const CN_COMPANIES: Company[] = [
     region: "CN",
     cities: [C.shanghai, C.shenzhen, C.dalian],
     website: "https://www.maersk.com",
-    linkedin: "https://www.linkedin.com/company/maersk",
+    linkedin: "maersk",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1970,7 +1971,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen, C.dalian],
     website: 'https://www.abb.com',
-    linkedin: 'https://www.linkedin.com/company/abb',
+    linkedin: 'abb',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -1989,7 +1990,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen, C.dalian],
     website: 'https://www.volvo.com',
-    linkedin: 'https://www.linkedin.com/company/volvo',
+    linkedin: 'volvo',
     params: {
       dailyWorkingHours: 7.5,
       dailyCommuteHours: 0.5,
@@ -2008,7 +2009,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.shenzhen],
     website: 'https://www.hexagon.com',
-    linkedin: 'https://www.linkedin.com/company/hexagon-ab',
+    linkedin: 'hexagon-ab',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2027,7 +2028,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou],
     website: 'https://www.pfizer.com',
-    linkedin: 'https://www.linkedin.com/company/pfizer',
+    linkedin: 'pfizer',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2046,7 +2047,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.novartis.com',
-    linkedin: 'https://www.linkedin.com/company/novartis',
+    linkedin: 'novartis',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2065,7 +2066,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.takeda.com',
-    linkedin: 'https://www.linkedin.com/company/takeda',
+    linkedin: 'takeda',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2084,7 +2085,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou],
     website: 'https://www.ikea.com',
-    linkedin: 'https://www.linkedin.com/company/ikea',
+    linkedin: 'ikea',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2103,7 +2104,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou],
     website: 'https://www.loreal.com',
-    linkedin: 'https://www.linkedin.com/company/loreal',
+    linkedin: 'loreal',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2122,7 +2123,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shenzhen],
     website: 'https://www.edrawsoft.com',
-    linkedin: 'https://www.linkedin.com/company/edrawsoft',
+    linkedin: 'edrawsoft',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2141,7 +2142,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.shenzhen],
     website: 'https://www.westerndigital.com',
-    linkedin: 'https://www.linkedin.com/company/western-digital',
+    linkedin: 'western-digital',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2160,7 +2161,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.dolby.com',
-    linkedin: 'https://www.linkedin.com/company/dolby',
+    linkedin: 'dolby',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2179,7 +2180,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai],
     website: 'https://www.logitech.com',
-    linkedin: 'https://www.linkedin.com/company/logitech',
+    linkedin: 'logitech',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2198,7 +2199,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.shenzhen],
     website: 'https://www.phoenixcontact.com',
-    linkedin: 'https://www.linkedin.com/company/phoenix-contact',
+    linkedin: 'phoenix-contact',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2217,7 +2218,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.shenzhen],
     website: 'https://www.rockwellautomation.com',
-    linkedin: 'https://www.linkedin.com/company/rockwell-automation',
+    linkedin: 'rockwell-automation',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2236,7 +2237,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai],
     website: 'https://www.sagemcom.com',
-    linkedin: 'https://www.linkedin.com/company/sagemcom',
+    linkedin: 'sagemcom',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2255,7 +2256,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.lilly.com',
-    linkedin: 'https://www.linkedin.com/company/eli-lilly-and-company',
+    linkedin: 'eli-lilly-and-company',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2274,7 +2275,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou],
     website: 'https://www.jnj.com',
-    linkedin: 'https://www.linkedin.com/company/johnson--johnson',
+    linkedin: 'johnson--johnson',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2293,7 +2294,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     website: 'https://www.henkel.com',
-    linkedin: 'https://www.linkedin.com/company/henkel',
+    linkedin: 'henkel',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2312,7 +2313,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen, C.chengdu],
     website: 'https://www.basf.com',
-    linkedin: 'https://www.linkedin.com/company/basf',
+    linkedin: 'basf',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2331,7 +2332,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.shenzhen, C.chengdu],
     website: 'https://www.harman.com',
-    linkedin: 'https://www.linkedin.com/company/harman-international',
+    linkedin: 'harman-international',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2350,7 +2351,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     website: 'https://www.dhl.com',
-    linkedin: 'https://www.linkedin.com/company/dhl',
+    linkedin: 'dhl',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2369,7 +2370,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou],
     website: 'https://www.msd.com',
-    linkedin: 'https://www.linkedin.com/company/merck-sharp-and-dohme-corp',
+    linkedin: 'merck-sharp-and-dohme-corp',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2388,7 +2389,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.merckgroup.com',
-    linkedin: 'https://www.linkedin.com/company/merckgroup',
+    linkedin: 'merckgroup',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2407,7 +2408,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai],
     website: 'https://www.desmi.com',
-    linkedin: 'https://www.linkedin.com/company/desmi',
+    linkedin: 'desmi',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2426,7 +2427,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou],
     website: 'https://www.grundfos.com',
-    linkedin: 'https://www.linkedin.com/company/grundfos',
+    linkedin: 'grundfos',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2445,7 +2446,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.shenzhen],
     website: 'https://www.atlascopco.com',
-    linkedin: 'https://www.linkedin.com/company/atlas-copco',
+    linkedin: 'atlas-copco',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2464,7 +2465,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai],
     website: 'https://www.sensirion.com',
-    linkedin: 'https://www.linkedin.com/company/sensirion',
+    linkedin: 'sensirion',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2483,7 +2484,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.tetrapak.com',
-    linkedin: 'https://www.linkedin.com/company/tetra-pak',
+    linkedin: 'tetra-pak',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2502,7 +2503,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai],
     website: 'https://www.pcb-connect.com',
-    linkedin: 'https://www.linkedin.com/company/pcb-connect',
+    linkedin: 'pcb-connect',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2521,7 +2522,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.buhlergroup.com',
-    linkedin: 'https://www.linkedin.com/company/buhler-group',
+    linkedin: 'buhler-group',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2540,7 +2541,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.mastercard.com',
-    linkedin: 'https://www.linkedin.com/company/mastercard',
+    linkedin: 'mastercard',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2559,7 +2560,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.visa.com',
-    linkedin: 'https://www.linkedin.com/company/visa',
+    linkedin: 'visa',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2578,7 +2579,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.shenzhen],
     website: 'https://www.zeiss.com',
-    linkedin: 'https://www.linkedin.com/company/zeiss',
+    linkedin: 'zeiss',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2597,7 +2598,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou],
     website: 'https://www.thermofisher.com',
-    linkedin: 'https://www.linkedin.com/company/thermo-fisher-scientific',
+    linkedin: 'thermo-fisher-scientific',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2616,7 +2617,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.mt.com',
-    linkedin: 'https://www.linkedin.com/company/mettler-toledo',
+    linkedin: 'mettler-toledo',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2635,7 +2636,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.olympus.com',
-    linkedin: 'https://www.linkedin.com/company/olympus',
+    linkedin: 'olympus',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2654,7 +2655,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.fluke.com',
-    linkedin: 'https://www.linkedin.com/company/fluke-corporation',
+    linkedin: 'fluke-corporation',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2673,7 +2674,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.juniper.net',
-    linkedin: 'https://www.linkedin.com/company/juniper-networks',
+    linkedin: 'juniper-networks',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2692,7 +2693,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.commscope.com',
-    linkedin: 'https://www.linkedin.com/company/commscope',
+    linkedin: 'commscope',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2711,7 +2712,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     website: 'https://www.jll.com',
-    linkedin: 'https://www.linkedin.com/company/jll',
+    linkedin: 'jll',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2730,7 +2731,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     website: 'https://www.cbre.com',
-    linkedin: 'https://www.linkedin.com/company/cbre',
+    linkedin: 'cbre',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2749,7 +2750,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.stryker.com',
-    linkedin: 'https://www.linkedin.com/company/stryker',
+    linkedin: 'stryker',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2768,7 +2769,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.medtronic.com',
-    linkedin: 'https://www.linkedin.com/company/medtronic',
+    linkedin: 'medtronic',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2787,7 +2788,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.karlstorz.com',
-    linkedin: 'https://www.linkedin.com/company/karl-storz',
+    linkedin: 'karl-storz',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2806,7 +2807,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai],
     website: 'https://www.skyscanner.com',
-    linkedin: 'https://www.linkedin.com/company/skyscanner',
+    linkedin: 'skyscanner',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2825,7 +2826,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai],
     website: 'https://www.zuru.com',
-    linkedin: 'https://www.linkedin.com/company/zuru',
+    linkedin: 'zuru',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2844,7 +2845,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.americanexpress.com',
-    linkedin: 'https://www.linkedin.com/company/american-express',
+    linkedin: 'american-express',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2863,7 +2864,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.hasbro.com',
-    linkedin: 'https://www.linkedin.com/company/hasbro',
+    linkedin: 'hasbro',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2882,7 +2883,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.electrolux.com',
-    linkedin: 'https://www.linkedin.com/company/electrolux',
+    linkedin: 'electrolux',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2901,7 +2902,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.kering.com',
-    linkedin: 'https://www.linkedin.com/company/kering',
+    linkedin: 'kering',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2920,7 +2921,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.shenzhen],
     website: 'https://www.te.com',
-    linkedin: 'https://www.linkedin.com/company/te-connectivity',
+    linkedin: 'te-connectivity',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2939,7 +2940,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     website: 'https://www.kuehne-nagel.com',
-    linkedin: 'https://www.linkedin.com/company/kuehne-nagel',
+    linkedin: 'kuehne-nagel',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2958,7 +2959,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     website: 'https://www.bayer.com',
-    linkedin: 'https://www.linkedin.com/company/bayer',
+    linkedin: 'bayer',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2977,7 +2978,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou],
     website: 'https://www.novonordisk.com',
-    linkedin: 'https://www.linkedin.com/company/novo-nordisk',
+    linkedin: 'novo-nordisk',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -2996,7 +2997,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou],
     website: 'https://www.iqvia.com',
-    linkedin: 'https://www.linkedin.com/company/iqvia',
+    linkedin: 'iqvia',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3015,7 +3016,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou],
     website: 'https://www.veeva.com',
-    linkedin: 'https://www.linkedin.com/company/veeva-systems',
+    linkedin: 'veeva-systems',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3034,7 +3035,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou],
     website: 'https://www.corning.com',
-    linkedin: 'https://www.linkedin.com/company/corning-incorporated',
+    linkedin: 'corning-incorporated',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3052,7 +3053,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.ecocert.com',
-    linkedin: 'https://www.linkedin.com/company/ecocert',
+    linkedin: 'ecocert',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3071,7 +3072,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou],
     website: 'https://www.slb.com',
-    linkedin: 'https://www.linkedin.com/company/slb',
+    linkedin: 'slb',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3090,7 +3091,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.beijing],
     website: 'https://www.sohu.com',
-    linkedin: 'https://www.linkedin.com/company/sohu',
+    linkedin: 'sohu',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3108,7 +3109,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     website: 'https://www.dxc.technology',
-    linkedin: 'https://www.linkedin.com/company/dxc-technology',
+    linkedin: 'dxc-technology',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3127,7 +3128,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.elekta.com',
-    linkedin: 'https://www.linkedin.com/company/elekta',
+    linkedin: 'elekta',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3146,7 +3147,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.ceva.com',
-    linkedin: 'https://www.linkedin.com/company/ceva-logistics',
+    linkedin: 'ceva-logistics',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3165,7 +3166,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     website: 'https://www.cummins.com',
-    linkedin: 'https://www.linkedin.com/company/cummins',
+    linkedin: 'cummins',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3184,7 +3185,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.dieffenbacher.com',
-    linkedin: 'https://www.linkedin.com/company/dieffenbacher',
+    linkedin: 'dieffenbacher',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3202,7 +3203,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.bostik.com',
-    linkedin: 'https://www.linkedin.com/company/bostik',
+    linkedin: 'bostik',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3221,7 +3222,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     website: 'https://www.schaeffler.com',
-    linkedin: 'https://www.linkedin.com/company/schaeffler',
+    linkedin: 'schaeffler',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3240,7 +3241,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     website: 'https://www.danone.com',
-    linkedin: 'https://www.linkedin.com/company/danone',
+    linkedin: 'danone',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3258,7 +3259,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     website: 'https://www.kerrygroup.com',
-    linkedin: 'https://www.linkedin.com/company/kerrygroup',
+    linkedin: 'kerrygroup',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3277,7 +3278,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     website: 'https://www.beiersdorf.com',
-    linkedin: 'https://www.linkedin.com/company/beiersdorf',
+    linkedin: 'beiersdorf',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3296,7 +3297,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     website: 'https://www.organon.com',
-    linkedin: 'https://www.linkedin.com/company/organon',
+    linkedin: 'organon',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3315,7 +3316,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.lseg.com',
-    linkedin: 'https://www.linkedin.com/company/london-stock-exchange-group',
+    linkedin: 'london-stock-exchange-group',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3333,7 +3334,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.wiley.com',
-    linkedin: 'https://www.linkedin.com/company/wiley',
+    linkedin: 'wiley',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3351,7 +3352,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.home.sandvik',
-    linkedin: 'https://www.linkedin.com/company/sandvik',
+    linkedin: 'sandvik',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3370,7 +3371,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     website: 'https://www.elcompanies.com',
-    linkedin: 'https://www.linkedin.com/company/estee-lauder-companies-inc',
+    linkedin: 'estee-lauder-companies-inc',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3389,7 +3390,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     website: 'https://www.unilever.com',
-    linkedin: 'https://www.linkedin.com/company/unilever',
+    linkedin: 'unilever',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3408,7 +3409,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.jpmorganchase.com',
-    linkedin: 'https://www.linkedin.com/company/jpmorgan-chase',
+    linkedin: 'jpmorgan-chase',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3427,7 +3428,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.barclays.com',
-    linkedin: 'https://www.linkedin.com/company/barclays',
+    linkedin: 'barclays',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3446,7 +3447,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing, C.guangzhou],
     website: 'https://www.agilent.com',
-    linkedin: 'https://www.linkedin.com/company/agilent-technologies',
+    linkedin: 'agilent-technologies',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3465,7 +3466,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.alten.com',
-    linkedin: 'https://www.linkedin.com/company/alten',
+    linkedin: 'alten',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3484,7 +3485,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.bureauveritas.com',
-    linkedin: 'https://www.linkedin.com/company/bureau-veritas',
+    linkedin: 'bureau-veritas',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3503,7 +3504,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.bruker.com',
-    linkedin: 'https://www.linkedin.com/company/bruker',
+    linkedin: 'bruker',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3522,7 +3523,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.sartorius.com',
-    linkedin: 'https://www.linkedin.com/company/sartorius',
+    linkedin: 'sartorius',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3541,7 +3542,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.nikon.com.cn',
-    linkedin: 'https://www.linkedin.com/company/nikon-corporation',
+    linkedin: 'nikon-corporation',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3560,7 +3561,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.reuters.com',
-    linkedin: 'https://www.linkedin.com/company/reuters',
+    linkedin: 'reuters',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3579,7 +3580,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.cambridge.org',
-    linkedin: 'https://www.linkedin.com/company/cambridge-university-press',
+    linkedin: 'cambridge-university-press',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3598,7 +3599,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.nomura.com',
-    linkedin: 'https://www.linkedin.com/company/nomura',
+    linkedin: 'nomura',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3617,7 +3618,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai],
     website: 'https://www.zhuoshiquant.com',
-    linkedin: 'https://www.linkedin.com/company/zhuoshi-quantitative-investment',
+    linkedin: 'zhuoshi-quantitative-investment',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3636,7 +3637,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.anz.com',
-    linkedin: 'https://www.linkedin.com/company/anz',
+    linkedin: 'anz',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3655,7 +3656,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.thalesgroup.com',
-    linkedin: 'https://www.linkedin.com/company/thalesgroup',
+    linkedin: 'thalesgroup',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3674,7 +3675,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.dhcc.com.cn',
-    linkedin: 'https://www.linkedin.com/company/donghua-software-co-ltd',
+    linkedin: 'donghua-software-co-ltd',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3693,7 +3694,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.beijing],
     website: 'https://www.aisino.com',
-    linkedin: 'https://www.linkedin.com/company/aisino',
+    linkedin: 'aisino',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3712,7 +3713,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.beijing],
     website: 'https://www.topsec.com.cn',
-    linkedin: 'https://www.linkedin.com/company/topsec',
+    linkedin: 'topsec',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3731,7 +3732,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.beijing],
     website: 'https://www.jiyi.com',
-    linkedin: 'https://www.linkedin.com/company/jiyi-network',
+    linkedin: 'jiyi-network',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3750,7 +3751,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.obel.com.cn',
-    linkedin: 'https://www.linkedin.com/company/obel',
+    linkedin: 'obel',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3769,7 +3770,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.huayu.com.cn',
-    linkedin: 'https://www.linkedin.com/company/huayu-software',
+    linkedin: 'huayu-software',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3788,7 +3789,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.seeyon.com',
-    linkedin: 'https://www.linkedin.com/company/seeyon',
+    linkedin: 'seeyon',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3807,7 +3808,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.sifang.com.cn',
-    linkedin: 'https://www.linkedin.com/company/sifang-automation',
+    linkedin: 'sifang-automation',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3827,7 +3828,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.ctsecurity.com.cn',
-    linkedin: 'https://www.linkedin.com/company/ctsecurity',
+    linkedin: 'ctsecurity',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
@@ -3846,7 +3847,7 @@ export const CN_COMPANIES: Company[] = [
     region: 'CN',
     cities: [C.shanghai, C.beijing],
     website: 'https://www.lenovo.com',
-    linkedin: 'https://www.linkedin.com/company/lenovo',
+    linkedin: 'lenovo',
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0.5,
