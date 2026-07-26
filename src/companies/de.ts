@@ -9,7 +9,7 @@ export const DE_COMPANIES: Company[] = [
     },
     region: "DE",
     cities: [{ en: "Walldorf" }],
-    website: "https://www.sap.com",
+    careerWebsite: "https://www.sap.com",
     linkedin: "sap",
     params: {
       dailyWorkingHours: 7.5,

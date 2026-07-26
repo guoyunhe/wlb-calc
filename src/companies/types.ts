@@ -11,7 +11,7 @@ export interface Company {
   region: string;
   cities: LocalizedName[];
   params: CalcParams;
-  website: string;
+  careerWebsite: string;
   linkedin: string;
   discussion?: number;
 }

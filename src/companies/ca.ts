@@ -9,7 +9,7 @@ export const CA_COMPANIES: Company[] = [
     },
     region: "CA",
     cities: [{ en: "Ottawa" }],
-    website: "https://www.shopify.com",
+    careerWebsite: "https://www.shopify.com",
     linkedin: "shopify",
     params: {
       dailyWorkingHours: 7,

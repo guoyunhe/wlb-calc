@@ -23,7 +23,7 @@ export const US_COMPANIES: Company[] = [
     },
     region: "US",
     cities: [C.mountainView, C.newYork, C.seattle],
-    website: "https://www.google.com",
+    careerWebsite: "https://www.google.com",
     linkedin: "google",
     params: {
       dailyWorkingHours: 8,
@@ -42,7 +42,7 @@ export const US_COMPANIES: Company[] = [
     },
     region: "US",
     cities: [C.redmond],
-    website: "https://www.microsoft.com",
+    careerWebsite: "https://www.microsoft.com",
     linkedin: "microsoft",
     params: {
       dailyWorkingHours: 8,
@@ -61,7 +61,7 @@ export const US_COMPANIES: Company[] = [
     },
     region: "US",
     cities: [C.losGatos],
-    website: "https://www.netflix.com",
+    careerWebsite: "https://www.netflix.com",
     linkedin: "netflix",
     params: {
       dailyWorkingHours: 7,
@@ -80,7 +80,7 @@ export const US_COMPANIES: Company[] = [
     },
     region: "US",
     cities: [C.sanFrancisco],
-    website: "https://www.salesforce.com",
+    careerWebsite: "https://www.salesforce.com",
     linkedin: "salesforce",
     params: {
       dailyWorkingHours: 7.5,
@@ -99,7 +99,7 @@ export const US_COMPANIES: Company[] = [
     },
     region: "US",
     cities: [C.sanJose],
-    website: "https://www.adobe.com",
+    careerWebsite: "https://www.adobe.com",
     linkedin: "adobe",
     params: {
       dailyWorkingHours: 8,
@@ -118,7 +118,7 @@ export const US_COMPANIES: Company[] = [
     },
     region: "US",
     cities: [C.sanFrancisco],
-    website: "https://www.github.com",
+    careerWebsite: "https://www.github.com",
     linkedin: "github",
     params: {
       dailyWorkingHours: 7,

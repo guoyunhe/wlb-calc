@@ -9,7 +9,7 @@ export const REMOTE_COMPANIES: Company[] = [
     },
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
-    website: "https://www.whatnot.com",
+    careerWebsite: "https://www.whatnot.com",
     linkedin: "whatnot",
     params: {
       dailyWorkingHours: 7,
@@ -28,7 +28,7 @@ export const REMOTE_COMPANIES: Company[] = [
     },
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
-    website: "https://www.goodnotes.com",
+    careerWebsite: "https://www.goodnotes.com",
     linkedin: "goodnotes",
     params: {
       dailyWorkingHours: 7,
@@ -47,7 +47,7 @@ export const REMOTE_COMPANIES: Company[] = [
     },
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
-    website: "https://www.linear.com",
+    careerWebsite: "https://www.linear.com",
     linkedin: "linear",
     params: {
       dailyWorkingHours: 7,
@@ -66,7 +66,7 @@ export const REMOTE_COMPANIES: Company[] = [
     },
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
-    website: "https://www.notion.com",
+    careerWebsite: "https://www.notion.com",
     linkedin: "notion",
     params: {
       dailyWorkingHours: 8,
@@ -85,7 +85,7 @@ export const REMOTE_COMPANIES: Company[] = [
     },
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
-    website: "https://www.figma.com",
+    careerWebsite: "https://www.figma.com",
     linkedin: "figma",
     params: {
       dailyWorkingHours: 8,
@@ -104,7 +104,7 @@ export const REMOTE_COMPANIES: Company[] = [
     },
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
-    website: "https://www.stripe.com",
+    careerWebsite: "https://www.stripe.com",
     linkedin: "stripe",
     params: {
       dailyWorkingHours: 8,
@@ -123,7 +123,7 @@ export const REMOTE_COMPANIES: Company[] = [
     },
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
-    website: "https://www.github.com",
+    careerWebsite: "https://www.github.com",
     linkedin: "github",
     params: {
       dailyWorkingHours: 7,
@@ -142,7 +142,7 @@ export const REMOTE_COMPANIES: Company[] = [
     },
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
-    website: "https://www.gitlab.com",
+    careerWebsite: "https://www.gitlab.com",
     linkedin: "gitlab",
     params: {
       dailyWorkingHours: 7,
@@ -161,7 +161,7 @@ export const REMOTE_COMPANIES: Company[] = [
     },
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
-    website: "https://www.automattic.com",
+    careerWebsite: "https://www.automattic.com",
     linkedin: "automattic",
     params: {
       dailyWorkingHours: 7,
@@ -180,7 +180,7 @@ export const REMOTE_COMPANIES: Company[] = [
     },
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
-    website: "https://www.buffer.com",
+    careerWebsite: "https://www.buffer.com",
     linkedin: "buffer",
     params: {
       dailyWorkingHours: 7,
@@ -199,7 +199,7 @@ export const REMOTE_COMPANIES: Company[] = [
     },
     region: "REMOTE",
     cities: [{ en: "Remote", zh: "远程" }],
-    website: "https://www.basecamp.com",
+    careerWebsite: "https://www.basecamp.com",
     linkedin: "basecamp",
     params: {
       dailyWorkingHours: 7,

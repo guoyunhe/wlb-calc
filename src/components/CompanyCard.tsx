@@ -64,7 +64,7 @@ export default function CompanyCard({ company, score }: CompanyCardProps) {
             variant="transparent"
             color="default"
             component="a"
-            href={company.website}
+            href={company.careerWebsite}
             target="_blank"
           >
             <GlobeIcon size="1rem" />
