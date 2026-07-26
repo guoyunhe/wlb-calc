@@ -60,17 +60,35 @@ export default function CompanyCard({ company, score }: CompanyCardProps) {
 
       <Card.Section onClick={(e) => e.stopPropagation()}>
         <Button.Group orientation="vertical">
-          <Button variant="transparent" color="default" component="a" href={company.website} target="_blank">
+          <Button
+            variant="transparent"
+            color="default"
+            component="a"
+            href={company.website}
+            target="_blank"
+          >
             <GlobeIcon size="1rem" />
           </Button>
           <Divider />
-          <Button variant="transparent" color="default" component="a" href={`https://www.linkedin.com/company/${company.linkedin}/jobs`} target="_blank">
+          <Button
+            variant="transparent"
+            color="default"
+            component="a"
+            href={`https://www.linkedin.com/company/${company.linkedin}/jobs`}
+            target="_blank"
+          >
             <LinkedinLogoIcon size="1rem" />
           </Button>
           {!!company.discussion && (
             <>
               <Divider />
-              <Button variant="transparent" color="default" component="a" href={`${GITHUB_URL}/discussions/${company.discussion}`} target="_blank">
+              <Button
+                variant="transparent"
+                color="default"
+                component="a"
+                href={`${GITHUB_URL}/discussions/${company.discussion}`}
+                target="_blank"
+              >
                 <ChatIcon size="1rem" />
               </Button>
             </>

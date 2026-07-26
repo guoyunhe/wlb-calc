@@ -8,6 +8,9 @@ export function cityKey(city: LocalizedName): string {
   return city.en;
 }
 
-export function companyHasCity(company: { cities: LocalizedName[] }, cityKeyValue: string): boolean {
+export function companyHasCity(
+  company: { cities: LocalizedName[] },
+  cityKeyValue: string,
+): boolean {
   return company.cities.some((city) => city.en === cityKeyValue);
 }

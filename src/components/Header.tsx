@@ -32,7 +32,8 @@ export default function Header() {
               value: "light",
               label: (
                 <Flex align="center">
-                  <SunIcon />&nbsp;{t("theme.light")}
+                  <SunIcon />
+                  &nbsp;{t("theme.light")}
                 </Flex>
               ),
             },
@@ -40,7 +41,8 @@ export default function Header() {
               value: "dark",
               label: (
                 <Flex align="center">
-                  <MoonIcon/>&nbsp;{t("theme.dark")}
+                  <MoonIcon />
+                  &nbsp;{t("theme.dark")}
                 </Flex>
               ),
             },
@@ -48,7 +50,8 @@ export default function Header() {
               value: "auto",
               label: (
                 <Flex align="center">
-                  <MonitorIcon />&nbsp;{t("theme.auto")}
+                  <MonitorIcon />
+                  &nbsp;{t("theme.auto")}
                 </Flex>
               ),
             },

@@ -1,7 +1,7 @@
-import { COMPANIES } from '.';
+import { COMPANIES } from ".";
 
-describe('COMPANIES', () => {
-  it('should have unique ids', () => {
+describe("COMPANIES", () => {
+  it("should have unique ids", () => {
     // count id duplicates
     const idCounts: Record<string, number> = {};
     for (const company of COMPANIES) {

@@ -86,7 +86,10 @@ export default function CompanyList() {
             </Text>
             <Select
               data={[
-                { value: "", label: `${t("companyList.filter.all")} (${selectedRegion ? REGIONS.find((r) => r.code === selectedRegion)?.companyCount || 0 : 0})` },
+                {
+                  value: "",
+                  label: `${t("companyList.filter.all")} (${selectedRegion ? REGIONS.find((r) => r.code === selectedRegion)?.companyCount || 0 : 0})`,
+                },
                 ...citySelectOptions,
               ]}
               value={selectedCity}
