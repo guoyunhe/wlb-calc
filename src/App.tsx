@@ -1,8 +1,11 @@
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
+import React, { Suspense } from "react";
 import Calculator from "./components/Calculator";
 import Footer from "./components/Footer";
-import CompanyList from "./components/CompanyList";
+import { Loader } from "@mantine/core";
+
+const CompanyList = React.lazy(() => import("./components/CompanyList"));
 
 function App() {
   const { t } = useTranslation();
@@ -16,7 +19,9 @@ function App() {
         <meta property="og:description" content={t("description")} />
       </Helmet>
       <Calculator />
-      <CompanyList />
+      <Suspense fallback={<Loader />}>
+        <CompanyList />
+      </Suspense>
       <Footer />
     </>
   );
