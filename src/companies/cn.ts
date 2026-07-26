@@ -27,7 +27,7 @@ export const CN_COMPANIES: Company[] = [
     id: "apple-cn",
     name: {
       en: "Apple",
-      zh: "苹果",
+      zh: "Apple/苹果",
     },
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.suzhou, C.chengdu, C.remote],
@@ -36,30 +36,31 @@ export const CN_COMPANIES: Company[] = [
     discussion: 2,
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0,
       weeklyWorkingDays: 5,
-      annualPaidLeaveDays: 20,
-      annualPaidSickLeaveDays: 15,
+      annualPaidLeaveDays: 15,
+      annualPaidSickLeaveDays: 12,
     },
   },
   {
     id: "amazon-cn",
     name: {
       en: "Amazon",
-      zh: "亚马逊",
+      zh: "Amazon/亚马逊",
     },
     region: "CN",
     cities: [C.shanghai, C.shenzhen, C.beijing, C.chengdu, C.dalian],
     website: "https://www.amazon.jobs/en/search?country[]=CHN",
     linkedin: "amazon",
+    discussion: 3,
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
-      annualPaidLeaveDays: 18,
-      annualPaidSickLeaveDays: 10,
+      annualPaidLeaveDays: 15,
+      annualPaidSickLeaveDays: 12,
     },
   },
   {
@@ -75,7 +76,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "intel",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -94,7 +95,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "oracle",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 18,
@@ -113,7 +114,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "morgan-stanley",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -132,7 +133,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "microsoft",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -151,7 +152,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "zalando",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 12,
@@ -170,7 +171,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "flexport",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 12,
@@ -189,7 +190,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "qualcomm",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 15,
@@ -208,7 +209,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "siemens",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -227,7 +228,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "philips",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -246,7 +247,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "schneider-electric",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -265,7 +266,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "afterpay",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -276,19 +277,20 @@ export const CN_COMPANIES: Company[] = [
     id: "airbnb-cn",
     name: {
       en: "Airbnb",
-      zh: "爱彼迎",
+      zh: "Airbnb/爱彼迎",
     },
     region: "CN",
     cities: [C.beijing],
-    website: "https://www.airbnb.com",
+    website: "https://careers.airbnb.com",
     linkedin: "airbnb",
+    discussion: 4,
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0,
       weeklyWorkingDays: 5,
-      annualPaidLeaveDays: 20,
-      annualPaidSickLeaveDays: 15,
+      annualPaidLeaveDays: 15,
+      annualPaidSickLeaveDays: 12,
     },
   },
   {
@@ -303,7 +305,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "amd",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -322,7 +324,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "arcsoft",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 15,
@@ -341,7 +343,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "arm",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -360,7 +362,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "autodesk",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -379,7 +381,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "booking",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -398,7 +400,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "bosch-group",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -417,7 +419,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "calix",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -436,7 +438,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "canva",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 25,
@@ -455,7 +457,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "cisco",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -474,7 +476,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "citrix",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -493,7 +495,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "continental-ag",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -512,7 +514,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "coolapk",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 1,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
@@ -531,7 +533,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "coupang",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -550,7 +552,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "cstc",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -569,7 +571,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "dell",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -588,7 +590,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "douban",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 1,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
@@ -607,7 +609,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "duolingo",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -626,7 +628,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "ebay",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -645,7 +647,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "ehealth",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -664,7 +666,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "electronic-arts",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -683,7 +685,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "emc",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -702,7 +704,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "epam-systems",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -721,7 +723,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "ericsson",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 25,
@@ -740,7 +742,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "freewheel",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -759,7 +761,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "ge",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -778,7 +780,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "google",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 25,
@@ -797,7 +799,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "grab",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -816,7 +818,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "honeywell",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -835,7 +837,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "hp",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -854,7 +856,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "hsbc",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -873,7 +875,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "hulu",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -892,7 +894,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "ibm",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -911,7 +913,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "iherb",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -930,7 +932,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "jetbrains",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 25,
@@ -949,7 +951,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "kong",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -968,7 +970,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "leetcode",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -987,7 +989,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "lego-group",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1006,7 +1008,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "linkedin",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1025,7 +1027,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "micro-focus",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1044,7 +1046,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "microstrategy",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1063,7 +1065,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "national-instruments",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1082,7 +1084,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "nike",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1101,7 +1103,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "nokia",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 25,
@@ -1120,7 +1122,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "nvidia",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1139,7 +1141,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "optiver",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 25,
@@ -1158,7 +1160,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "paypal",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1177,7 +1179,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "pivotal",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1196,7 +1198,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "rakuten",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1215,7 +1217,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "red-hat",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 25,
@@ -1234,7 +1236,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "ringcentral",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1253,7 +1255,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "rippling",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1272,7 +1274,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "sandisk",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1291,7 +1293,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "sap",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 30,
@@ -1310,7 +1312,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "smartnews",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1329,7 +1331,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "snap",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1348,7 +1350,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "starbucks",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1367,7 +1369,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "state-street",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1386,7 +1388,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "suse",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 25,
@@ -1405,7 +1407,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "the-trade-desk",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1424,7 +1426,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "thoughtworks",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1443,7 +1445,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "trend-micro",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1462,7 +1464,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "tubi",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1481,7 +1483,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "tusimple",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1500,7 +1502,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "two-sigma",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1519,7 +1521,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "ubisoft",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1538,7 +1540,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "unity",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1557,7 +1559,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "vipshop",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 1,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
@@ -1576,7 +1578,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "vmware",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1595,7 +1597,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "wework",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1614,7 +1616,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "wish",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1633,7 +1635,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "works-applications",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1652,7 +1654,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "xmind",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 1,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
@@ -1671,7 +1673,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "zhihu",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 1,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
@@ -1690,7 +1692,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "zoom",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 25,
@@ -1709,7 +1711,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "china-life",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 15,
@@ -1728,7 +1730,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "samsung-electronics",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 15,
@@ -1747,7 +1749,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "dongfeng-nissan",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 15,
@@ -1766,7 +1768,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "procter--gamble",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1785,7 +1787,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "watsons",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 15,
@@ -1804,7 +1806,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "gac-honda",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 15,
@@ -1823,7 +1825,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "kimberlyclark",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1842,7 +1844,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "colgate",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1861,7 +1863,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "mentholatum",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 15,
@@ -1880,7 +1882,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "mars",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1899,7 +1901,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "general-mills",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1918,7 +1920,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "astrazeneca",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1937,7 +1939,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "firmenich",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1956,7 +1958,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "maersk",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -1975,7 +1977,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "abb",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 15,
@@ -1994,7 +1996,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "volvo",
     params: {
       dailyWorkingHours: 7.5,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 15,
@@ -2013,7 +2015,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "hexagon-ab",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2032,7 +2034,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "pfizer",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2051,7 +2053,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "novartis",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2070,7 +2072,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "takeda",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2089,7 +2091,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "ikea",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2108,7 +2110,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "loreal",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2127,7 +2129,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "edrawsoft",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 1,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
@@ -2146,7 +2148,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "western-digital",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2165,7 +2167,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "dolby",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2184,7 +2186,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "logitech",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2203,7 +2205,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "phoenix-contact",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2222,7 +2224,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "rockwell-automation",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2241,7 +2243,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "sagemcom",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2260,7 +2262,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "eli-lilly-and-company",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2279,7 +2281,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "johnson--johnson",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2298,7 +2300,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "henkel",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2317,7 +2319,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "basf",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2336,7 +2338,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "harman-international",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2355,7 +2357,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "dhl",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2374,7 +2376,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "merck-sharp-and-dohme-corp",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2393,7 +2395,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "merckgroup",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2412,7 +2414,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "desmi",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2431,7 +2433,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "grundfos",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2450,7 +2452,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "atlas-copco",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2469,7 +2471,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "sensirion",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2488,7 +2490,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "tetra-pak",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2507,7 +2509,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "pcb-connect",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2526,7 +2528,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "buhler-group",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2545,7 +2547,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "mastercard",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2564,7 +2566,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "visa",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2583,7 +2585,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "zeiss",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2602,7 +2604,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "thermo-fisher-scientific",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2621,7 +2623,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "mettler-toledo",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2640,7 +2642,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "olympus",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2659,7 +2661,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "fluke-corporation",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2678,7 +2680,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "juniper-networks",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2697,7 +2699,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "commscope",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2716,7 +2718,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "jll",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2735,7 +2737,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "cbre",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2754,7 +2756,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "stryker",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2773,7 +2775,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "medtronic",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2792,7 +2794,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "karl-storz",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2811,7 +2813,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "skyscanner",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2830,7 +2832,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "zuru",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2849,7 +2851,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "american-express",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2868,7 +2870,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "hasbro",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2887,7 +2889,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "electrolux",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2906,7 +2908,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "kering",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2925,7 +2927,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "te-connectivity",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2944,7 +2946,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "kuehne-nagel",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2963,7 +2965,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "bayer",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -2982,7 +2984,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "novo-nordisk",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3001,7 +3003,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "iqvia",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3020,7 +3022,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "veeva-systems",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3039,7 +3041,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "corning-incorporated",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3057,7 +3059,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "ecocert",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3076,7 +3078,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "slb",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3095,7 +3097,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "sohu",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3113,7 +3115,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "dxc-technology",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3132,7 +3134,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "elekta",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3151,7 +3153,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "ceva-logistics",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3170,7 +3172,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "cummins",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3189,7 +3191,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "dieffenbacher",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3207,7 +3209,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "bostik",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3226,7 +3228,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "schaeffler",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3245,7 +3247,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "danone",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3263,7 +3265,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "kerrygroup",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3282,7 +3284,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "beiersdorf",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3301,7 +3303,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "organon",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3320,7 +3322,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "london-stock-exchange-group",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3338,7 +3340,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "wiley",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3356,7 +3358,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "sandvik",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3375,7 +3377,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "estee-lauder-companies-inc",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3394,7 +3396,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "unilever",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3413,7 +3415,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "jpmorgan-chase",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3432,7 +3434,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "barclays",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3451,7 +3453,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "agilent-technologies",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3470,7 +3472,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "alten",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3489,7 +3491,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "bureau-veritas",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3508,7 +3510,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "bruker",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3527,7 +3529,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "sartorius",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3546,7 +3548,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "nikon-corporation",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3565,7 +3567,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "reuters",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3584,7 +3586,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "cambridge-university-press",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3603,7 +3605,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "nomura",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3622,7 +3624,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "zhuoshi-quantitative-investment",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3641,7 +3643,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "anz",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3660,7 +3662,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "thalesgroup",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3679,7 +3681,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "donghua-software-co-ltd",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3698,7 +3700,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "aisino",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3717,7 +3719,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "topsec",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3736,7 +3738,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "jiyi-network",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
@@ -3755,7 +3757,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "obel",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
@@ -3774,7 +3776,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "huayu-software",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
@@ -3793,7 +3795,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "seeyon",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
@@ -3812,7 +3814,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "sifang-automation",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
@@ -3832,7 +3834,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "ctsecurity",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
@@ -3851,7 +3853,7 @@ export const CN_COMPANIES: Company[] = [
     linkedin: "lenovo",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 0.5,
+      dailyCommuteHours: 1,
       dailyCommunicationOutsideWorkHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
