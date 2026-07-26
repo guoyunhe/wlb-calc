@@ -67,7 +67,6 @@ export default function CompanyCard({ company, score }: CompanyCardProps) {
           <Button variant="transparent" color="default" component="a" href={`https://www.linkedin.com/company/${company.linkedin}/jobs`} target="_blank">
             <LinkedinLogoIcon size="1rem" />
           </Button>
-          <Divider />
           {!!company.discussion && (
             <>
               <Divider />
