@@ -1994,15 +1994,15 @@ export const CN_COMPANIES: Company[] = [
     },
   },
   {
-    id: "volvo-cn",
+    id: "volvo-cars-cn",
     name: {
-      en: "Volvo",
-      zh: "沃尔沃",
+      en: "Volvo Cars",
+      zh: "沃尔沃汽车",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen, C.dalian],
-    careerWebsite: "https://www.volvo.com",
-    linkedin: "volvo",
+    cities: [C.shanghai, C.chengdu, C.beijing],
+    careerWebsite: "https://www.volvocars.com.cn/zh-cn/l/about/our-company/careers/",
+    linkedin: "volvo-cars",
     params: {
       dailyWorkingHours: 7.5,
       dailyCommuteHours: 1,
