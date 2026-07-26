@@ -22,7 +22,7 @@ export default function CompanyList() {
   const filteredCompanies = useMemo(() => {
     return COMPANIES.filter((company) => {
       const scorePass = calc(company.params) > 80;
-      const regionPass = !selectedRegion || company.region === selectedRegion || (selectedRegion === "REMOTE" && company.cities.some((city) => city.en === "Remote"));
+      const regionPass = !selectedRegion || company.region === selectedRegion;
       const cityPass = !selectedCity || companyHasCity(company, selectedCity);
       return scorePass && regionPass && cityPass;
     }).sort((a, b) => calc(b.params) - calc(a.params));
@@ -86,7 +86,7 @@ export default function CompanyList() {
             </Text>
             <Select
               data={[
-                { value: "", label: `${t("companyList.filter.all")} (${citiesForRegion.reduce((sum, city) => sum + city.companyCount, 0)})` },
+                { value: "", label: `${t("companyList.filter.all")} (${selectedRegion ? REGIONS.find((r) => r.code === selectedRegion)?.companyCount || 0 : 0})` },
                 ...citySelectOptions,
               ]}
               value={selectedCity}
