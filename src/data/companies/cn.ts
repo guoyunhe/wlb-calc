@@ -1,5 +1,5 @@
+import type City from "../../types/City";
 import type Company from "../../types/Company";
-import type LocalizedName from "../../types/LocalizedName";
 
 const CN_CITIES = {
   beijing: { en: "Beijing", zh: "北京" },
@@ -17,13 +17,17 @@ const CN_CITIES = {
   xiamen: { en: "Xiamen", zh: "厦门" },
   dalian: { en: "Dalian", zh: "大连" },
   zhuhai: { en: "Zhuhai", zh: "珠海" },
+  zhengzhou: { en: "Zhengzhou", zh: "郑州" },
   changsha: { en: "Changsha", zh: "长沙" },
   changchun: { en: "Changchun", zh: "长春" },
   chongqing: { en: "Chongqing", zh: "重庆" },
   tianjin: { en: "Tianjin", zh: "天津" },
+  haikou: { en: "Haikou", zh: "海口" },
+  jiaxing: { en: "Jiaxing", zh: "嘉兴" },
+  foshan: { en: "Foshan", zh: "佛山" },
   hongkong: { en: "Hong Kong", zh: "香港" },
   remote: { en: "Remote", zh: "远程" },
-} as const satisfies Record<string, LocalizedName>;
+} as const satisfies Record<string, City>;
 
 const C = CN_CITIES;
 
@@ -36,6 +40,44 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.suzhou, C.chengdu, C.remote],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "静安区",
+        address: "南京西路789号兴业太古汇香港兴业中心一座",
+        employeeCount: 3000,
+      },
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "中国(上海)自由贸易试验区马吉路88号C区6号楼",
+        employeeCount: 1200,
+      },
+      {
+        city: C.beijing,
+        district: "东城区",
+        address: "东长安街1号东方广场东方经贸城东一办公楼20层",
+        employeeCount: 800,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "建国门外大街1号国贸写字楼2座",
+        employeeCount: 500,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "招商街道沿山路12号万联大厦A座",
+        employeeCount: 1000,
+      },
+      {
+        city: C.suzhou,
+        district: "苏州工业园区",
+        address: "金鸡湖大道1355号国际科技园",
+        employeeCount: 300,
+      },
+    ],
     careerWebsite: "https://jobs.apple.com/zh-cn/search?location=china-CHNC",
     linkedin: "apple",
     discussion: 2,
@@ -56,6 +98,44 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.shenzhen, C.beijing, C.chengdu, C.dalian],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "东四环中路56号远洋国际中心A座",
+        employeeCount: 2500,
+      },
+      {
+        city: C.shanghai,
+        district: "静安区",
+        address: "南京西路789号兴业太古汇香港兴业中心二座",
+        employeeCount: 2000,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "深南大道9668号华润城大厦B座15楼",
+        employeeCount: 1500,
+      },
+      {
+        city: C.hangzhou,
+        district: "滨江区",
+        address: "网商路599号网易二期旁/巨星大厦",
+        employeeCount: 800,
+      },
+      {
+        city: C.chengdu,
+        district: "武侯区",
+        address: "交子大道333号中海国际中心E座",
+        employeeCount: 600,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "珠江东路6号周大福金融中心（广州东塔）",
+        employeeCount: 500,
+      },
+    ],
     careerWebsite: "https://www.amazon.jobs/en/search?country[]=CHN",
     linkedin: "amazon",
     discussion: 3,
@@ -76,6 +156,32 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.chengdu, C.shanghai, C.xiamen],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "闵行区",
+        address: "紫竹科学园区紫日路751号",
+        employeeCount: 3500,
+      },
+      {
+        city: C.beijing,
+        district: "东城区",
+        address: "北三环东路36号环球贸易中心D座20层",
+        employeeCount: 1500,
+      },
+      {
+        city: C.chengdu,
+        district: "高新区",
+        address: "合作路88号（成都高新综合保税区）",
+        employeeCount: 3000,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "沙河西路深圳湾科技生态园11栋",
+        employeeCount: 800,
+      },
+    ],
     careerWebsite:
       "https://jobs.intel.cn/intel/position/index?recruitmentType=SOCIALRECRUITMENT&keyword=&baseProvinceCity=",
     linkedin: "intel",
@@ -96,6 +202,44 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.nanjing, C.suzhou],
+    offices: [
+      {
+        city: C.beijing,
+        district: "海淀区",
+        address: "中关村软件园16号楼甲骨文大厦",
+        employeeCount: 1500,
+      },
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "碧波路690号张江微电子港8号楼",
+        employeeCount: 1200,
+      },
+      {
+        city: C.shenzhen,
+        district: "福田区",
+        address: "益田路5033号平安金融中心42楼",
+        employeeCount: 500,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "珠江东路6号周大福金融中心（广州东塔）",
+        employeeCount: 400,
+      },
+      {
+        city: C.chengdu,
+        district: "高新区",
+        address: "天府大道中段1388号美年广场",
+        employeeCount: 300,
+      },
+      {
+        city: C.nanjing,
+        district: "建邺区",
+        address: "江东中路347号南京国金中心（IFC）",
+        employeeCount: 200,
+      },
+    ],
     careerWebsite: "https://www.oracle.com/cn/careers/",
     linkedin: "oracle",
     params: {
@@ -115,6 +259,32 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.zhuhai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "世纪大道100号上海环球金融中心75-77楼",
+        employeeCount: 1200,
+      },
+      {
+        city: C.beijing,
+        district: "东城区",
+        address: "安定门外大街208号玖安广场（原中粮置地广场）A塔12-13层",
+        employeeCount: 800,
+      },
+      {
+        city: C.shenzhen,
+        district: "福田区",
+        address: "中心四路1号嘉里建设广场二座19楼",
+        employeeCount: 300,
+      },
+      {
+        city: C.hangzhou,
+        district: "上城区",
+        address: "富春路701号万象城一期写字楼",
+        employeeCount: 150,
+      },
+    ],
     careerWebsite: "https://www.morganstanley.com/careers",
     linkedin: "morgan-stanley",
     params: {
@@ -134,6 +304,44 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.suzhou],
+    offices: [
+      {
+        city: C.beijing,
+        district: "海淀区",
+        address: "丹棱街5号微软大厦",
+        employeeCount: 4500,
+      },
+      {
+        city: C.suzhou,
+        district: "苏州工业园区",
+        address: "星湖街328号创意产业园25栋",
+        employeeCount: 3000,
+      },
+      {
+        city: C.shanghai,
+        district: "闵行区",
+        address: "紫星路999号微软园区",
+        employeeCount: 2500,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "高新南九道55号微软科通大厦2-6层",
+        employeeCount: 1000,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "珠江东路6号周大福金融中心（广州东塔）",
+        employeeCount: 300,
+      },
+      {
+        city: C.chengdu,
+        district: "高新区",
+        address: "天府大道中段1388号美年广场",
+        employeeCount: 200,
+      },
+    ],
     careerWebsite: "https://careers.microsoft.com/v2/global/en/home.html?lc=China",
     linkedin: "microsoft",
     params: {
@@ -153,6 +361,20 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shenzhen],
+    offices: [
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "科发路91号华润置地大厦D座802",
+        employeeCount: 150,
+      },
+      {
+        city: C.shanghai,
+        district: "静安区",
+        address: "南京西路1266号恒隆广场一期",
+        employeeCount: 80,
+      },
+    ],
     careerWebsite: "https://jobs.zalando.com/en/jobs?locations=China",
     linkedin: "zalando",
     params: {
@@ -172,6 +394,32 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.shenzhen],
+    offices: [
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "科苑南路2666号中国华润大厦（春笋）28楼",
+        employeeCount: 400,
+      },
+      {
+        city: C.shanghai,
+        district: "静安区",
+        address: "南京西路1601号越洋广场1505室",
+        employeeCount: 300,
+      },
+      {
+        city: C.beijing,
+        district: "海淀区",
+        address: "丹棱街1号互联网金融中心5层 WeWork 05-112",
+        employeeCount: 80,
+      },
+      {
+        city: C.hongkong,
+        district: "东区",
+        address: "鲗鱼涌英皇道979号太古坊一座43楼",
+        employeeCount: 200,
+      },
+    ],
     careerWebsite: "https://www.flexport.com/careers/jobs/?location=China",
     linkedin: "flexport",
     params: {
@@ -191,6 +439,32 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.xian, C.wuxi],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "张江高科技园区亮秀路72号7层",
+        employeeCount: 2000,
+      },
+      {
+        city: C.beijing,
+        district: "东城区",
+        address: "北三环东路36号环球贸易中心C栋6层",
+        employeeCount: 1500,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "粤海街道科苑南路3331号阿里巴巴大厦N2座6楼",
+        employeeCount: 800,
+      },
+      {
+        city: C.xian,
+        district: "雁塔区",
+        address: "高新六路38号腾飞创新中心A座201室",
+        employeeCount: 500,
+      },
+    ],
     careerWebsite: "https://www.qualcomm.com/company/careers/jobs?location=China",
     linkedin: "qualcomm",
     params: {
@@ -210,6 +484,56 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.chengdu, C.guangzhou, C.nanjing, C.suzhou],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "望京中环南路7号西门子大厦（中国区总部）",
+        employeeCount: 3500,
+      },
+      {
+        city: C.shanghai,
+        district: "杨浦区",
+        address: "大连路500号西门子上海中心",
+        employeeCount: 3000,
+      },
+      {
+        city: C.chengdu,
+        district: "高新区",
+        address: "拓新东街81号天府软件园C区6号楼",
+        employeeCount: 1500,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "天河路208号粤海天河城大厦8楼",
+        employeeCount: 1000,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "前湾一路前海嘉里商务中心T1写字楼704",
+        employeeCount: 800,
+      },
+      {
+        city: C.suzhou,
+        district: "苏州工业园区",
+        address: "苏华路2号国际大厦1117-1119室",
+        employeeCount: 600,
+      },
+      {
+        city: C.wuhan,
+        district: "东湖新技术开发区",
+        address: "高新大道999号（西门子武汉创新中心）",
+        employeeCount: 500,
+      },
+      {
+        city: C.xian,
+        district: "雁塔区",
+        address: "天谷八路156号西安软件新城研发基地B-2号楼",
+        employeeCount: 400,
+      },
+    ],
     careerWebsite: "https://jobs.siemens.com/jobs?location=China",
     linkedin: "siemens",
     params: {
@@ -229,6 +553,44 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.beijing, C.shenzhen, C.suzhou, C.chengdu],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "静安区",
+        address: "灵石路718号宁汇广场A1座（大中华区总部）",
+        employeeCount: 3500,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "望京东路1号广顺北大街交叉口飞利浦大厦",
+        employeeCount: 1500,
+      },
+      {
+        city: C.suzhou,
+        district: "苏州工业园区",
+        address: "九华路258号（飞利浦医疗科技苏州基地）",
+        employeeCount: 2000,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "高新技术产业园区粤兴二道6号飞利浦大厦",
+        employeeCount: 1200,
+      },
+      {
+        city: C.chengdu,
+        district: "高新区",
+        address: "天府大道中段1388号美年广场",
+        employeeCount: 600,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "林和西路9号耀中广场A座",
+        employeeCount: 500,
+      },
+    ],
     careerWebsite: "https://www.careers.philips.com/global/en/search-results?m=3&location=China",
     linkedin: "philips",
     params: {
@@ -248,6 +610,50 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.wuhan, C.xian, C.guangzhou],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "望京东路6号施耐德电气大厦（中国区总部）",
+        employeeCount: 3500,
+      },
+      {
+        city: C.shanghai,
+        district: "普陀区",
+        address: "云岭东路89号长风国际大厦",
+        employeeCount: 3000,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "科苑南路3099号中国储能大厦7-8楼",
+        employeeCount: 1500,
+      },
+      {
+        city: C.wuhan,
+        district: "东湖新技术开发区",
+        address: "光谷大道77号金融港B11栋（施耐德电气武汉研发中心）",
+        employeeCount: 1200,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "金穗路62号侨鑫国际金融中心20楼",
+        employeeCount: 800,
+      },
+      {
+        city: C.chengdu,
+        district: "高新区",
+        address: "世纪城南路599号天府软件园D区7栋",
+        employeeCount: 600,
+      },
+      {
+        city: C.xian,
+        district: "雁塔区",
+        address: "天谷八路156号西安软件新城研发基地B-2号楼（西安研发中心）",
+        employeeCount: 800,
+      },
+    ],
     careerWebsite:
       "https://se.wd3.myworkdayjobs.com/SchneiderElectricCareers?locationCountry=a220263f350c441c9b2184f4f71a067a",
     linkedin: "schneider-electric",
@@ -264,10 +670,23 @@ export const CN_COMPANIES: Company[] = [
     id: "afterpay-cn",
     name: {
       en: "Afterpay",
-      zh: "Afterpay",
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "静安区",
+        address: "南京西路1266号恒隆广场一座",
+        employeeCount: 120,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "粤海街道科苑南路2666号中国华润大厦（春笋）",
+        employeeCount: 50,
+      },
+    ],
     careerWebsite: "https://block.xyz/careers?location=Shanghai%2C%20China",
     linkedin: "afterpay",
     params: {
@@ -287,6 +706,20 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "酒仙桥路4号宏源大厦",
+        employeeCount: 50,
+      },
+      {
+        city: C.shanghai,
+        district: "静安区",
+        address: "南京西路789号兴业太古汇",
+        employeeCount: 50,
+      },
+    ],
     careerWebsite: "https://careers.airbnb.com",
     linkedin: "airbnb",
     discussion: 4,
@@ -307,6 +740,26 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.beijing, C.suzhou],
+    offices: [
+      {
+        city: C.beijing,
+        district: "海淀区",
+        address: "融科资讯中心 C 座",
+        employeeCount: 1000,
+      },
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "张江高科技园区科苑路 88 号德国中心",
+        employeeCount: 1500,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "深圳湾科技生态园",
+        employeeCount: 300,
+      },
+    ],
     careerWebsite: "https://jobs.amd.com/go/Jobs-in-China/2566600/",
     linkedin: "amd",
     params: {
@@ -326,6 +779,26 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.beijing, C.shenzhen, C.chengdu],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "申江路 5005 号星现代产业园",
+        employeeCount: 500,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "科苑南路 2666 号中国华润大厦（春笋）",
+        employeeCount: 200,
+      },
+      {
+        city: C.beijing,
+        district: "海淀区",
+        address: "知春路 56 号中关村创客总部",
+        employeeCount: 100,
+      },
+    ],
     careerWebsite: "https://www.armchina.com/Joblist.html",
     linkedin: "arm",
     params: {
@@ -345,6 +818,26 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.beijing],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "张江高科技园区李冰路 399 号",
+        employeeCount: 800,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "望京街 9 号望京 SOHO",
+        employeeCount: 300,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "高新区南区科技南十二路",
+        employeeCount: 100,
+      },
+    ],
     careerWebsite:
       "https://autodesk.wd1.myworkdayjobs.com/Uni?locationCountry=a220263f350c441c9b2184f4f71a067a",
     linkedin: "autodesk",
@@ -365,6 +858,26 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "长宁区",
+        address: "长宁路 1193 号长宁来福士广场 T3 办公楼",
+        employeeCount: 600,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "东三环北路 38 号院 1 号楼泰康金融大厦",
+        employeeCount: 150,
+      },
+      {
+        city: C.haikou,
+        district: "龙华区",
+        address: "滨海大道 32 号复兴城互联网信息产业园",
+        employeeCount: 50,
+      },
+    ],
     careerWebsite: "https://careers.booking.com/search-jobs/?location=China",
     linkedin: "booking",
     params: {
@@ -384,6 +897,38 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.suzhou, C.wuxi, C.changsha, C.chengdu, C.hangzhou],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "长宁区",
+        address: "福泉北路 333 号博世中国总部",
+        employeeCount: 10000,
+      },
+      {
+        city: C.suzhou,
+        district: "工业园区",
+        address: "星龙街 455 号",
+        employeeCount: 9000,
+      },
+      {
+        city: C.wuxi,
+        district: "新吴区",
+        address: "长江路 17 号",
+        employeeCount: 3000,
+      },
+      {
+        city: C.changsha,
+        district: "长沙县",
+        address: "经济技术开发区漓湘中路 26 号",
+        employeeCount: 2000,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "酒仙桥路 10 号恒通商务园",
+        employeeCount: 1000,
+      },
+    ],
     careerWebsite: "https://jobs.smartrecruiters.com/BoschGroup?search=China",
     linkedin: "bosch-group",
     params: {
@@ -403,6 +948,20 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.nanjing],
+    offices: [
+      {
+        city: C.nanjing,
+        district: "雨花台区",
+        address: "软件大道 170 号天合广场 5 幢",
+        employeeCount: 300,
+      },
+      {
+        city: C.beijing,
+        district: "海淀区",
+        address: "中关村东路 1 号院清华科技园科技大厦 D 座",
+        employeeCount: 100,
+      },
+    ],
     careerWebsite:
       "https://calix.wd1.myworkdayjobs.com/Calix_Careers?locationCountry=a220263f350c441c9b2184f4f71a067a",
     linkedin: "calix",
@@ -423,6 +982,20 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.wuhan],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "东三环北路 27 号嘉铭中心",
+        employeeCount: 150,
+      },
+      {
+        city: C.wuhan,
+        district: "洪山区",
+        address: "关山大道 332 号保利国际中心",
+        employeeCount: 50,
+      },
+    ],
     careerWebsite: "https://www.lifeatcanva.com/en/jobs/?location=China",
     linkedin: "canva",
     params: {
@@ -442,6 +1015,38 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.beijing, C.hangzhou, C.suzhou, C.shenzhen, C.hefei],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "徐汇区",
+        address: "宜山路 900 号科技绿洲三期 20 号楼",
+        employeeCount: 3000,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "建国门外大街 1 号国贸写字楼 2 座",
+        employeeCount: 1500,
+      },
+      {
+        city: C.hangzhou,
+        district: "滨江区",
+        address: "江南大道 3850 号创新大厦",
+        employeeCount: 800,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "深南大道 9668 号华润置地大厦 B 座",
+        employeeCount: 500,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "珠江东路 6 号广州周大福金融中心（东塔）",
+        employeeCount: 300,
+      },
+    ],
     careerWebsite: "https://careers.cisco.com/global/en/search-results?location=China",
     linkedin: "cisco",
     params: {
@@ -461,6 +1066,26 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.nanjing],
+    offices: [
+      {
+        city: C.nanjing,
+        district: "雨花台区",
+        address: "软件大道 106 号中兴通讯大厦",
+        employeeCount: 600,
+      },
+      {
+        city: C.shanghai,
+        district: "徐汇区",
+        address: "田林路 397 号捷强园区",
+        employeeCount: 400,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "东方东路 19 号亮马桥外交办公大楼",
+        employeeCount: 200,
+      },
+    ],
     careerWebsite: "https://careers.cloud.com/jobs?location=China",
     linkedin: "citrix",
     params: {
@@ -480,6 +1105,38 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.hefei, C.changchun, C.chongqing, C.suzhou, C.wuhan],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "杨浦区",
+        address: "大连路 538 号大陆集团大楼",
+        employeeCount: 3000,
+      },
+      {
+        city: C.changchun,
+        district: "净月高新技术产业开发区",
+        address: "净月大街 5188 号",
+        employeeCount: 2500,
+      },
+      {
+        city: C.hefei,
+        district: "高新区",
+        address: "习友路 1888 号",
+        employeeCount: 2000,
+      },
+      {
+        city: C.chongqing,
+        district: "渝北区",
+        address: "创新路 1 号",
+        employeeCount: 1500,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "酒仙桥路 10 号恒通商务园",
+        employeeCount: 500,
+      },
+    ],
     careerWebsite: "https://jobs.continental.com/en/",
     linkedin: "continental-ag",
     params: {
@@ -499,6 +1156,26 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "望京街 9 号望京 SOHO",
+        employeeCount: 600,
+      },
+      {
+        city: C.shanghai,
+        district: "静安区",
+        address: "南京西路 1717 号会德丰国际广场",
+        employeeCount: 400,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "科苑南路 2666 号中国华润大厦（春笋）",
+        employeeCount: 300,
+      },
+    ],
     careerWebsite: "https://www.coupang.jobs/en/jobs/?location=China",
     linkedin: "coupang",
     params: {
@@ -518,6 +1195,38 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.dalian],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "陆家嘴环路 333 号花旗集团大厦",
+        employeeCount: 3000,
+      },
+      {
+        city: C.dalian,
+        district: "沙河口区",
+        address: "体坛路 22 号诺德英特宜家中心",
+        employeeCount: 2000,
+      },
+      {
+        city: C.beijing,
+        district: "西城区",
+        address: "金融大街 7 号英蓝国际金融中心",
+        employeeCount: 800,
+      },
+      {
+        city: C.shenzhen,
+        district: "福田区",
+        address: "益田路 4068 号卓越时代广场",
+        employeeCount: 500,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "珠江东路 6 号广州周大福金融中心（东塔）",
+        employeeCount: 300,
+      },
+    ],
     careerWebsite: "https://jobs.citi.com/search-jobs/China",
     linkedin: "cstc",
     params: {
@@ -537,6 +1246,38 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.xiamen, C.chengdu, C.shanghai, C.beijing],
+    offices: [
+      {
+        city: C.xiamen,
+        district: "湖里区",
+        address: "金尚路 2388 号戴尔（中国）有限公司",
+        employeeCount: 6000,
+      },
+      {
+        city: C.chengdu,
+        district: "高新区",
+        address: "天府大道中段 1388 号美年广场",
+        employeeCount: 3000,
+      },
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "科苑路 88 号德国中心",
+        employeeCount: 1500,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "东三环中路 1 号环球金融中心",
+        employeeCount: 1000,
+      },
+      {
+        city: C.shenzhen,
+        district: "福田区",
+        address: "深南大道 7888 号东海国际中心",
+        employeeCount: 500,
+      },
+    ],
     careerWebsite: "https://jobs.dell.com/search-jobs/China",
     linkedin: "dell",
     params: {
@@ -556,6 +1297,14 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.tianjin],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "酒仙桥路 4 号宏源大厦",
+        employeeCount: 500,
+      },
+    ],
     careerWebsite: "https://jobs.douban.com",
     linkedin: "douban",
     params: {
@@ -575,6 +1324,14 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "东三环北路 38 号院 1 号楼泰康金融大厦",
+        employeeCount: 100,
+      },
+    ],
     careerWebsite: "https://careers.duolingo.com/?location=Beijing%2C+China",
     linkedin: "duolingo",
     params: {
@@ -594,6 +1351,26 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.shenzhen],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "科苑路 88 号德国中心",
+        employeeCount: 1500,
+      },
+      {
+        city: C.shenzhen,
+        district: "福田区",
+        address: "深南大道 4011 号香港中旅大厦",
+        employeeCount: 300,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "东三环北路 38 号院 1 号楼泰康金融大厦",
+        employeeCount: 150,
+      },
+    ],
     careerWebsite: "https://jobs.ebaymainstreet.com/en/search-jobs/?location=China",
     linkedin: "ebay",
     params: {
@@ -613,6 +1390,14 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.xiamen],
+    offices: [
+      {
+        city: C.xiamen,
+        district: "思明区",
+        address: "软件园二期观日路 24 号",
+        employeeCount: 300,
+      },
+    ],
     careerWebsite: "https://www.ehealthinsurance.com/about-ehealth/careers",
     linkedin: "ehealth",
     params: {
@@ -632,6 +1417,14 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "静安区",
+        address: "南京西路 1266 号恒隆广场一期",
+        employeeCount: 400,
+      },
+    ],
     careerWebsite: "https://ea.gr8people.com/jobs?geo_location=CN",
     linkedin: "electronic-arts",
     params: {
@@ -651,7 +1444,33 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.beijing, C.chengdu],
-    careerWebsite: "https://jobs.dell.com/search-jobs/China",
+    offices: [
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "科苑路 88 号德国中心",
+        employeeCount: 1500,
+      },
+      {
+        city: C.beijing,
+        district: "海淀区",
+        address: "中关村东路 1 号院清华科技园科技大厦 D 座",
+        employeeCount: 1000,
+      },
+      {
+        city: C.chengdu,
+        district: "高新区",
+        address: "天府大道中段 1388 号美年广场",
+        employeeCount: 800,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "珠江东路 6 号广州周大福金融中心（东塔）",
+        employeeCount: 200,
+      },
+    ],
+    careerWebsite: "https://www.dell.com/careers/en-us/search-results?location=China",
     linkedin: "emc",
     params: {
       dailyWorkingHours: 8,
@@ -670,6 +1489,44 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shenzhen, C.shanghai, C.suzhou, C.chengdu],
+    offices: [
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "粤海街道科苑南路 2666 号中国华润大厦（春笋）",
+        employeeCount: 800,
+      },
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "祖冲之路 2277 号世和商务中心",
+        employeeCount: 600,
+      },
+      {
+        city: C.chengdu,
+        district: "高新区",
+        address: "天府大道中段 530 号东方希望天祥广场",
+        employeeCount: 400,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "东三环北路 38 号院 1 号楼泰康金融大厦",
+        employeeCount: 200,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "林和西路 9 号耀中广场",
+        employeeCount: 150,
+      },
+      {
+        city: C.suzhou,
+        district: "工业园区",
+        address: "星桂街 33 号凤凰国际大厦",
+        employeeCount: 100,
+      },
+    ],
     careerWebsite: "https://www.epam.com/careers/locations/china",
     linkedin: "epam-systems",
     params: {
@@ -689,6 +1546,44 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai, C.guangzhou, C.nanjing, C.chengdu],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "望京广顺南大街 16 号爱立信大厦",
+        employeeCount: 4000,
+      },
+      {
+        city: C.nanjing,
+        district: "江宁区",
+        address: "江宁经济技术开发区新兴路 18 号",
+        employeeCount: 3000,
+      },
+      {
+        city: C.shanghai,
+        district: "长宁区",
+        address: "临虹路 168 号爱立信大楼",
+        employeeCount: 1500,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "珠江西路 5 号广州国际金融中心（西塔）",
+        employeeCount: 800,
+      },
+      {
+        city: C.chengdu,
+        district: "高新区",
+        address: "天府大道中段 1388 号美年广场",
+        employeeCount: 500,
+      },
+      {
+        city: C.xian,
+        district: "雁塔区",
+        address: "高新六路 38 号",
+        employeeCount: 400,
+      },
+    ],
     careerWebsite: "https://jobs.ericsson.com/search/?q=&locationsearch=China",
     linkedin: "ericsson",
     params: {
@@ -708,6 +1603,14 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "建国门外大街 1 号国贸写字楼 2 座",
+        employeeCount: 400,
+      },
+    ],
     careerWebsite: "https://jobs.comcast.com/search-jobs?k=FreeWheel&location=China",
     linkedin: "freewheel",
     params: {
@@ -727,6 +1630,38 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.beijing, C.wuhan, C.suzhou],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "华陀路 1 座通用电气中国科技园区",
+        employeeCount: 3000,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "北京经济技术开发区永昌北路 1 号",
+        employeeCount: 1500,
+      },
+      {
+        city: C.wuxi,
+        district: "新吴区",
+        address: "长江路 32 号",
+        employeeCount: 1200,
+      },
+      {
+        city: C.wuhan,
+        district: "江夏区",
+        address: "高新大道 999 号武汉新能源研究院",
+        employeeCount: 600,
+      },
+      {
+        city: C.guangzhou,
+        district: "黄埔区",
+        address: "开创大道 1500 号",
+        employeeCount: 500,
+      },
+    ],
     careerWebsite: "https://jobs.gecareers.com/global/en/search-results?location=China",
     linkedin: "ge",
     params: {
@@ -746,6 +1681,26 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen],
+    offices: [
+      {
+        city: C.beijing,
+        district: "海淀区",
+        address: "中关村东路 1 号院清华科技园科技大厦 6 号楼",
+        employeeCount: 1000,
+      },
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "世纪大道 100 号上海环球金融中心",
+        employeeCount: 800,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "深南大道 9668 号华润置地大厦 B 座",
+        employeeCount: 200,
+      },
+    ],
     careerWebsite: "https://www.google.com/about/careers/applications/jobs/results/?location=China",
     linkedin: "google",
     discussion: 5,
@@ -766,6 +1721,14 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "启阳路 4 号中轻大厦",
+        employeeCount: 300,
+      },
+    ],
     careerWebsite: "https://grab.careers/jobs/?location=China",
     linkedin: "grab",
     params: {
@@ -785,6 +1748,44 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.beijing, C.guangzhou, C.tianjin],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "张江高科技园区李时珍路 227 号",
+        employeeCount: 3000,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "酒仙桥路 10 号恒通商务园 B21 座",
+        employeeCount: 1200,
+      },
+      {
+        city: C.tianjin,
+        district: "滨海新区",
+        address: "天津经济技术开发区南海路 168 号",
+        employeeCount: 1000,
+      },
+      {
+        city: C.suzhou,
+        district: "工业园区",
+        address: "星海街 188 号",
+        employeeCount: 800,
+      },
+      {
+        city: C.chongqing,
+        district: "渝北区",
+        address: "黄山大道中段 6 号",
+        employeeCount: 500,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "珠江东路 6 号广州周大福金融中心（东塔）",
+        employeeCount: 300,
+      },
+    ],
     careerWebsite: "https://careers.honeywell.com/us/en/search-results?location=China",
     linkedin: "honeywell",
     params: {
@@ -804,6 +1805,44 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "望京广顺南大街 8 号院利星行中心",
+        employeeCount: 3000,
+      },
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "科苑路 88 号德国中心",
+        employeeCount: 1500,
+      },
+      {
+        city: C.chongqing,
+        district: "沙坪坝区",
+        address: "微电园西永大道 25 号",
+        employeeCount: 1200,
+      },
+      {
+        city: C.dalian,
+        district: "甘井子区",
+        address: "软件园路 1 号软件园 16 号楼",
+        employeeCount: 1000,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "珠江东路 6 号广州周大福金融中心（东塔）",
+        employeeCount: 500,
+      },
+      {
+        city: C.chengdu,
+        district: "高新区",
+        address: "天府大道中段 1388 号美年广场",
+        employeeCount: 400,
+      },
+    ],
     careerWebsite: "https://jobs.hp.com/search-jobs/China",
     linkedin: "hp",
     params: {
@@ -823,6 +1862,44 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.guangzhou, C.xian],
+    offices: [
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "天河路 381 号",
+        employeeCount: 7000,
+      },
+      {
+        city: C.foshan,
+        district: "南海区",
+        address: "灯湖东路 8 号广东省金融高新区汇丰大厦",
+        employeeCount: 4000,
+      },
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "世纪大道 8 号上海国金中心汇丰银行大楼",
+        employeeCount: 3000,
+      },
+      {
+        city: C.xian,
+        district: "雁塔区",
+        address: "锦业路 1 号都市之门 B 座",
+        employeeCount: 1500,
+      },
+      {
+        city: C.beijing,
+        district: "西城区",
+        address: "金融大街 8 号华实大厦",
+        employeeCount: 1000,
+      },
+      {
+        city: C.shenzhen,
+        district: "福田区",
+        address: "益田路 4088 号香格里拉大酒店写字楼",
+        employeeCount: 800,
+      },
+    ],
     careerWebsite: "https://www.hsbc.com",
     linkedin: "hsbc",
     params: {
@@ -842,6 +1919,14 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "建国门外大街 1 号国贸写字楼 2 座",
+        employeeCount: 400,
+      },
+    ],
     careerWebsite: "https://www.hulu.com",
     linkedin: "hulu",
     params: {
@@ -861,6 +1946,14 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "静安区",
+        address: "南京西路 1601 号越洋广场",
+        employeeCount: 100,
+      },
+    ],
     careerWebsite: "https://www.iherb.com",
     linkedin: "iherb",
     params: {
@@ -880,6 +1973,14 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "长宁区",
+        address: "长宁路 1189 号来福士广场 T1 办公楼",
+        employeeCount: 100,
+      },
+    ],
     careerWebsite: "https://www.jetbrains.com/careers/jobs/?location=china",
     linkedin: "jetbrains",
     discussion: 6,
@@ -900,6 +2001,14 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "静安区",
+        address: "南京西路 1717 号会德丰国际广场",
+        employeeCount: 50,
+      },
+    ],
     careerWebsite: "https://www.kong.com",
     linkedin: "kong",
     params: {
@@ -919,6 +2028,14 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "祖冲之路 2277 号世和商务中心",
+        employeeCount: 150,
+      },
+    ],
     careerWebsite: "https://www.leetcode.com",
     linkedin: "leetcode",
     params: {
@@ -938,6 +2055,32 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "徐汇区",
+        address: "淮海中路 999 号环贸广场二期",
+        employeeCount: 1200,
+      },
+      {
+        city: C.jiaxing,
+        district: "秀洲区",
+        address: "桐乡大道 2283 号乐高玩具（嘉兴）有限公司",
+        employeeCount: 1500,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "建国门外大街 1 号国贸写字楼 2 座",
+        employeeCount: 200,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "深南大道 9668 号华润置地大厦 B 座",
+        employeeCount: 100,
+      },
+    ],
     careerWebsite: "https://www.legogroup.com",
     linkedin: "lego-group",
     params: {
@@ -957,6 +2100,20 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "东三环中路 1 号环球金融中心西塔",
+        employeeCount: 300,
+      },
+      {
+        city: C.shanghai,
+        district: "静安区",
+        address: "南京西路 1601 号越洋广场",
+        employeeCount: 100,
+      },
+    ],
     careerWebsite: "https://www.linkedin.com",
     linkedin: "linkedin",
     params: {
@@ -976,6 +2133,26 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "科苑路 88 号德国中心",
+        employeeCount: 400,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "望京广顺南大街 8 号院利星行中心",
+        employeeCount: 300,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "珠江东路 6 号广州周大福金融中心（东塔）",
+        employeeCount: 100,
+      },
+    ],
     careerWebsite: "https://www.microfocus.com",
     linkedin: "micro-focus",
     params: {
@@ -995,6 +2172,14 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.hangzhou],
+    offices: [
+      {
+        city: C.hangzhou,
+        district: "滨江区",
+        address: "网商路 599 号网易大厦二期",
+        employeeCount: 400,
+      },
+    ],
     careerWebsite: "https://www.microstrategy.com",
     linkedin: "microstrategy",
     params: {
@@ -1010,10 +2195,36 @@ export const CN_COMPANIES: Company[] = [
     id: "ni-cn",
     name: {
       en: "National Instruments",
-      zh: "NI",
+      zh: "NI/国家仪器(美)",
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "张江高科技园区张衡路 180 号",
+        employeeCount: 500,
+      },
+      {
+        city: C.beijing,
+        district: "海淀区",
+        address: "知春路 27 号航天科技大厦",
+        employeeCount: 100,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "体育西路 109 号高威大厦",
+        employeeCount: 50,
+      },
+      {
+        city: C.chengdu,
+        district: "高新区",
+        address: "天府大道中段 530 号东方希望天府生机广场",
+        employeeCount: 50,
+      },
+    ],
     careerWebsite: "https://www.nationalinstruments.com",
     linkedin: "national-instruments",
     params: {
@@ -1033,6 +2244,26 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "杨浦区",
+        address: "江湾城路 99 号耐克大中华区总部（李娜楼）",
+        employeeCount: 4000,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "建国门外大街 1 号国贸写字楼 2 座",
+        employeeCount: 500,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "珠江东路 6 号广州周大福金融中心（东塔）",
+        employeeCount: 300,
+      },
+    ],
     careerWebsite: "https://www.nike.com",
     linkedin: "nike",
     params: {
@@ -1052,6 +2283,38 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.nanjing, C.hangzhou],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "酒仙桥东路 1 号 M8 楼",
+        employeeCount: 3000,
+      },
+      {
+        city: C.hangzhou,
+        district: "滨江区",
+        address: "江陵路 88 号",
+        employeeCount: 3000,
+      },
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "金科路 2555 号",
+        employeeCount: 2500,
+      },
+      {
+        city: C.chengdu,
+        district: "高新区",
+        address: "天府大道中段 1388 号美年广场",
+        employeeCount: 1000,
+      },
+      {
+        city: C.nanjing,
+        district: "雨花台区",
+        address: "安德门大街 57 号",
+        employeeCount: 800,
+      },
+    ],
     careerWebsite: "https://www.nokia.com",
     linkedin: "nokia",
     params: {
@@ -1071,6 +2334,26 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.chengdu, C.hangzhou, C.hongkong],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "申江路 5005 号张江集团创新中心 2 号楼",
+        employeeCount: 2000,
+      },
+      {
+        city: C.beijing,
+        district: "海淀区",
+        address: "清华东路 16 号艺海大厦",
+        employeeCount: 800,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "科苑南路 2666 号中国华润大厦",
+        employeeCount: 300,
+      },
+    ],
     careerWebsite: "https://www.nvidia.com",
     linkedin: "nvidia",
     params: {
@@ -1090,6 +2373,14 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "世纪大道 8 号上海国金中心二期",
+        employeeCount: 150,
+      },
+    ],
     careerWebsite: "https://www.optiver.com",
     linkedin: "optiver",
     params: {
@@ -1109,6 +2400,26 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "世纪大道 8 号上海国金中心二期",
+        employeeCount: 1000,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "东三环中路 1 号环球金融中心西塔",
+        employeeCount: 100,
+      },
+      {
+        city: C.shenzhen,
+        district: "福田区",
+        address: "益田路 5033 号平安金融中心",
+        employeeCount: 100,
+      },
+    ],
     careerWebsite: "https://www.paypal.com",
     linkedin: "paypal",
     params: {
@@ -1128,6 +2439,20 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai],
+    offices: [
+      {
+        city: C.beijing,
+        district: "海淀区",
+        address: "中关村东路 1 号院清华科技园科技大厦 B 座",
+        employeeCount: 300,
+      },
+      {
+        city: C.shanghai,
+        district: "黄浦区",
+        address: "西藏中路 268 号来福士广场",
+        employeeCount: 150,
+      },
+    ],
     careerWebsite: "https://www.pivotal.com",
     linkedin: "pivotal",
     params: {
@@ -1147,6 +2472,26 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.dalian],
+    offices: [
+      {
+        city: C.dalian,
+        district: "高新区",
+        address: "软件园路 18 号大连软件园 17 号楼",
+        employeeCount: 500,
+      },
+      {
+        city: C.shanghai,
+        district: "长宁区",
+        address: "长宁路 1193 号来福士广场 T3 办公楼",
+        employeeCount: 200,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "东三环北路 38 号院泰康金融大厦",
+        employeeCount: 100,
+      },
+    ],
     careerWebsite: "https://www.rakuten.com",
     linkedin: "rakuten",
     params: {
@@ -1166,6 +2511,26 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.xian],
+    offices: [
+      {
+        city: C.beijing,
+        district: "海淀区",
+        address: "知春路 6 号锦秋国际大厦 A 座",
+        employeeCount: 400,
+      },
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "世纪大道 1198 号世纪汇广场 1 座",
+        employeeCount: 200,
+      },
+      {
+        city: C.shenzhen,
+        district: "福田区",
+        address: "益田路 5033 号平安金融中心",
+        employeeCount: 50,
+      },
+    ],
     careerWebsite: "https://www.redhat.com",
     linkedin: "red-hat",
     params: {
@@ -1185,6 +2550,26 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.xiamen, C.hangzhou, C.hongkong],
+    offices: [
+      {
+        city: C.xiamen,
+        district: "思明区",
+        address: "软件园二期望海路 63 号号楼",
+        employeeCount: 800,
+      },
+      {
+        city: C.hangzhou,
+        district: "滨江区",
+        address: "江陵路 2028 号星耀城二期 3 幢",
+        employeeCount: 300,
+      },
+      {
+        city: C.hongkong,
+        district: "中西区",
+        address: "皇后大道中 99 号中环中心",
+        employeeCount: 50,
+      },
+    ],
     careerWebsite: "https://www.ringcentral.com",
     linkedin: "ringcentral",
     params: {
@@ -1204,6 +2589,20 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "东三环中路 1 号环球金融中心",
+        employeeCount: 150,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "科苑南路 2666 号中国华润大厦",
+        employeeCount: 100,
+      },
+    ],
     careerWebsite: "https://www.rippling.com",
     linkedin: "rippling",
     params: {
@@ -1223,6 +2622,26 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "闵行区",
+        address: "紫星路 888 号西部数据（SanDisk）上海研发中心",
+        employeeCount: 2000,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "深南大道 9968 号汉京金融中心",
+        employeeCount: 300,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "建国路 79 号华贸中心 2 号写字楼",
+        employeeCount: 100,
+      },
+    ],
     careerWebsite: "https://www.sandisk.com",
     linkedin: "sandisk",
     params: {
@@ -1242,6 +2661,38 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.beijing],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "晨晖路 1001 号 SAP 软件系统（中国）有限公司上海分公司",
+        employeeCount: 3500,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "望京启阳路 4 号中航资本大厦",
+        employeeCount: 1500,
+      },
+      {
+        city: C.chengdu,
+        district: "高新区",
+        address: "天府大道中段 1388 号美年广场 D 座",
+        employeeCount: 800,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "海德三道 126 号深圳湾一号 T7 座",
+        employeeCount: 300,
+      },
+      {
+        city: C.dalian,
+        district: "高新区",
+        address: "软件园路 18 号大连软件园 15 号楼",
+        employeeCount: 300,
+      },
+    ],
     careerWebsite: "https://www.sap.com",
     linkedin: "sap",
     params: {
@@ -1261,6 +2712,20 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "工体北路 4 号院 22 号楼 东方东 zone", // 北京研发中心/办公室
+        employeeCount: 150,
+      },
+      {
+        city: C.shanghai,
+        district: "静安区",
+        address: "南京西路 1266 号恒隆广场一期", // 上海办公室
+        employeeCount: 100,
+      },
+    ],
     careerWebsite: "https://www.smartnews.com",
     linkedin: "smartnews",
     params: {
@@ -1280,6 +2745,20 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shenzhen],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "建国路 79 号华贸中心 2 号写字楼",
+        employeeCount: 300,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "科苑南路 2666 号中国华润大厦（春笋）",
+        employeeCount: 200,
+      },
+    ],
     careerWebsite: "https://www.snap.com",
     linkedin: "snap",
     params: {
@@ -1299,6 +2778,32 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.shenzhen],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "徐汇区",
+        address: "桂箐路 65 号新研大厦 B 座", // 星巴克中国总部 / 顾客关怀中心
+        employeeCount: 60000,
+      },
+      {
+        city: C.shenzhen,
+        district: "福田区",
+        address: "滨河大道 9289 号河套科创中心", // 星巴克中国创新科技中心 (SITC)
+        employeeCount: 1000,
+      },
+      {
+        city: C.suzhou,
+        district: "昆山市",
+        address: "综合保税区星巴克咖啡创新产业园", // 星巴克中国咖啡创新产业园 (绿色烘焙工厂)
+        employeeCount: 800,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "西大望路 1 号温特莱中心 B 座", // 华北区运营管理办公室/北方总部
+        employeeCount: 1500,
+      },
+    ],
     careerWebsite:
       "https://starbucks.zhiye.com/social/jobs?1=%5B%7B%22id%22%3A%223%22%2C%22label%22%3A%22%E8%81%8C%E8%83%BD%E6%94%AF%E6%8C%81%22%7D%5D",
     linkedin: "starbucks",
@@ -1319,6 +2824,32 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.hangzhou],
+    offices: [
+      {
+        city: C.hangzhou,
+        district: "西湖区",
+        address: "西斗门路 3 号天堂软件园 C 座", // 杭州科技与运营中心（西湖园区）
+        employeeCount: 2500,
+      },
+      {
+        city: C.hangzhou,
+        district: "滨江区",
+        address: "聚才路 239 号 5 号楼", // 杭州滨江研发/运营基地
+        employeeCount: 1500,
+      },
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "世纪大道 8 号上海国金中心二期 36 楼", // 上海分行 / 业务据点
+        employeeCount: 150,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "建国门外大道 1 号中国国际贸易中心国贸写字楼 2 座", // 北京代表处/管理团队
+        employeeCount: 50,
+      },
+    ],
     careerWebsite: "https://www.statestreet.com",
     linkedin: "state-street",
     params: {
@@ -1338,6 +2869,32 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.xian],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "东三环北路 38 号院 1 号楼泰康金融大厦", // 北京 Headquarters / 中国区总部
+        employeeCount: 150,
+      },
+      {
+        city: C.shanghai,
+        district: "静安区",
+        address: "南京西路 1601 号越洋国际广场", // 上海办公室
+        employeeCount: 80,
+      },
+      {
+        city: C.shenzhen,
+        district: "福田区",
+        address: "深南大道 7888 号东海国际中心 B 座", // 华南区/深圳办公室
+        employeeCount: 40,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "珠江东路 6 号广州周大福金融中心（K11）", // 广州办事处
+        employeeCount: 30,
+      },
+    ],
     careerWebsite: "https://www.suse.com",
     linkedin: "suse",
     params: {
@@ -1357,6 +2914,20 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai, C.shenzhen],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "静安区",
+        address: "南京西路 1601 号越洋国际广场", // 中国区总部
+        employeeCount: 120,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "建国门外大道 1 号中国国际贸易中心国贸写字楼 2 座", // 北京办公室
+        employeeCount: 60,
+      },
+    ],
     careerWebsite: "https://www.thetradedesk.com",
     linkedin: "the-trade-desk",
     params: {
@@ -1376,6 +2947,44 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.xian, C.beijing, C.shenzhen, C.chengdu, C.wuhan, C.shanghai, C.hongkong],
+    offices: [
+      {
+        city: C.xian,
+        district: "雁塔区",
+        address: "天府大道 / 锦业一路 11 号西安软件园 H 座", // 西安研发与交付中心
+        employeeCount: 1500,
+      },
+      {
+        city: C.beijing,
+        district: "东城区",
+        address: "东直门外大街 48 号东方银座 B 座", // 北京办公室
+        employeeCount: 600,
+      },
+      {
+        city: C.shanghai,
+        district: "长宁区",
+        address: "延安西路 2299 号世贸商城 11 楼", // 上海办公室
+        employeeCount: 500,
+      },
+      {
+        city: C.chengdu,
+        district: "高新区",
+        address: "天府大道中段 1388 号美年广场 A 座", // 成都办公室
+        employeeCount: 400,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "深南大道 9668 号华润置地大厦 B 座", // 深圳办公室
+        employeeCount: 300,
+      },
+      {
+        city: C.wuhan,
+        district: "洪山区",
+        address: "关山大道 1 号光谷软件园 E3 栋", // 武汉办公室
+        employeeCount: 300,
+      },
+    ],
     careerWebsite: "https://www.thoughtworks.com",
     linkedin: "thoughtworks",
     params: {
@@ -1395,6 +3004,32 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.nanjing],
+    offices: [
+      {
+        city: C.nanjing,
+        district: "雨花台区",
+        address: "软件大道 48 号苏美达大厦 / 趋势科技中国研发中心", // 南京中国研发中心
+        employeeCount: 600,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "东三环北路 38 号院 1 号楼泰康金融大厦", // 北京办公室 / 商业运营
+        employeeCount: 150,
+      },
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "张江高科技园区科苑路 88 号德国中心", // 上海办公室
+        employeeCount: 100,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "林和西路 9 号耀中广场", // 广州办公室
+        employeeCount: 50,
+      },
+    ],
     careerWebsite: "https://www.trendmicro.com",
     linkedin: "trend-micro",
     params: {
@@ -1414,6 +3049,14 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "工体北路 4 号院 22 号楼 东方东 zone", // Tubi 北京研发中心
+        employeeCount: 120,
+      },
+    ],
     careerWebsite: "https://www.tubi.com",
     linkedin: "tubi",
     params: {
@@ -1433,6 +3076,20 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai],
+    offices: [
+      {
+        city: C.beijing,
+        district: "海淀区",
+        address: "东北旺西路 8 号中关村软件园二期 12 号楼", // 北京研发中心/ HQ
+        employeeCount: 400,
+      },
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "环湖西二路 888 号 C 座", // 上海临港自动驾驶研发与测试基地
+        employeeCount: 300,
+      },
+    ],
     careerWebsite: "https://www.tusimple.com",
     linkedin: "tusimple",
     params: {
@@ -1452,6 +3109,20 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "世纪大道 8 号上海国金中心二期 38 楼", // 双禧投资 / 上海总部
+        employeeCount: 60,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "建国门外大道 1 号中国国际贸易中心国贸写字楼 2 座", // 北京代表处
+        employeeCount: 20,
+      },
+    ],
     careerWebsite: "https://www.twosigma.com",
     linkedin: "two-sigma",
     params: {
@@ -1471,6 +3142,26 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "碧波路 690 号张江微电子港 1 号楼", // 育碧上海工作室 (Ubisoft Shanghai)
+        employeeCount: 1000,
+      },
+      {
+        city: C.chengdu,
+        district: "高新区",
+        address: "天府大道中段 1388 号美年广场 C 座", // 育碧成都工作室 (Ubisoft Chengdu)
+        employeeCount: 400,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "东三环中路 1 号环球金融中心西塔", // 北京发行与市场中心
+        employeeCount: 80,
+      },
+    ],
     careerWebsite: "https://www.ubisoft.com",
     linkedin: "ubisoft",
     params: {
@@ -1490,6 +3181,32 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "虹口区",
+        address: "东大名路 501 号白玉兰广场 30 楼", // 上海 HQ / 团结引擎研发中心
+        employeeCount: 500,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "工体北路 4 号院 22 号楼 东方东 zone", // 北京办公室
+        employeeCount: 150,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "珠江东路 6 号广州周大福金融中心（K11）", // 广州办公室 / 游戏技术支持
+        employeeCount: 80,
+      },
+      {
+        city: C.chengdu,
+        district: "高新区",
+        address: "天府大道中段 1388 号美年广场 B 座", // 成都办公室 / 工业与技术服务
+        employeeCount: 70,
+      },
+    ],
     careerWebsite: "https://www.unity.com",
     linkedin: "unity",
     params: {
@@ -1509,6 +3226,26 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.guangzhou,
+        district: "海珠区",
+        address: "鼎新路 128 号唯品会总部大厦", // 广州总部（琶洲 HQ）
+        employeeCount: 6000,
+      },
+      {
+        city: C.shanghai,
+        district: "长宁区",
+        address: "长宁路 1193 号来福士广场 T1 座", // 上海运营与研发中心
+        employeeCount: 1500,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "建国门外大道 1 号中国国际贸易中心国贸写字楼 1 座", // 北京办公室
+        employeeCount: 500,
+      },
+    ],
     careerWebsite: "https://www.vipshop.com",
     linkedin: "vipshop",
     params: {
@@ -1528,6 +3265,38 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai],
+    offices: [
+      {
+        city: C.beijing,
+        district: "海淀区",
+        address: "融科资讯中心 C 座 10 楼", // 北京 Headquarters / 研发中心
+        employeeCount: 1200,
+      },
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "张江高科技园区科苑路 88 号德国中心", // 上海研发中心 / 商业中心
+        employeeCount: 800,
+      },
+      {
+        city: C.chengdu,
+        district: "高新区",
+        address: "天府大道中段 1388 号美年广场 A 座", // 成都研发/服务支持中心
+        employeeCount: 300,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "深南大道 9668 号华润置地大厦 B 座", // 深圳办公室
+        employeeCount: 150,
+      },
+      {
+        city: C.guangzhou,
+        district: "天河区",
+        address: "珠江东路 6 号广州周大福金融中心（K11）", // 广州办公室
+        employeeCount: 100,
+      },
+    ],
     careerWebsite: "https://www.vmware.com",
     linkedin: "vmware",
     params: {
@@ -1547,6 +3316,32 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "静安区",
+        address: "威海路 696 号 WeWork 威海路旗舰店（中国区总部）", // 上海 Headquarters
+        employeeCount: 300,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "光华路 9 号光华路 SOHO II 3 楼", // 北京运营总部
+        employeeCount: 150,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "海德三道 126 号深圳湾一号 T7 座", // 华南区运营中心
+        employeeCount: 80,
+      },
+      {
+        city: C.chengdu,
+        district: "锦江区",
+        address: "睿东中心 A 座 28 楼", // 西南区运营中心
+        employeeCount: 50,
+      },
+    ],
     careerWebsite: "https://www.wework.com",
     linkedin: "wework",
     params: {
@@ -1566,6 +3361,20 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "徐汇区",
+        address: "宜山路 810 号库克大厦", // 中国区研发与运营中心
+        employeeCount: 400,
+      },
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "科苑南路 2666 号中国华润大厦（春笋）", // 华南商家支持与运营中心
+        employeeCount: 300,
+      },
+    ],
     careerWebsite: "https://www.wish.com",
     linkedin: "wish",
     params: {
@@ -1585,6 +3394,14 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shanghai],
+    offices: [
+      {
+        city: C.shanghai,
+        district: "普陀区",
+        address: "凯旋北路 1188 号月星环球港 B 座 20 楼 B-C 单元", // 中国研发中心 / 上海总部
+        employeeCount: 400,
+      },
+    ],
     careerWebsite: "https://www.worksapplications.com",
     linkedin: "works-applications",
     params: {
@@ -1604,6 +3421,20 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.shenzhen],
+    offices: [
+      {
+        city: C.shenzhen,
+        district: "南山区",
+        address: "科苑南路 3099 号中国科技开发院 3 号楼", // 中国总部及核心研发中心
+        employeeCount: 150,
+      },
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "建国路 88 号 SOHO 现代城", // 北京分公司 / 市场运营中心
+        employeeCount: 50,
+      },
+    ],
     careerWebsite: "https://www.xmind.com",
     linkedin: "xmind",
     params: {
@@ -1623,6 +3454,20 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing],
+    offices: [
+      {
+        city: C.beijing,
+        district: "海淀区",
+        address: "学院路 35 号世宁大厦", // 知乎北京总部
+        employeeCount: 2000,
+      },
+      {
+        city: C.shanghai,
+        district: "徐汇区",
+        address: "田林路 397 号捷强园区", // 上海研发与商业化中心
+        employeeCount: 500,
+      },
+    ],
     careerWebsite: "https://www.zhihu.com",
     linkedin: "zhihu",
     params: {
@@ -1642,6 +3487,32 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.hefei, C.hangzhou, C.suzhou],
+    offices: [
+      {
+        city: C.hangzhou,
+        district: "余杭区",
+        address: "文一西路 969 号阿里巴巴西溪园区附近 / 核心研发中心", // 杭州研发中心
+        employeeCount: 700,
+      },
+      {
+        city: C.suzhou,
+        district: "苏州工业园区",
+        address: "星湖街 328 号创意产业园", // 苏州研发中心
+        employeeCount: 400,
+      },
+      {
+        city: C.hefei,
+        district: "高新区",
+        address: "望江西路 800 号创新产业园", // 合肥研发中心
+        employeeCount: 300,
+      },
+      {
+        city: C.shanghai,
+        district: "徐汇区",
+        address: "斜土路 2899A 号光启文化广场 A 座", // 上海分公司 / 运营支持
+        employeeCount: 150,
+      },
+    ],
     careerWebsite: "https://www.zoom.com",
     linkedin: "zoom",
     params: {
@@ -1661,6 +3532,32 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.guangzhou],
+    offices: [
+      {
+        city: C.beijing,
+        district: "西城区",
+        address: "金融大街 17 号中国人寿中心 / 集团总部", // 中国人寿保险（集团）公司 HQ
+        employeeCount: 2500,
+      },
+      {
+        city: C.beijing,
+        district: "西城区",
+        address: "金融大街 16 号中国人寿广场 A 座", // 中国人寿保险股份有限公司总部
+        employeeCount: 3000,
+      },
+      {
+        city: C.shanghai,
+        district: "浦东新区",
+        address: "世纪大道 100 号上海环球金融中心 / 华东业务与投资中心", // 上海分支机构
+        employeeCount: 800,
+      },
+      {
+        city: C.shenzhen,
+        district: "福田区",
+        address: "益田路 6003 号荣超商务中心 A 座", // 深圳分公司 / 南方业务中心
+        employeeCount: 600,
+      },
+    ],
     careerWebsite: "https://www.chinalife.com",
     linkedin: "china-life",
     params: {
@@ -1680,6 +3577,38 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.beijing, C.shanghai, C.shenzhen, C.xian],
+    offices: [
+      {
+        city: C.beijing,
+        district: "朝阳区",
+        address: "朝阳门外大街 18 号中国人寿大厦 / 三星（中国）投资有限公司", // 中国总部 (Samsung China HQ)
+        employeeCount: 1500,
+      },
+      {
+        city: C.shanghai,
+        district: "长宁区",
+        address: "娄山关路 523 号金虹桥国际中心 / 华东销售与半导体技术中心", // 上海分公司与技术中心
+        employeeCount: 1200,
+      },
+      {
+        city: C.xian,
+        district: "高新区",
+        address: "西安高新区综合保税区产业配套区 / 三星半导体存储芯片工厂", // 西安半导体制造基地
+        employeeCount: 3500,
+      },
+      {
+        city: C.tianjin,
+        district: "西青区",
+        address: "微电子工业区微三路 1 号 / 天津三星通信与元器件基地", // 天津制造与研发基地
+        employeeCount: 5000,
+      },
+      {
+        city: C.suzhou,
+        district: "苏州工业园区",
+        address: "苏虹东路 501 号 / 苏州三星电子家电制造基地", // 苏州家电与制造基地
+        employeeCount: 6000,
+      },
+    ],
     careerWebsite: "https://www.samsungelectronics.com",
     linkedin: "samsung-electronics",
     params: {
@@ -1699,6 +3628,38 @@ export const CN_COMPANIES: Company[] = [
     },
     region: "CN",
     cities: [C.guangzhou, C.wuhan],
+    offices: [
+      {
+        city: C.guangzhou,
+        district: "花都区",
+        address: "风神大道 8 号东风日产乘用车公司总部", // 广州花都总部与一工厂
+        employeeCount: 15000,
+      },
+      {
+        city: C.wuhan,
+        district: "武汉经济技术开发区",
+        address: "东风大道特 1 号东风日产武汉工厂", // 武汉工厂
+        employeeCount: 5000,
+      },
+      {
+        city: C.zhengzhou,
+        district: "经开区",
+        address: "航海东路与经开第四大街交汇处东风日产郑州工厂", // 郑州工厂
+        employeeCount: 6000,
+      },
+      {
+        city: C.dalian,
+        district: "保税区",
+        address: "海湾工业区东风日产大连工厂", // 大连工厂
+        employeeCount: 3000,
+      },
+      {
+        city: C.shanghai,
+        district: "徐汇区",
+        address: "云锦路 701 号西岸智慧谷 / 智能网联与前瞻设计中心", // 上海研发/设计前沿窗口
+        employeeCount: 300,
+      },
+    ],
     careerWebsite: "https://www.dongfengnissan.com",
     linkedin: "dongfeng-nissan",
     params: {
