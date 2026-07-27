@@ -1,5 +1,5 @@
-import type Company from "../types/Company";
-import type Region from "../types/Region";
+import type Company from "../../types/Company";
+import type Region from "../../types/Region";
 
 import { US_COMPANIES } from "./us";
 import { SE_COMPANIES } from "./se";
@@ -8,7 +8,7 @@ import { DE_COMPANIES } from "./de";
 import { CA_COMPANIES } from "./ca";
 import { CN_COMPANIES } from "./cn";
 import { REMOTE_COMPANIES } from "./remote";
-import calc, { getScoreLevel } from "../calc";
+import calc, { getScoreLevel } from "../../calc";
 
 export type { Region };
 export { localizedLabel, cityKey, companyHasCity } from "./locale";

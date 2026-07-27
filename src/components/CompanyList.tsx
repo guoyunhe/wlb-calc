@@ -2,7 +2,7 @@ import { SimpleGrid, Text, Space, Container, Select, Box } from "@mantine/core";
 import { useTranslation } from "react-i18next";
 import { useState, useMemo, useEffect } from "react";
 import { BuildingIcon } from "@phosphor-icons/react";
-import { COMPANIES, REGIONS, companyHasCity, localizedLabel, cityKey } from "../companies";
+import { COMPANIES, REGIONS, companyHasCity, localizedLabel, cityKey } from "../data/companies";
 import calc from "../calc";
 import CompanyCard from "./CompanyCard";
 

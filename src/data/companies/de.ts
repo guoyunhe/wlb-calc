@@ -1,4 +1,4 @@
-import type Company from "../types/Company";
+import type Company from "../../types/Company";
 
 export const DE_COMPANIES: Company[] = [
   {

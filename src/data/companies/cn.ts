@@ -1,5 +1,5 @@
-import type Company from "../types/Company";
-import type LocalizedName from "../types/LocalizedName";
+import type Company from "../../types/Company";
+import type LocalizedName from "../../types/LocalizedName";
 
 const CN_CITIES = {
   beijing: { en: "Beijing", zh: "北京" },

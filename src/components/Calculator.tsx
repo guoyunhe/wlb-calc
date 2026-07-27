@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import calc from "../calc";
 import { IDEAL_VALUES, CALC_CONFIG, PRESETS } from "../config";
 import type { CalcParams } from "../config";
-import { COMPANIES } from "../companies";
+import { COMPANIES } from "../data/companies";
 import Header from "./Header";
 import ParamSlider from "./ParamSlider";
 import ScoreCard from "./ScoreCard";
