@@ -1,5 +1,6 @@
 import type LocalizedName from "./LocalizedName";
 import type CalcParams from "./CalcParams";
+import type { ScoreLevel } from "../config";
 
 export default interface Company {
   id: string;
@@ -11,5 +12,5 @@ export default interface Company {
   linkedin: string;
   discussion?: number;
   score?: number;
-  level?: string;
+  level?: ScoreLevel;
 }

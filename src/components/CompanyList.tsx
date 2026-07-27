@@ -19,14 +19,15 @@ export default function CompanyList() {
     }
   }, [i18n.language]);
 
-  const filteredCompanies = useMemo(() => {
-    return COMPANIES.filter((company) => {
-      const scorePass = calc(company.params) > 80;
-      const regionPass = !selectedRegion || company.region === selectedRegion;
-      const cityPass = !selectedCity || companyHasCity(company, selectedCity);
-      return scorePass && regionPass && cityPass;
-    }).sort((a, b) => calc(b.params) - calc(a.params));
-  }, [selectedRegion, selectedCity]);
+  const filteredCompanies = useMemo(
+    () =>
+      COMPANIES.filter((company) => {
+        const regionPass = !selectedRegion || company.region === selectedRegion;
+        const cityPass = !selectedCity || companyHasCity(company, selectedCity);
+        return regionPass && cityPass;
+      }),
+    [selectedRegion, selectedCity],
+  );
 
   const citiesForRegion = useMemo(() => {
     if (!selectedRegion) {

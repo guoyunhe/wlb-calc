@@ -1,6 +1,6 @@
 import type Company from "../types/Company";
+import type Region from "../types/Region";
 
-import type { Region } from "./types";
 import { US_COMPANIES } from "./us";
 import { SE_COMPANIES } from "./se";
 import { AU_COMPANIES } from "./au";
@@ -8,6 +8,7 @@ import { DE_COMPANIES } from "./de";
 import { CA_COMPANIES } from "./ca";
 import { CN_COMPANIES } from "./cn";
 import { REMOTE_COMPANIES } from "./remote";
+import calc, { getScoreLevel } from "../calc";
 
 export type { Region };
 export { localizedLabel, cityKey, companyHasCity } from "./locale";
@@ -21,6 +22,13 @@ export const COMPANIES: Company[] = [
   ...CN_COMPANIES,
   ...REMOTE_COMPANIES,
 ];
+
+COMPANIES.forEach((company) => {
+  company.score = calc(company.params);
+  company.level = getScoreLevel(company.score);
+});
+
+COMPANIES.sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
 
 export const REGIONS: Region[] = COMPANIES.reduce((acc, company) => {
   let existingRegion = acc.find((r) => r.code === company.region);
