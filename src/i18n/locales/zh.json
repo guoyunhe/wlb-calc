@@ -1,25 +1,15 @@
 {
   "title": "WLB 计算器",
   "subtitle": "输入你的工作参数，实时计算工作与生活平衡得分",
-  "description": "计算你的工作生活平衡得分。输入工作时长、通勤时间等参数，评估工作质量。",
-  "params": "参数设置",
-  "dailyWorkingHours": {
-    "label": "每日工作时长（实际）"
-  },
-  "dailyCommuteHours": {
-    "label": "每日通勤时长"
-  },
-  "weeklyWorkingDays": {
-    "label": "每周工作天数（实际）"
-  },
-  "annualPaidLeaveDays": {
-    "label": "每年带薪休假"
-  },
-  "annualPaidSickLeaveDays": {
-    "label": "每年带薪病假"
-  },
-  "dailyOutsideWorkCommunicationHours": {
-    "label": "每日工作外沟通时长"
+  "params": {
+    "label": {
+      "dailyWorkingHours": "每日工作时长（实际）",
+      "dailyCommuteHours": "每日通勤时长",
+      "dailyOutsideWorkCommunicationHours": "每日工作外沟通时长",
+      "weeklyWorkingDays": "每周工作天数（实际）",
+      "annualPaidLeaveDays": "每年带薪休假",
+      "annualPaidSickLeaveDays": "每年带薪病假"
+    }
   },
   "unit": {
     "hour": "{{hour}} 小时",

@@ -14,7 +14,7 @@ export default function ParamSlider({ config, inputProps }: ParamSliderProps) {
     <Box key={config.key} mb="lg">
       <Group justify="space-between" mb="sm">
         <Text fw={500} size="sm">
-          {t(`${config.key}.label`)}
+          {t(`params.label.${config.key}`)}
         </Text>
         <Badge>{t(`unit.${config.unit}`, { [config.unit]: inputProps.value })}</Badge>
       </Group>

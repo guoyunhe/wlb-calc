@@ -1,25 +1,15 @@
 {
   "title": "WLB Calculator",
   "subtitle": "Enter your work parameters to calculate your work-life balance score in real-time",
-  "description": "Calculate your work-life balance score. Input daily working hours, commute time, and other parameters to assess your job quality.",
-  "params": "Parameter Settings",
-  "dailyWorkingHours": {
-    "label": "Daily Working Hours (Actual)"
-  },
-  "dailyCommuteHours": {
-    "label": "Daily Commute Hours"
-  },
-  "weeklyWorkingDays": {
-    "label": "Weekly Working Days (Actual)"
-  },
-  "annualPaidLeaveDays": {
-    "label": "Annual Paid Leave"
-  },
-  "annualPaidSickLeaveDays": {
-    "label": "Annual Paid Sick Leave"
-  },
-  "dailyOutsideWorkCommunicationHours": {
-    "label": "Daily Outside-Work Communication Hours"
+  "params": {
+    "label": {
+      "dailyWorkingHours": "Daily Working Hours (Actual)",
+      "dailyCommuteHours": "Daily Commute Hours",
+      "dailyOutsideWorkCommunicationHours": "Daily Outside-Work Communication Hours",
+      "weeklyWorkingDays": "Weekly Working Days (Actual)",
+      "annualPaidLeaveDays": "Annual Paid Leave",
+      "annualPaidSickLeaveDays": "Annual Paid Sick Leave"
+    }
   },
   "unit": {
     "hour": "{{hour}} H",
