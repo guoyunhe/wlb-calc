@@ -77,7 +77,7 @@ export const CALC_CONFIG: ParamConfig[] = [
   },
   {
     key: "annualPaidSickLeaveDays",
-    ideal: 10,
+    ideal: 15,
     penaltyWeight: 0.5,
     penaltyType: "deficit",
     unit: "day",

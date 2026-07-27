@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import React, { Suspense } from "react";
 import Calculator from "./components/Calculator";
 import Footer from "./components/Footer";
-import { Loader } from "@mantine/core";
+import { Center, Loader } from "@mantine/core";
 
 const CompanyList = React.lazy(() => import("./components/CompanyList"));
 
@@ -19,7 +19,7 @@ function App() {
         <meta property="og:description" content={t("description")} />
       </Helmet>
       <Calculator />
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={<Center h={300}><Loader /></Center>}>
         <CompanyList />
       </Suspense>
       <Footer />
