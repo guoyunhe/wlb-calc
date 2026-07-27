@@ -319,25 +319,6 @@ export const CN_COMPANIES: Company[] = [
     },
   },
   {
-    id: "arcsoft-cn",
-    name: {
-      en: "ArcSoft",
-      zh: "虹软",
-    },
-    region: "CN",
-    cities: [C.hangzhou, C.shanghai, C.nanjing],
-    careerWebsite: "https://www.arcsoft.com.cn/job/index.html",
-    linkedin: "arcsoft",
-    params: {
-      dailyWorkingHours: 8,
-      dailyCommuteHours: 1,
-      dailyOutsideWorkCommunicationHours: 0,
-      weeklyWorkingDays: 5,
-      annualPaidLeaveDays: 5,
-      annualPaidSickLeaveDays: 0,
-    },
-  },
-  {
     id: "arm-cn",
     name: {
       en: "ARM",
@@ -508,25 +489,6 @@ export const CN_COMPANIES: Company[] = [
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 15,
       annualPaidSickLeaveDays: 12,
-    },
-  },
-  {
-    id: "coolapk-cn",
-    name: {
-      en: "Coolapk",
-      zh: "Coolapk/酷安",
-    },
-    region: "CN",
-    cities: [C.beijing, C.shenzhen],
-    careerWebsite: "https://www.coolapk.com/about/job",
-    linkedin: "coolapk",
-    params: {
-      dailyWorkingHours: 8,
-      dailyCommuteHours: 1,
-      dailyOutsideWorkCommunicationHours: 0,
-      weeklyWorkingDays: 5,
-      annualPaidLeaveDays: 5,
-      annualPaidSickLeaveDays: 0,
     },
   },
   {
