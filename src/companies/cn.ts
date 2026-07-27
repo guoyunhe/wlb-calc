@@ -854,25 +854,6 @@ export const CN_COMPANIES: Company[] = [
     },
   },
   {
-    id: "ibm-cn",
-    name: {
-      en: "IBM",
-      zh: "IBM",
-    },
-    region: "CN",
-    cities: [C.beijing, C.shanghai],
-    careerWebsite: "https://www.ibm.com",
-    linkedin: "ibm",
-    params: {
-      dailyWorkingHours: 8,
-      dailyCommuteHours: 1,
-      dailyOutsideWorkCommunicationHours: 0,
-      weeklyWorkingDays: 5,
-      annualPaidLeaveDays: 20,
-      annualPaidSickLeaveDays: 15,
-    },
-  },
-  {
     id: "iherb-cn",
     name: {
       en: "iHerb",
