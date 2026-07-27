@@ -8,7 +8,7 @@ describe("calc", () => {
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
       annualPaidSickLeaveDays: 5,
-      dailyCommunicationOutsideWorkHours: 2,
+      dailyOutsideWorkCommunicationHours: 2,
     });
     expect(result).toBe(68);
   });
@@ -20,7 +20,7 @@ describe("calc", () => {
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
       annualPaidSickLeaveDays: 15,
-      dailyCommunicationOutsideWorkHours: 0,
+      dailyOutsideWorkCommunicationHours: 0,
     });
     expect(result).toBe(100);
   });
@@ -32,7 +32,7 @@ describe("calc", () => {
       weeklyWorkingDays: 6,
       annualPaidLeaveDays: 5,
       annualPaidSickLeaveDays: 3,
-      dailyCommunicationOutsideWorkHours: 5,
+      dailyOutsideWorkCommunicationHours: 5,
     });
     expect(result).toBeLessThan(50);
   });
@@ -44,7 +44,7 @@ describe("calc", () => {
       weeklyWorkingDays: 4,
       annualPaidLeaveDays: 30,
       annualPaidSickLeaveDays: 20,
-      dailyCommunicationOutsideWorkHours: 0,
+      dailyOutsideWorkCommunicationHours: 0,
     });
     expect(highScore).toBe(100);
 
@@ -54,7 +54,7 @@ describe("calc", () => {
       weeklyWorkingDays: 7,
       annualPaidLeaveDays: 0,
       annualPaidSickLeaveDays: 0,
-      dailyCommunicationOutsideWorkHours: 20,
+      dailyOutsideWorkCommunicationHours: 20,
     });
     expect(lowScore).toBe(0);
   });

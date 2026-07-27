@@ -23,7 +23,7 @@
     "label": "Annual Paid Sick Leave",
     "unit": "days"
   },
-  "dailyCommunicationOutsideWorkHours": {
+  "dailyOutsideWorkCommunicationHours": {
     "label": "After-Hours Communication",
     "unit": "hours/day"
   },

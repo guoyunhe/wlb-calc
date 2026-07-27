@@ -3,7 +3,7 @@ export const GITHUB_URL = "https://github.com/guoyunhe/wlb-calc";
 export interface CalcParams {
   dailyWorkingHours: number;
   dailyCommuteHours: number;
-  dailyCommunicationOutsideWorkHours: number;
+  dailyOutsideWorkCommunicationHours: number;
   weeklyWorkingDays: number;
   annualPaidLeaveDays: number;
   annualPaidSickLeaveDays: number;
@@ -46,7 +46,7 @@ export const CALC_CONFIG: ParamConfig[] = [
     step: 0.5,
   },
   {
-    key: "dailyCommunicationOutsideWorkHours",
+    key: "dailyOutsideWorkCommunicationHours",
     ideal: 0,
     penaltyWeight: 5,
     penaltyType: "direct",
@@ -195,7 +195,7 @@ export const PRESETS: Preset[] = [
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 1,
-      dailyCommunicationOutsideWorkHours: 0,
+      dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
       annualPaidSickLeaveDays: 0,
@@ -207,7 +207,7 @@ export const PRESETS: Preset[] = [
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 1,
-      dailyCommunicationOutsideWorkHours: 0,
+      dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 15,
       annualPaidSickLeaveDays: 0,
@@ -219,7 +219,7 @@ export const PRESETS: Preset[] = [
     params: {
       dailyWorkingHours: 11,
       dailyCommuteHours: 1,
-      dailyCommunicationOutsideWorkHours: 0.5,
+      dailyOutsideWorkCommunicationHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 7,
       annualPaidSickLeaveDays: 0,
@@ -231,7 +231,7 @@ export const PRESETS: Preset[] = [
     params: {
       dailyWorkingHours: 11,
       dailyCommuteHours: 1,
-      dailyCommunicationOutsideWorkHours: 1,
+      dailyOutsideWorkCommunicationHours: 1,
       weeklyWorkingDays: 5.5,
       annualPaidLeaveDays: 7,
       annualPaidSickLeaveDays: 0,
@@ -243,7 +243,7 @@ export const PRESETS: Preset[] = [
     params: {
       dailyWorkingHours: 11,
       dailyCommuteHours: 1,
-      dailyCommunicationOutsideWorkHours: 2,
+      dailyOutsideWorkCommunicationHours: 2,
       weeklyWorkingDays: 6,
       annualPaidLeaveDays: 7,
       annualPaidSickLeaveDays: 0,

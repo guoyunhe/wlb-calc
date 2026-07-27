@@ -14,7 +14,7 @@ export const DE_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 7.5,
       dailyCommuteHours: 0.5,
-      dailyCommunicationOutsideWorkHours: 0,
+      dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 30,
       annualPaidSickLeaveDays: 25,

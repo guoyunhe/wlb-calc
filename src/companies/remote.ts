@@ -14,7 +14,7 @@ export const REMOTE_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0,
-      dailyCommunicationOutsideWorkHours: 0.5,
+      dailyOutsideWorkCommunicationHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 25,
       annualPaidSickLeaveDays: 15,
@@ -33,7 +33,7 @@ export const REMOTE_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0,
-      dailyCommunicationOutsideWorkHours: 0.5,
+      dailyOutsideWorkCommunicationHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 25,
       annualPaidSickLeaveDays: 15,
@@ -52,7 +52,7 @@ export const REMOTE_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0,
-      dailyCommunicationOutsideWorkHours: 0,
+      dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 30,
       annualPaidSickLeaveDays: 15,
@@ -71,7 +71,7 @@ export const REMOTE_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0,
-      dailyCommunicationOutsideWorkHours: 0.5,
+      dailyOutsideWorkCommunicationHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 25,
       annualPaidSickLeaveDays: 15,
@@ -90,7 +90,7 @@ export const REMOTE_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0,
-      dailyCommunicationOutsideWorkHours: 0.5,
+      dailyOutsideWorkCommunicationHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 25,
       annualPaidSickLeaveDays: 15,
@@ -109,7 +109,7 @@ export const REMOTE_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 0,
-      dailyCommunicationOutsideWorkHours: 0.5,
+      dailyOutsideWorkCommunicationHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 25,
       annualPaidSickLeaveDays: 15,
@@ -128,7 +128,7 @@ export const REMOTE_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0,
-      dailyCommunicationOutsideWorkHours: 0,
+      dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 30,
       annualPaidSickLeaveDays: 15,
@@ -147,7 +147,7 @@ export const REMOTE_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0,
-      dailyCommunicationOutsideWorkHours: 0.5,
+      dailyOutsideWorkCommunicationHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 30,
       annualPaidSickLeaveDays: 15,
@@ -166,7 +166,7 @@ export const REMOTE_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0,
-      dailyCommunicationOutsideWorkHours: 0.5,
+      dailyOutsideWorkCommunicationHours: 0.5,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 30,
       annualPaidSickLeaveDays: 15,
@@ -185,7 +185,7 @@ export const REMOTE_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0,
-      dailyCommunicationOutsideWorkHours: 0,
+      dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 25,
       annualPaidSickLeaveDays: 15,
@@ -204,7 +204,7 @@ export const REMOTE_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0,
-      dailyCommunicationOutsideWorkHours: 0,
+      dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 4,
       annualPaidLeaveDays: 30,
       annualPaidSickLeaveDays: 15,

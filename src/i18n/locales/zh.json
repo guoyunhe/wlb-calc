@@ -23,7 +23,7 @@
     "label": "每年带薪病假",
     "unit": "天"
   },
-  "dailyCommunicationOutsideWorkHours": {
+  "dailyOutsideWorkCommunicationHours": {
     "label": "工作外沟通时长",
     "unit": "小时/天"
   },

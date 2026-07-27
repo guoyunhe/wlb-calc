@@ -14,7 +14,7 @@ export const CA_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 7,
       dailyCommuteHours: 0.5,
-      dailyCommunicationOutsideWorkHours: 0,
+      dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
       annualPaidSickLeaveDays: 15,
