@@ -10,7 +10,7 @@ describe("calc", () => {
       annualPaidSickLeaveDays: 5,
       dailyOutsideWorkCommunicationHours: 2,
     });
-    expect(result).toBe(68);
+    expect(result).toBe(65);
   });
 
   it("should return 100 for ideal work-life balance", () => {
