@@ -1,4 +1,4 @@
-import { Card, Text, Badge, Box, Flex, Title, Space, useMantineColorScheme, Divider } from "@mantine/core";
+import { Card, Text, Badge, Box, Flex, Space, useMantineColorScheme } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import { useTranslation } from "react-i18next";
 import { getScoreLevel } from "../calc";
