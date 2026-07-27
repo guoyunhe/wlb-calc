@@ -5,10 +5,10 @@ describe("calc", () => {
     const result = calc({
       dailyWorkingHours: 8,
       dailyCommuteHours: 2,
+      dailyOutsideWorkCommunicationHours: 2,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
       annualPaidSickLeaveDays: 5,
-      dailyOutsideWorkCommunicationHours: 2,
     });
     expect(result).toBe(65);
   });
@@ -17,10 +17,10 @@ describe("calc", () => {
     const result = calc({
       dailyWorkingHours: 7,
       dailyCommuteHours: 0,
+      dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 20,
       annualPaidSickLeaveDays: 15,
-      dailyOutsideWorkCommunicationHours: 0,
     });
     expect(result).toBe(100);
   });
@@ -29,10 +29,10 @@ describe("calc", () => {
     const result = calc({
       dailyWorkingHours: 12,
       dailyCommuteHours: 2,
+      dailyOutsideWorkCommunicationHours: 5,
       weeklyWorkingDays: 6,
       annualPaidLeaveDays: 5,
       annualPaidSickLeaveDays: 3,
-      dailyOutsideWorkCommunicationHours: 5,
     });
     expect(result).toBeLessThan(50);
   });
@@ -41,20 +41,20 @@ describe("calc", () => {
     const highScore = calc({
       dailyWorkingHours: 7,
       dailyCommuteHours: 0,
+      dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 4,
       annualPaidLeaveDays: 30,
       annualPaidSickLeaveDays: 20,
-      dailyOutsideWorkCommunicationHours: 0,
     });
     expect(highScore).toBe(100);
 
     const lowScore = calc({
       dailyWorkingHours: 20,
       dailyCommuteHours: 5,
+      dailyOutsideWorkCommunicationHours: 20,
       weeklyWorkingDays: 7,
       annualPaidLeaveDays: 0,
       annualPaidSickLeaveDays: 0,
-      dailyOutsideWorkCommunicationHours: 20,
     });
     expect(lowScore).toBe(0);
   });
