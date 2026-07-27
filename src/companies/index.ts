@@ -1,4 +1,6 @@
-import type { Company, Region, LocalizedName } from "./types";
+import type Company from "../types/Company";
+
+import type { Region } from "./types";
 import { US_COMPANIES } from "./us";
 import { SE_COMPANIES } from "./se";
 import { AU_COMPANIES } from "./au";
@@ -7,7 +9,7 @@ import { CA_COMPANIES } from "./ca";
 import { CN_COMPANIES } from "./cn";
 import { REMOTE_COMPANIES } from "./remote";
 
-export type { Company, Region, LocalizedName };
+export type { Region };
 export { localizedLabel, cityKey, companyHasCity } from "./locale";
 
 export const COMPANIES: Company[] = [

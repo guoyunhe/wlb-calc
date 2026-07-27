@@ -1,7 +1,7 @@
 import { Badge, Button, Card, Divider, Flex, Text } from "@mantine/core";
 import { GlobeIcon, MapPinIcon, LinkedinLogoIcon, ChatIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
-import type { Company } from "../companies";
+import type Company from "../types/Company";
 import { localizedLabel } from "../companies";
 import { getScoreLevel } from "../calc";
 import { useMediaQuery } from "@mantine/hooks";

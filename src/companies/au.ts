@@ -1,4 +1,4 @@
-import type { Company } from "./types";
+import type Company from "../types/Company";
 
 export const AU_COMPANIES: Company[] = [
   {

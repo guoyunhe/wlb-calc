@@ -1,20 +1,4 @@
-import type { CalcParams } from "../config";
-
-export interface LocalizedName {
-  en: string;
-  zh?: string;
-}
-
-export interface Company {
-  id: string;
-  name: LocalizedName;
-  region: string;
-  cities: LocalizedName[];
-  params: CalcParams;
-  careerWebsite: string;
-  linkedin: string;
-  discussion?: number;
-}
+import type LocalizedName from "../types/LocalizedName";
 
 export interface CityWithCompanyCount extends LocalizedName {
   companyCount: number;

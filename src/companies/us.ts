@@ -1,5 +1,5 @@
-import type { Company } from "./types";
-import type { LocalizedName } from "./types";
+import type Company from "../types/Company";
+import type LocalizedName from "../types/LocalizedName";
 
 const US_CITIES = {
   mountainView: { en: "Mountain View", zh: "山景城" },
