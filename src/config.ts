@@ -1,3 +1,5 @@
+import type Level from "./types/Level";
+
 export const GITHUB_URL = "https://github.com/guoyunhe/wlb-calc";
 
 export interface CalcParams {
@@ -100,22 +102,7 @@ export const PENALTY_WEIGHTS: Record<keyof CalcParams, number> = CALC_CONFIG.red
   {} as Record<keyof CalcParams, number>,
 );
 
-export interface ScoreLevel {
-  key: string;
-  minScore: number;
-  color: string;
-  labelKey: string;
-  bg: {
-    light: string;
-    dark: string;
-  };
-  textColor: {
-    light: string;
-    dark: string;
-  };
-}
-
-export const SCORE_LEVELS: ScoreLevel[] = [
+export const SCORE_LEVELS: Level[] = [
   {
     key: "a",
     minScore: 90,

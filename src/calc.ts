@@ -1,4 +1,5 @@
-import type { CalcParams, ScoreLevel } from "./config";
+import type { CalcParams } from "./config";
+import type Level from "./types/Level";
 import { CALC_CONFIG, SCORE_LEVELS } from "./config";
 
 export default function calc(params: CalcParams) {
@@ -24,7 +25,7 @@ export default function calc(params: CalcParams) {
   return Math.max(0, Math.min(100, Math.round(score)));
 }
 
-export const getScoreLevel = (score: number): ScoreLevel => {
+export const getScoreLevel = (score: number): Level => {
   return (
     SCORE_LEVELS.find((level) => score >= level.minScore) || SCORE_LEVELS[SCORE_LEVELS.length - 1]
   );
