@@ -1,4 +1,4 @@
-import { Card, Text, Badge, Box, Flex, Title, Space, useMantineColorScheme } from "@mantine/core";
+import { Card, Text, Badge, Box, Flex, Title, Space, useMantineColorScheme, Divider } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import { useTranslation } from "react-i18next";
 import { getScoreLevel } from "../calc";
@@ -34,19 +34,18 @@ export default function ScoreCard({ score }: ScoreCardProps) {
           {score}
         </Box>
         <Badge color={level.color} size="lg" variant="filled" radius="lg" px="lg">
-          {t(level.labelKey)}
+          {t(`score.label.${level.key}`)}
         </Badge>
       </Flex>
 
       <Space h="xl" />
 
-      <Title order={3} size="h5" mb="md">
-        {t("guide.title")}
-      </Title>
       <Box>
         {SCORE_LEVELS.map((lvl) => (
-          <Text key={lvl.minScore} size="xs" color={`${lvl.color}.6`} mb="sm">
-            <strong>{t(`guide.${lvl.labelKey.split(".")[1]}`)}</strong>
+          <Text key={lvl.key} size="xs" color={`${lvl.color}.6`} mb="sm">
+            <strong>{t(`score.label.${lvl.key}`)}</strong>
+            :&nbsp;
+            <span>{t(`score.description.${lvl.key}`)}</span>
           </Text>
         ))}
       </Box>

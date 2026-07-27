@@ -101,6 +101,7 @@ export const PENALTY_WEIGHTS: Record<keyof CalcParams, number> = CALC_CONFIG.red
 );
 
 export interface ScoreLevel {
+  key: string;
   minScore: number;
   color: string;
   labelKey: string;
@@ -116,6 +117,7 @@ export interface ScoreLevel {
 
 export const SCORE_LEVELS: ScoreLevel[] = [
   {
+    key: "a",
     minScore: 90,
     color: "green",
     labelKey: "score.a",
@@ -129,6 +131,7 @@ export const SCORE_LEVELS: ScoreLevel[] = [
     },
   },
   {
+    key: "b",
     minScore: 80,
     color: "green",
     labelKey: "score.b",
@@ -142,6 +145,7 @@ export const SCORE_LEVELS: ScoreLevel[] = [
     },
   },
   {
+    key: "c",
     minScore: 60,
     color: "yellow",
     labelKey: "score.c",
@@ -155,6 +159,7 @@ export const SCORE_LEVELS: ScoreLevel[] = [
     },
   },
   {
+    key: "d",
     minScore: 40,
     color: "orange",
     labelKey: "score.d",
@@ -168,6 +173,7 @@ export const SCORE_LEVELS: ScoreLevel[] = [
     },
   },
   {
+    key: "e",
     minScore: 0,
     color: "red",
     labelKey: "score.e",

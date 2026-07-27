@@ -27,28 +27,25 @@
   },
   "score": {
     "title": "Your Work-Life Balance Score",
-    "a": "A - Excellent",
-    "b": "B - Good",
-    "c": "C - Average",
-    "d": "D - Poor",
-    "e": "E - Very Poor"
-  },
-  "guide": {
-    "title": "Score Guide",
-    "a": "90-100: A - Excellent - Perfect work-life balance",
-    "b": "80-89: B - Good - Basic balance with slight pressure",
-    "c": "60-79: C - Average - Need to pay attention to workload",
-    "d": "40-59: D - Poor - Suggest adjusting work status",
-    "e": "0-39: E - Very Poor - Run! Please run!"
-  },
-  "language": {
-    "zh": "中文",
-    "en": "English"
+    "label": {
+      "a": "A - Excellent",
+      "b": "B - Good",
+      "c": "C - Average",
+      "d": "D - Poor",
+      "e": "E - Very Poor"
+    },
+    "description": {
+      "a": "Perfect work-life balance",
+      "b": "Basic balance with slight pressure",
+      "c": "Need to pay attention to workload",
+      "d": "Suggest adjusting work status",
+      "e": "Run! Please run!"
+    }
   },
   "theme": {
     "light": "Light",
     "dark": "Dark",
-    "auto": "System"
+    "auto": "Auto"
   },
   "footer": "© {{year}} Guo Yunhe",
   "companyList": {
