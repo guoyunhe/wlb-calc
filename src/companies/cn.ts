@@ -523,7 +523,7 @@ export const CN_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 1,
-      dailyOutsideWorkCommunicationHours: 1,
+      dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 5,
       annualPaidSickLeaveDays: 0,
@@ -599,7 +599,7 @@ export const CN_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 1,
-      dailyOutsideWorkCommunicationHours: 1,
+      dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
       annualPaidSickLeaveDays: 5,
@@ -1571,7 +1571,7 @@ export const CN_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 1,
-      dailyOutsideWorkCommunicationHours: 1,
+      dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
       annualPaidSickLeaveDays: 5,
@@ -1666,7 +1666,7 @@ export const CN_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 1,
-      dailyOutsideWorkCommunicationHours: 1,
+      dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
       annualPaidSickLeaveDays: 5,
@@ -1685,7 +1685,7 @@ export const CN_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 1,
-      dailyOutsideWorkCommunicationHours: 1,
+      dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
       annualPaidSickLeaveDays: 5,
@@ -2141,7 +2141,7 @@ export const CN_COMPANIES: Company[] = [
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 1,
-      dailyOutsideWorkCommunicationHours: 1,
+      dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 10,
       annualPaidSickLeaveDays: 5,
