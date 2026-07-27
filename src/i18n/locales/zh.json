@@ -4,13 +4,13 @@
   "description": "计算你的工作生活平衡得分。输入工作时长、通勤时间等参数，评估工作质量。",
   "params": "参数设置",
   "dailyWorkingHours": {
-    "label": "每日工作时长"
+    "label": "每日工作时长（实际）"
   },
   "dailyCommuteHours": {
     "label": "每日通勤时长"
   },
   "weeklyWorkingDays": {
-    "label": "每周工作天数"
+    "label": "每周工作天数（实际）"
   },
   "annualPaidLeaveDays": {
     "label": "每年带薪休假"

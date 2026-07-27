@@ -4,13 +4,13 @@
   "description": "Calculate your work-life balance score. Input daily working hours, commute time, and other parameters to assess your job quality.",
   "params": "Parameter Settings",
   "dailyWorkingHours": {
-    "label": "Daily Working Hours"
+    "label": "Daily Working Hours (Actual)"
   },
   "dailyCommuteHours": {
     "label": "Daily Commute Hours"
   },
   "weeklyWorkingDays": {
-    "label": "Weekly Working Days"
+    "label": "Weekly Working Days (Actual)"
   },
   "annualPaidLeaveDays": {
     "label": "Annual Paid Leave"
@@ -22,8 +22,8 @@
     "label": "Daily Outside-Work Communication Hours"
   },
   "unit": {
-    "hour": "{{hour}} hours",
-    "day": "{{day}} days"
+    "hour": "{{hour}} H",
+    "day": "{{day}} D"
   },
   "score": {
     "title": "Your Work-Life Balance Score",
