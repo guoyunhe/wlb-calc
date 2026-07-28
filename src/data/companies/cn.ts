@@ -1,49 +1,51 @@
 import type City from "../../types/City";
 import type Company from "../../types/Company";
 
-const CN_CITIES = {
-  beijing: { en: "Beijing", zh: "北京" },
-  shanghai: { en: "Shanghai", zh: "上海" },
-  shenzhen: { en: "Shenzhen", zh: "深圳" },
-  guangzhou: { en: "Guangzhou", zh: "广州" },
-  chengdu: { en: "Chengdu", zh: "成都" },
-  suzhou: { en: "Suzhou", zh: "苏州" },
-  xian: { en: "Xian", zh: "西安" },
-  wuxi: { en: "Wuxi", zh: "无锡" },
-  hangzhou: { en: "Hangzhou", zh: "杭州" },
-  nanjing: { en: "Nanjing", zh: "南京" },
-  wuhan: { en: "Wuhan", zh: "武汉" },
-  hefei: { en: "Hefei", zh: "合肥" },
-  xiamen: { en: "Xiamen", zh: "厦门" },
-  dalian: { en: "Dalian", zh: "大连" },
-  zhuhai: { en: "Zhuhai", zh: "珠海" },
-  zhengzhou: { en: "Zhengzhou", zh: "郑州" },
-  changsha: { en: "Changsha", zh: "长沙" },
-  changchun: { en: "Changchun", zh: "长春" },
-  chongqing: { en: "Chongqing", zh: "重庆" },
-  tianjin: { en: "Tianjin", zh: "天津" },
-  haikou: { en: "Haikou", zh: "海口" },
-  jiaxing: { en: "Jiaxing", zh: "嘉兴" },
-  foshan: { en: "Foshan", zh: "佛山" },
-  zhongshan: { en: "Zhongshan", zh: "中山" },
-  kunming: { en: "Kunming", zh: "昆明" },
-  qingdao: { en: "Qingdao", zh: "青岛" },
-  daqing: { en: "Daqing", zh: "大庆" },
-  taizhou: { en: "Taizhou", zh: "台州" },
-  kunshan: { en: "Kunshan", zh: "昆山" },
-  zhanjiang: { en: "Zhanjiang", zh: "湛江" },
-  huhehaote: { en: "Huhehaote", zh: "呼和浩特" },
-  dongguan: { en: "Dongguan", zh: "东莞" },
-  changzhou: { en: "Changzhou", zh: "常州" },
-  xiangyang: { en: "Xiangyang", zh: "襄阳" },
-  taiyuan: { en: "Taiyuan", zh: "太原" },
-  taicang: { en: "Taicang", zh: "太仓" },
-  hongkong: { en: "Hong Kong", zh: "香港" },
-  taipei: { en: "Taipei", zh: "台北" },
-  remote: { en: "Remote", zh: "远程" },
-} as const satisfies Record<string, City>;
+const CN_CITIES: City[] = [
+  { id: "beijing", name: { en: "Beijing", zh: "北京" } },
+  { id: "shanghai", name: { en: "Shanghai", zh: "上海" } },
+  { id: "shenzhen", name: { en: "Shenzhen", zh: "深圳" } },
+  { id: "guangzhou", name: { en: "Guangzhou", zh: "广州" } },
+  { id: "chengdu", name: { en: "Chengdu", zh: "成都" } },
+  { id: "suzhou", name: { en: "Suzhou", zh: "苏州" } },
+  { id: "xian", name: { en: "Xian", zh: "西安" } },
+  { id: "wuxi", name: { en: "Wuxi", zh: "无锡" } },
+  { id: "hangzhou", name: { en: "Hangzhou", zh: "杭州" } },
+  { id: "nanjing", name: { en: "Nanjing", zh: "南京" } },
+  { id: "wuhan", name: { en: "Wuhan", zh: "武汉" } },
+  { id: "hefei", name: { en: "Hefei", zh: "合肥" } },
+  { id: "xiamen", name: { en: "Xiamen", zh: "厦门" } },
+  { id: "dalian", name: { en: "Dalian", zh: "大连" } },
+  { id: "zhuhai", name: { en: "Zhuhai", zh: "珠海" } },
+  { id: "zhengzhou", name: { en: "Zhengzhou", zh: "郑州" } },
+  { id: "changsha", name: { en: "Changsha", zh: "长沙" } },
+  { id: "changchun", name: { en: "Changchun", zh: "长春" } },
+  { id: "chongqing", name: { en: "Chongqing", zh: "重庆" } },
+  { id: "tianjin", name: { en: "Tianjin", zh: "天津" } },
+  { id: "haikou", name: { en: "Haikou", zh: "海口" } },
+  { id: "jiaxing", name: { en: "Jiaxing", zh: "嘉兴" } },
+  { id: "foshan", name: { en: "Foshan", zh: "佛山" } },
+  { id: "zhongshan", name: { en: "Zhongshan", zh: "中山" } },
+  { id: "kunming", name: { en: "Kunming", zh: "昆明" } },
+  { id: "qingdao", name: { en: "Qingdao", zh: "青岛" } },
+  { id: "daqing", name: { en: "Daqing", zh: "大庆" } },
+  { id: "taizhou", name: { en: "Taizhou", zh: "台州" } },
+  { id: "kunshan", name: { en: "Kunshan", zh: "昆山" } },
+  { id: "zhanjiang", name: { en: "Zhanjiang", zh: "湛江" } },
+  { id: "huhehaote", name: { en: "Huhehaote", zh: "呼和浩特" } },
+  { id: "dongguan", name: { en: "Dongguan", zh: "东莞" } },
+  { id: "changzhou", name: { en: "Changzhou", zh: "常州" } },
+  { id: "xiangyang", name: { en: "Xiangyang", zh: "襄阳" } },
+  { id: "taiyuan", name: { en: "Taiyuan", zh: "太原" } },
+  { id: "taicang", name: { en: "Taicang", zh: "太仓" } },
+  { id: "hongkong", name: { en: "Hong Kong", zh: "香港" } },
+  { id: "taipei", name: { en: "Taipei", zh: "台北" } },
+];
 
-const C = CN_CITIES;
+const C = CN_CITIES.reduce<Record<string, City>>((acc, city) => {
+  acc[city.id] = city;
+  return acc;
+}, {});
 
 export const CN_COMPANIES: Company[] = [
   {
@@ -53,7 +55,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Apple/苹果",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai, C.shenzhen, C.suzhou, C.chengdu, C.remote],
     offices: [
       {
         city: C.shanghai,
@@ -111,7 +112,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Amazon/亚马逊",
     },
     region: "CN",
-    cities: [C.shanghai, C.shenzhen, C.beijing, C.chengdu, C.dalian],
     offices: [
       {
         city: C.beijing,
@@ -169,7 +169,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "英特尔",
     },
     region: "CN",
-    cities: [C.beijing, C.chengdu, C.shanghai, C.xiamen],
     offices: [
       {
         city: C.shanghai,
@@ -215,7 +214,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "甲骨文",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai, C.shenzhen, C.nanjing, C.suzhou],
     offices: [
       {
         city: C.beijing,
@@ -272,7 +270,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "摩根士丹利",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai, C.shenzhen, C.zhuhai],
     offices: [
       {
         city: C.shanghai,
@@ -317,7 +314,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "微软",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai, C.shenzhen, C.suzhou],
     offices: [
       {
         city: C.beijing,
@@ -374,7 +370,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Zalando/嘉兰朵",
     },
     region: "CN",
-    cities: [C.shenzhen],
     offices: [
       {
         city: C.shenzhen,
@@ -407,7 +402,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Flexport/飞协博",
     },
     region: "CN",
-    cities: [C.shanghai, C.shenzhen],
     offices: [
       {
         city: C.shenzhen,
@@ -452,7 +446,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "高通",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai, C.shenzhen, C.xian, C.wuxi],
     offices: [
       {
         city: C.shanghai,
@@ -497,7 +490,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "西门子",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai, C.shenzhen, C.chengdu, C.guangzhou, C.nanjing, C.suzhou],
     offices: [
       {
         city: C.beijing,
@@ -566,7 +558,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "飞利浦",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.shenzhen, C.suzhou, C.chengdu],
     offices: [
       {
         city: C.shanghai,
@@ -623,7 +614,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "施耐德电气",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai, C.shenzhen, C.wuhan, C.xian, C.guangzhou],
     offices: [
       {
         city: C.beijing,
@@ -686,7 +676,6 @@ export const CN_COMPANIES: Company[] = [
       en: "Afterpay",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -719,7 +708,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Airbnb/爱彼迎",
     },
     region: "CN",
-    cities: [C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -753,7 +741,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "AMD/超微半导体",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.suzhou],
     offices: [
       {
         city: C.beijing,
@@ -792,7 +779,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "ARM/安谋",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.shenzhen, C.chengdu],
     offices: [
       {
         city: C.shanghai,
@@ -831,7 +817,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Autodesk/欧特克",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -871,7 +856,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Booking/缤客",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -910,7 +894,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "博世",
     },
     region: "CN",
-    cities: [C.shanghai, C.suzhou, C.wuxi, C.changsha, C.chengdu, C.hangzhou],
     offices: [
       {
         city: C.shanghai,
@@ -961,7 +944,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Calix",
     },
     region: "CN",
-    cities: [C.nanjing],
     offices: [
       {
         city: C.nanjing,
@@ -995,7 +977,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Canva/可画",
     },
     region: "CN",
-    cities: [C.beijing, C.wuhan],
     offices: [
       {
         city: C.beijing,
@@ -1028,7 +1009,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "思科",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.hangzhou, C.suzhou, C.shenzhen, C.hefei],
     offices: [
       {
         city: C.shanghai,
@@ -1079,7 +1059,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Citrix/思杰",
     },
     region: "CN",
-    cities: [C.nanjing],
     offices: [
       {
         city: C.nanjing,
@@ -1118,7 +1097,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "大陆集团",
     },
     region: "CN",
-    cities: [C.shanghai, C.hefei, C.changchun, C.chongqing, C.suzhou, C.wuhan],
     offices: [
       {
         city: C.shanghai,
@@ -1169,7 +1147,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Coupang/酷澎",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai, C.shenzhen],
     offices: [
       {
         city: C.beijing,
@@ -1208,7 +1185,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "花旗金融",
     },
     region: "CN",
-    cities: [C.shanghai, C.dalian],
     offices: [
       {
         city: C.shanghai,
@@ -1259,7 +1235,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "戴尔",
     },
     region: "CN",
-    cities: [C.xiamen, C.chengdu, C.shanghai, C.beijing],
     offices: [
       {
         city: C.xiamen,
@@ -1310,7 +1285,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "豆瓣",
     },
     region: "CN",
-    cities: [C.beijing, C.tianjin],
     offices: [
       {
         city: C.beijing,
@@ -1337,7 +1311,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "多邻国",
     },
     region: "CN",
-    cities: [C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -1364,7 +1337,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "eBay",
     },
     region: "CN",
-    cities: [C.shanghai, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -1403,7 +1375,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "eHealth",
     },
     region: "CN",
-    cities: [C.xiamen],
     offices: [
       {
         city: C.xiamen,
@@ -1430,7 +1401,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "EA",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -1457,7 +1427,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "EMC",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.chengdu],
     offices: [
       {
         city: C.shanghai,
@@ -1502,7 +1471,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "EPAM/亿磐",
     },
     region: "CN",
-    cities: [C.shenzhen, C.shanghai, C.suzhou, C.chengdu],
     offices: [
       {
         city: C.shenzhen,
@@ -1559,7 +1527,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "爱立信",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai, C.guangzhou, C.nanjing, C.chengdu],
     offices: [
       {
         city: C.beijing,
@@ -1616,7 +1583,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "FreeWheel",
     },
     region: "CN",
-    cities: [C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -1643,7 +1609,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "通用电气",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.wuhan, C.suzhou],
     offices: [
       {
         city: C.shanghai,
@@ -1694,7 +1659,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Google/谷歌",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai, C.shenzhen],
     offices: [
       {
         city: C.beijing,
@@ -1734,7 +1698,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Grab",
     },
     region: "CN",
-    cities: [C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -1761,7 +1724,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "霍尼韦尔",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.tianjin],
     offices: [
       {
         city: C.shanghai,
@@ -1818,7 +1780,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "HP/惠普",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.beijing,
@@ -1875,7 +1836,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "汇丰银行",
     },
     region: "CN",
-    cities: [C.shanghai, C.guangzhou, C.xian],
     offices: [
       {
         city: C.guangzhou,
@@ -1932,7 +1892,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Hulu",
     },
     region: "CN",
-    cities: [C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -1959,7 +1918,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "iHerb",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -1986,7 +1944,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "JetBrains",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -2014,7 +1971,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Kong",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -2041,7 +1997,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "LeetCode",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -2068,7 +2023,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "乐高",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -2113,7 +2067,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "领英",
     },
     region: "CN",
-    cities: [C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -2146,7 +2099,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Micro Focus",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -2185,7 +2137,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "MicroStrategy",
     },
     region: "CN",
-    cities: [C.hangzhou],
     offices: [
       {
         city: C.hangzhou,
@@ -2212,7 +2163,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "NI/国家仪器(美)",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -2257,7 +2207,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "耐克",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -2296,7 +2245,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "诺基亚",
     },
     region: "CN",
-    cities: [C.shanghai, C.nanjing, C.hangzhou],
     offices: [
       {
         city: C.beijing,
@@ -2347,7 +2295,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "英伟达",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai, C.shenzhen, C.chengdu, C.hangzhou, C.hongkong],
     offices: [
       {
         city: C.shanghai,
@@ -2386,7 +2333,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Optiver",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -2413,7 +2359,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "PayPal/贝宝",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -2452,7 +2397,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Pivotal",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai],
     offices: [
       {
         city: C.beijing,
@@ -2485,7 +2429,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "乐天",
     },
     region: "CN",
-    cities: [C.shanghai, C.dalian],
     offices: [
       {
         city: C.dalian,
@@ -2524,7 +2467,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "RedHat/红帽",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai, C.shenzhen, C.xian],
     offices: [
       {
         city: C.beijing,
@@ -2563,7 +2505,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "RingCentral",
     },
     region: "CN",
-    cities: [C.xiamen, C.hangzhou, C.hongkong],
     offices: [
       {
         city: C.xiamen,
@@ -2602,7 +2543,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Rippling",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai],
     offices: [
       {
         city: C.beijing,
@@ -2635,7 +2575,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "闪迪",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -2674,7 +2613,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "SAP/思爱普",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -2725,7 +2663,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "SmartNews",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai],
     offices: [
       {
         city: C.beijing,
@@ -2758,7 +2695,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Snap",
     },
     region: "CN",
-    cities: [C.beijing, C.shenzhen],
     offices: [
       {
         city: C.beijing,
@@ -2791,7 +2727,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "星巴克",
     },
     region: "CN",
-    cities: [C.shanghai, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -2837,7 +2772,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "道富银行",
     },
     region: "CN",
-    cities: [C.hangzhou],
     offices: [
       {
         city: C.hangzhou,
@@ -2882,7 +2816,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "SUSE",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai, C.shenzhen, C.xian],
     offices: [
       {
         city: C.beijing,
@@ -2927,7 +2860,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "The Trade Desk",
     },
     region: "CN",
-    cities: [C.shanghai, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -2960,7 +2892,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "ThoughtWorks",
     },
     region: "CN",
-    cities: [C.xian, C.beijing, C.shenzhen, C.chengdu, C.wuhan, C.shanghai, C.hongkong],
     offices: [
       {
         city: C.xian,
@@ -3017,7 +2948,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "趋势科技",
     },
     region: "CN",
-    cities: [C.nanjing],
     offices: [
       {
         city: C.nanjing,
@@ -3062,7 +2992,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Tubi",
     },
     region: "CN",
-    cities: [C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -3089,7 +3018,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "图森未来",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai],
     offices: [
       {
         city: C.beijing,
@@ -3122,7 +3050,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Two Sigma",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -3155,7 +3082,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "育碧",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -3194,7 +3120,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Unity",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -3239,7 +3164,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "唯品会",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.guangzhou,
@@ -3278,7 +3202,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "VMware/威睿",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai],
     offices: [
       {
         city: C.beijing,
@@ -3329,7 +3252,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "WeWork",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -3374,7 +3296,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Wish",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -3407,7 +3328,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Works Applications",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -3434,7 +3354,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "XMind",
     },
     region: "CN",
-    cities: [C.shenzhen],
     offices: [
       {
         city: C.shenzhen,
@@ -3467,7 +3386,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "知乎",
     },
     region: "CN",
-    cities: [C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -3500,7 +3418,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Zoom",
     },
     region: "CN",
-    cities: [C.hefei, C.hangzhou, C.suzhou],
     offices: [
       {
         city: C.hangzhou,
@@ -3545,7 +3462,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "中国人寿",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai, C.shenzhen, C.guangzhou],
     offices: [
       {
         city: C.beijing,
@@ -3590,7 +3506,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "三星电子",
     },
     region: "CN",
-    cities: [C.beijing, C.shanghai, C.shenzhen, C.xian],
     offices: [
       {
         city: C.beijing,
@@ -3641,7 +3556,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "东风日产",
     },
     region: "CN",
-    cities: [C.guangzhou, C.wuhan],
     offices: [
       {
         city: C.guangzhou,
@@ -3692,7 +3606,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "宝洁",
     },
     region: "CN",
-    cities: [C.shanghai, C.guangzhou],
     offices: [
       {
         city: C.guangzhou,
@@ -3737,7 +3650,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "屈臣氏",
     },
     region: "CN",
-    cities: [C.shanghai, C.guangzhou, C.shenzhen],
     offices: [
       {
         city: C.guangzhou,
@@ -3782,7 +3694,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "广汽本田",
     },
     region: "CN",
-    cities: [C.guangzhou],
     offices: [
       {
         city: C.guangzhou,
@@ -3827,7 +3738,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "金佰利",
     },
     region: "CN",
-    cities: [C.shanghai, C.guangzhou],
     offices: [
       {
         city: C.shanghai,
@@ -3872,7 +3782,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "高露洁",
     },
     region: "CN",
-    cities: [C.shanghai, C.guangzhou],
     offices: [
       {
         city: C.shanghai,
@@ -3917,7 +3826,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "曼秀雷敦",
     },
     region: "CN",
-    cities: [C.shanghai, C.guangzhou],
     offices: [
       {
         city: C.zhongshan,
@@ -3962,7 +3870,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "玛氏",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.guangzhou,
@@ -4007,7 +3914,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "通用磨坊",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -4052,7 +3958,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "阿斯利康",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou],
     offices: [
       {
         city: C.shanghai,
@@ -4103,7 +4008,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Firmenich/芬美意",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -4148,7 +4052,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "马士基",
     },
     region: "CN",
-    cities: [C.shanghai, C.shenzhen, C.dalian],
     offices: [
       {
         city: C.shanghai,
@@ -4199,7 +4102,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "ABB",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen, C.dalian],
     offices: [
       {
         city: C.beijing,
@@ -4250,7 +4152,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "沃尔沃汽车",
     },
     region: "CN",
-    cities: [C.shanghai, C.chengdu, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -4301,7 +4202,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "海克斯康",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.shenzhen],
     offices: [
       {
         city: C.qingdao,
@@ -4352,7 +4252,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "辉瑞",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou],
     offices: [
       {
         city: C.beijing,
@@ -4403,7 +4302,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "诺华",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -4454,7 +4352,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "武田",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -4503,7 +4400,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "宜家",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou],
     offices: [
       {
         city: C.shanghai,
@@ -4559,7 +4455,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "欧莱雅",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou],
     offices: [
       {
         city: C.shanghai,
@@ -4615,7 +4510,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "亿图软件",
     },
     region: "CN",
-    cities: [C.shenzhen],
     offices: [
       {
         city: C.shenzhen,
@@ -4657,7 +4551,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "西部数据",
     },
     region: "CN",
-    cities: [C.shanghai, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -4706,7 +4599,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "杜比",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -4748,7 +4640,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "罗技",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -4797,7 +4688,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "菲尼克斯电气",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.shenzhen],
     offices: [
       {
         city: C.nanjing,
@@ -4846,7 +4736,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "罗克韦尔自动化",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -4895,7 +4784,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "萨基姆通讯",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shenzhen,
@@ -4937,7 +4825,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "礼来",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -4986,7 +4873,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "强生",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou],
     offices: [
       {
         city: C.shanghai,
@@ -5035,7 +4921,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "汉高",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -5091,7 +4976,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "巴斯夫",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen, C.chengdu],
     offices: [
       {
         city: C.shanghai,
@@ -5154,7 +5038,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "哈曼",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.shenzhen, C.chengdu],
     offices: [
       {
         city: C.shanghai,
@@ -5210,7 +5093,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "敦豪",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     offices: [
       {
         city: C.beijing,
@@ -5266,7 +5148,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "默沙东",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou],
     offices: [
       {
         city: C.shanghai,
@@ -5315,7 +5196,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "默克",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -5371,7 +5251,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "代斯米",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -5420,7 +5299,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "格兰富",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou],
     offices: [
       {
         city: C.shanghai,
@@ -5476,7 +5354,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "阿特拉斯・科普柯",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -5532,7 +5409,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "盛思锐",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -5574,7 +5450,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "利乐",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -5630,7 +5505,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "PCB Connect",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shenzhen,
@@ -5665,7 +5539,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "布勒",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -5714,7 +5587,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "万事达",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -5763,7 +5635,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "维萨",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -5812,7 +5683,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "蔡司",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -5868,7 +5738,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "赛默飞",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou],
     offices: [
       {
         city: C.shanghai,
@@ -5925,7 +5794,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "梅特勒托利多",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -5981,7 +5849,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "奥林巴斯",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -6030,7 +5897,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "福禄克",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -6079,7 +5945,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "瞻博",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -6128,7 +5993,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "康普",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -6177,7 +6041,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "仲量联行",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -6233,7 +6096,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "世邦魏理仕",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -6289,7 +6151,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "史赛克",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -6345,7 +6206,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "美敦力",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -6402,7 +6262,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "卡尔史托斯",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -6459,7 +6318,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "天巡",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shenzhen,
@@ -6502,7 +6360,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "ZURU",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.guangzhou,
@@ -6554,7 +6411,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "美国运通",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -6604,7 +6460,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "孩之宝",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shenzhen,
@@ -6657,7 +6512,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "伊莱克斯",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -6699,7 +6553,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "开云集团",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -6758,7 +6611,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "泰科电子",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -6815,7 +6667,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "德迅",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -6872,7 +6723,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "拜耳",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -6930,7 +6780,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "诺和诺德",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou],
     offices: [
       {
         city: C.shanghai,
@@ -6990,7 +6839,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "益百利",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou],
     offices: [
       {
         city: C.hongkong,
@@ -7026,7 +6874,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Veeva/维沃",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou],
     offices: [
       {
         city: C.shanghai,
@@ -7084,7 +6931,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "康宁",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou],
     offices: [
       {
         city: C.shanghai,
@@ -7143,7 +6989,6 @@ export const CN_COMPANIES: Company[] = [
       en: "Ecocert",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -7187,7 +7032,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "斯伦贝谢",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou],
     offices: [
       {
         city: C.shanghai,
@@ -7248,7 +7092,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "搜狐",
     },
     region: "CN",
-    cities: [C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -7299,7 +7142,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "戴安杰",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     offices: [
       {
         city: C.beijing,
@@ -7357,7 +7199,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Elekta/医科达",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -7415,7 +7256,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Ceva/诗华",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -7473,7 +7313,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "康明斯",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     offices: [
       {
         city: C.wuhan,
@@ -7533,7 +7372,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "迪芬巴赫",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -7577,7 +7415,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "波士胶",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -7637,7 +7474,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Schaeffler/舍弗勒",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -7698,7 +7534,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Danone/达能",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -7758,7 +7593,6 @@ export const CN_COMPANIES: Company[] = [
       en: "Kerry",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -7820,7 +7654,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "拜尔斯道夫",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -7879,7 +7712,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "欧加隆",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -7937,7 +7769,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "伦敦证券交易所集团",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -7991,7 +7822,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "约翰威立出版集团",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -8036,7 +7866,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "山特维克",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -8097,7 +7926,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "雅诗兰黛",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -8157,7 +7985,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "联合利华",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou, C.shenzhen],
     offices: [
       {
         city: C.shanghai,
@@ -8218,7 +8045,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "摩根大通",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -8278,7 +8104,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "巴克莱银行",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.hongkong,
@@ -8321,7 +8146,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "安捷伦",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing, C.guangzhou],
     offices: [
       {
         city: C.shanghai,
@@ -8382,7 +8206,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "ALTEN/欧特昂",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -8443,7 +8266,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "必维国际检验集团",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -8504,7 +8326,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "Bruker/布鲁克",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -8557,7 +8378,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "赛多利斯",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -8610,7 +8430,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "尼康",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -8663,7 +8482,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "路透社",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -8708,7 +8526,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "剑桥大学出版社",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -8754,7 +8571,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "野村证券",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -8806,7 +8622,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "卓识量化",
     },
     region: "CN",
-    cities: [C.shanghai],
     offices: [
       {
         city: C.shanghai,
@@ -8858,7 +8673,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "澳新银行",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.shanghai,
@@ -8910,7 +8724,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "泰雷兹",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -8963,7 +8776,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "东华软件",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -9022,7 +8834,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "航天信息",
     },
     region: "CN",
-    cities: [C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -9083,7 +8894,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "天融信",
     },
     region: "CN",
-    cities: [C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -9144,7 +8954,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "极意网络",
     },
     region: "CN",
-    cities: [C.beijing],
     offices: [
       {
         city: C.wuhan,
@@ -9197,7 +9006,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "欧倍尔",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -9250,7 +9058,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "华宇软件",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -9310,7 +9117,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "致远互联",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -9370,7 +9176,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "四方继保",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -9431,7 +9236,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "长亭科技",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.beijing,
@@ -9492,7 +9296,6 @@ export const CN_COMPANIES: Company[] = [
       zh: "联想",
     },
     region: "CN",
-    cities: [C.shanghai, C.beijing],
     offices: [
       {
         city: C.beijing,

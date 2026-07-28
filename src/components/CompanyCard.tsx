@@ -53,7 +53,11 @@ export default function CompanyCard({ company, score }: CompanyCardProps) {
         <Flex align="start" ml="-.1rem">
           <MapPinIcon size="1rem" />
           <Text size="xs" ml="0.1rem">
-            {company.cities.map((city) => localizedLabel(city, i18n.language)).join(", ")}
+            {Array.from(
+              new Set(
+                company.offices.map((office) => localizedLabel(office.city.name, i18n.language)),
+              ),
+            ).join(", ")}
           </Text>
         </Flex>
       </Card.Section>

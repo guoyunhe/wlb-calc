@@ -7,7 +7,6 @@ export default interface Company {
   id: string;
   name: LocalizedName;
   region: string;
-  cities: LocalizedName[];
   offices: Office[];
   params: CalcParams;
   careerWebsite: string;

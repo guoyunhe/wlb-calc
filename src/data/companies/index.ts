@@ -6,7 +6,7 @@ import { CN_COMPANIES } from "./cn";
 import calc, { getScoreLevel } from "../../calc";
 
 export type { Region };
-export { localizedLabel, cityKey, companyHasCity } from "./locale";
+export { localizedLabel } from "./locale";
 
 export const COMPANIES: Company[] = [...CN_COMPANIES, ...US_COMPANIES];
 
@@ -21,8 +21,8 @@ export const REGIONS: Region[] = COMPANIES.reduce((acc, company) => {
   let existingRegion = acc.find((r) => r.code === company.region);
   if (existingRegion) {
     existingRegion.companyCount++;
-    for (const city of company.cities) {
-      const existingCity = existingRegion.cities.find((c) => c.en === city.en);
+    for (const city of company.offices.map((office) => office.city)) {
+      const existingCity = existingRegion.cities.find((c) => c.id === city.id);
       if (existingCity) {
         existingCity.companyCount!++;
       } else {
@@ -33,7 +33,7 @@ export const REGIONS: Region[] = COMPANIES.reduce((acc, company) => {
     acc.push({
       code: company.region,
       labelKey: `region.${company.region}`,
-      cities: company.cities.map((city) => ({ ...city, companyCount: 1 })),
+      cities: company.offices.map((office) => ({ ...office.city, companyCount: 1 })),
       companyCount: 1,
     });
   }

@@ -1,5 +1,7 @@
-import type LocalizedName from "../types/LocalizedName";
+import type LocalizedName from "./LocalizedName";
 
-export default interface City extends LocalizedName {
+export default interface City {
+  id: string;
+  name: LocalizedName;
   companyCount?: number;
 }

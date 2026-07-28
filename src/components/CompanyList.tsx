@@ -2,7 +2,7 @@ import { SimpleGrid, Text, Space, Container, Select, Box } from "@mantine/core";
 import { useTranslation } from "react-i18next";
 import { useState, useMemo, useEffect } from "react";
 import { BuildingIcon } from "@phosphor-icons/react";
-import { COMPANIES, REGIONS, companyHasCity, localizedLabel, cityKey } from "../data/companies";
+import { COMPANIES, REGIONS, localizedLabel } from "../data/companies";
 import calc from "../calc";
 import CompanyCard from "./CompanyCard";
 
@@ -23,7 +23,8 @@ export default function CompanyList() {
     () =>
       COMPANIES.filter((company) => {
         const regionPass = !selectedRegion || company.region === selectedRegion;
-        const cityPass = !selectedCity || companyHasCity(company, selectedCity);
+        const cityPass =
+          !selectedCity || company.offices.some((office) => office.city.id === selectedCity);
         return regionPass && cityPass;
       }),
     [selectedRegion, selectedCity],
@@ -41,8 +42,8 @@ export default function CompanyList() {
     return [...citiesForRegion]
       .sort((a, b) => b.companyCount! - a.companyCount!)
       .map((city) => ({
-        value: cityKey(city),
-        label: `${localizedLabel(city, i18n.language)} (${city.companyCount})`,
+        value: city.id,
+        label: `${localizedLabel(city.name, i18n.language)} (${city.companyCount})`,
       }));
   }, [citiesForRegion, i18n.language]);
 

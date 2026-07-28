@@ -1,26 +1,28 @@
+import type City from "../../types/City";
 import type Company from "../../types/Company";
-import type LocalizedName from "../../types/LocalizedName";
 
-const US_CITIES = {
-  sunnyvale: { en: "Sunnyvale", zh: "桑尼维尔" },
-  austin: { en: "Austin", zh: "奥斯汀" },
-  mountainView: { en: "Mountain View", zh: "山景城" },
-  newYork: { en: "New York", zh: "纽约" },
-  seattle: { en: "Seattle", zh: "西雅图" },
-  redmond: { en: "Redmond", zh: "雷德蒙德" },
-  losGatos: { en: "Los Gatos", zh: "洛斯加托斯" },
-  sanFrancisco: { en: "San Francisco", zh: "旧金山" },
-  sanJose: { en: "San Jose", zh: "圣何塞" },
-  lehi: { en: "Lehi", zh: "利海" },
-  remote: { en: "Remote", zh: "远程" },
-  indianapolis: { en: "Indianapolis", zh: "印第安纳波利斯" },
-  bellevue: { en: "Bellevue", zh: "贝尔维尤" },
-  atlanta: { en: "Atlanta", zh: "亚特兰大" },
-  losAngeles: { en: "Los Angeles", zh: "洛杉矶" },
-  reston: { en: "Reston", zh: "雷斯顿" },
-} as const satisfies Record<string, LocalizedName>;
+const US_CITIES: City[] = [
+  { id: "sunnyvale", name: { en: "Sunnyvale", zh: "桑尼维尔" } },
+  { id: "austin", name: { en: "Austin", zh: "奥斯汀" } },
+  { id: "mountainView", name: { en: "Mountain View", zh: "山景城" } },
+  { id: "newYork", name: { en: "New York", zh: "纽约" } },
+  { id: "seattle", name: { en: "Seattle", zh: "西雅图" } },
+  { id: "redmond", name: { en: "Redmond", zh: "雷德蒙德" } },
+  { id: "losGatos", name: { en: "Los Gatos", zh: "洛斯加托斯" } },
+  { id: "sanFrancisco", name: { en: "San Francisco", zh: "旧金山" } },
+  { id: "sanJose", name: { en: "San Jose", zh: "圣何塞" } },
+  { id: "lehi", name: { en: "Lehi", zh: "利海" } },
+  { id: "indianapolis", name: { en: "Indianapolis", zh: "印第安纳波利斯" } },
+  { id: "bellevue", name: { en: "Bellevue", zh: "贝尔维尤" } },
+  { id: "atlanta", name: { en: "Atlanta", zh: "亚特兰大" } },
+  { id: "losAngeles", name: { en: "Los Angeles", zh: "洛杉矶" } },
+  { id: "reston", name: { en: "Reston", zh: "雷斯顿" } },
+];
 
-const C = US_CITIES;
+const C = US_CITIES.reduce<Record<string, City>>((acc, city) => {
+  acc[city.id] = city;
+  return acc;
+}, {});
 
 export const US_COMPANIES: Company[] = [
   {
@@ -30,7 +32,6 @@ export const US_COMPANIES: Company[] = [
       zh: "苹果",
     },
     region: "US",
-    cities: [C.sanFrancisco, C.sanJose, C.sunnyvale, C.mountainView],
     offices: [
       {
         city: C.sanFrancisco,
@@ -79,7 +80,6 @@ export const US_COMPANIES: Company[] = [
       zh: "谷歌",
     },
     region: "US",
-    cities: [C.mountainView, C.newYork, C.seattle],
     offices: [
       {
         city: C.mountainView,
@@ -135,7 +135,6 @@ export const US_COMPANIES: Company[] = [
       zh: "亚马逊",
     },
     region: "US",
-    cities: [C.seattle, C.newYork, C.austin],
     offices: [
       {
         city: C.seattle,
@@ -177,7 +176,6 @@ export const US_COMPANIES: Company[] = [
       zh: "微软",
     },
     region: "US",
-    cities: [C.redmond],
     offices: [
       {
         city: C.redmond,
@@ -233,7 +231,6 @@ export const US_COMPANIES: Company[] = [
       zh: "网飞",
     },
     region: "US",
-    cities: [C.losGatos],
     offices: [
       {
         city: C.losGatos,
@@ -274,7 +271,6 @@ export const US_COMPANIES: Company[] = [
       en: "Salesforce",
     },
     region: "US",
-    cities: [C.sanFrancisco],
     offices: [
       {
         city: C.sanFrancisco,
@@ -330,7 +326,6 @@ export const US_COMPANIES: Company[] = [
       zh: "奥多比",
     },
     region: "US",
-    cities: [C.sanJose],
     offices: [
       {
         city: C.sanJose,
@@ -385,7 +380,6 @@ export const US_COMPANIES: Company[] = [
       en: "GitHub",
     },
     region: "US",
-    cities: [C.sanFrancisco],
     offices: [
       {
         city: C.sanFrancisco,
@@ -412,7 +406,6 @@ export const US_COMPANIES: Company[] = [
       en: "Twitter",
     },
     region: "US",
-    cities: [C.sanFrancisco, C.newYork],
     offices: [
       {
         city: C.sanFrancisco,
@@ -446,7 +439,6 @@ export const US_COMPANIES: Company[] = [
       en: "LinkedIn",
     },
     region: "US",
-    cities: [C.sunnyvale, C.newYork],
     offices: [
       {
         city: C.sunnyvale,
@@ -480,7 +472,6 @@ export const US_COMPANIES: Company[] = [
       en: "Uber",
     },
     region: "US",
-    cities: [C.sanFrancisco, C.austin],
     offices: [
       {
         city: C.sanFrancisco,
@@ -514,7 +505,6 @@ export const US_COMPANIES: Company[] = [
       en: "Airbnb",
     },
     region: "US",
-    cities: [C.sanFrancisco, C.newYork],
     offices: [
       {
         city: C.sanFrancisco,
