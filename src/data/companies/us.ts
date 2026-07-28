@@ -2,6 +2,8 @@ import type Company from "../../types/Company";
 import type LocalizedName from "../../types/LocalizedName";
 
 const US_CITIES = {
+  sunnyvale: { en: "Sunnyvale", zh: "桑尼维尔" },
+  austin: { en: "Austin", zh: "奥斯汀" },
   mountainView: { en: "Mountain View", zh: "山景城" },
   newYork: { en: "New York", zh: "纽约" },
   seattle: { en: "Seattle", zh: "西雅图" },
@@ -9,12 +11,67 @@ const US_CITIES = {
   losGatos: { en: "Los Gatos", zh: "洛斯加托斯" },
   sanFrancisco: { en: "San Francisco", zh: "旧金山" },
   sanJose: { en: "San Jose", zh: "圣何塞" },
+  lehi: { en: "Lehi", zh: "利海" },
   remote: { en: "Remote", zh: "远程" },
+  indianapolis: { en: "Indianapolis", zh: "印第安纳波利斯" },
+  bellevue: { en: "Bellevue", zh: "贝尔维尤" },
+  atlanta: { en: "Atlanta", zh: "亚特兰大" },
+  losAngeles: { en: "Los Angeles", zh: "洛杉矶" },
+  reston: { en: "Reston", zh: "雷斯顿" },
 } as const satisfies Record<string, LocalizedName>;
 
 const C = US_CITIES;
 
 export const US_COMPANIES: Company[] = [
+  {
+    id: "apple-us",
+    name: {
+      en: "Apple",
+      zh: "苹果",
+    },
+    region: "US",
+    cities: [C.sanFrancisco, C.sanJose, C.sunnyvale, C.mountainView],
+    offices: [
+      {
+        city: C.sanFrancisco,
+        district: "SoMa / Financial District",
+        address: "1 Infinite Loop, Cupertino, CA 95014",
+        description: "Apple Corporate Headquarters (Apple Park)",
+        employeeCount: 10000,
+      },
+      {
+        city: C.sanJose,
+        district: "Downtown / North San Jose",
+        address: "1 Apple Park Way, Cupertino, CA 95014",
+        description: "Apple Park Campus & R&D Center",
+        employeeCount: 8000,
+      },
+      {
+        city: C.sunnyvale,
+        district: "Silicon Valley",
+        address: "1065 La Avenida St, Sunnyvale, CA 94089",
+        description: "Apple Silicon Valley Campus",
+        employeeCount: 5000,
+      },
+      {
+        city: C.mountainView,
+        district: "Silicon Valley",
+        address: "1600 Amphitheatre Parkway, Mountain View, CA 94043",
+        description: "Apple Mountain View Campus (Engineering & R&D)",
+        employeeCount: 3000,
+      },
+    ],
+    careerWebsite: "https://www.apple.com",
+    linkedin: "apple",
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0.5,
+      dailyOutsideWorkCommunicationHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
   {
     id: "google-us",
     name: {
@@ -23,6 +80,43 @@ export const US_COMPANIES: Company[] = [
     },
     region: "US",
     cities: [C.mountainView, C.newYork, C.seattle],
+    offices: [
+      {
+        city: C.mountainView,
+        district: "Silicon Valley",
+        address: "1600 Amphitheatre Parkway, Mountain View, CA 94043",
+        description: "Google Global Headquarters (Googleplex)",
+        employeeCount: 20000,
+      },
+      {
+        city: C.newYork,
+        district: "Chelsea / Manhattan",
+        address: "111 Eighth Avenue, New York, NY 10011",
+        description: "Main East Coast Headquarters & Engineering Hub",
+        employeeCount: 12000,
+      },
+      {
+        city: C.sunnyvale,
+        district: "Silicon Valley",
+        address: "803 11th Avenue, Sunnyvale, CA 94089",
+        description: "Bay Area Major Campus",
+        employeeCount: 10000,
+      },
+      {
+        city: C.seattle,
+        district: "South Lake Union / Fremont",
+        address: "601 N 34th Street, Seattle, WA 98103",
+        description: "Pacific Northwest Engineering Hub",
+        employeeCount: 5000,
+      },
+      {
+        city: C.austin,
+        district: "Downtown",
+        address: "500 W 2nd Street, Austin, TX 78701",
+        description: "Southern US Regional Hub",
+        employeeCount: 3000,
+      },
+    ],
     careerWebsite: "https://www.google.com",
     linkedin: "google",
     params: {
@@ -35,6 +129,48 @@ export const US_COMPANIES: Company[] = [
     },
   },
   {
+    id: "amazon-us",
+    name: {
+      en: "Amazon",
+      zh: "亚马逊",
+    },
+    region: "US",
+    cities: [C.seattle, C.newYork, C.austin],
+    offices: [
+      {
+        city: C.seattle,
+        district: "South Lake Union / Downtown",
+        address: "410 Terry Avenue North, Seattle, WA 98109",
+        description: "Amazon Global Headquarters (HQ1)",
+        employeeCount: 30000,
+      },
+      {
+        city: C.newYork,
+        district: "Manhattan / Midtown",
+        address: "7 Times Square, New York, NY 10036",
+        description: "East Coast Headquarters & Tech Hub",
+        employeeCount: 15000,
+      },
+      {
+        city: C.austin,
+        district: "Downtown / East Austin",
+        address: "500 W 2nd Street, Austin, TX 78701",
+        description: "Southern US Regional Hub & Tech Center",
+        employeeCount: 8000,
+      },
+    ],
+    careerWebsite: "https://www.amazon.com",
+    linkedin: "amazon",
+    params: {
+      dailyWorkingHours: 9,
+      dailyCommuteHours: 1,
+      dailyOutsideWorkCommunicationHours: 1,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 15,
+      annualPaidSickLeaveDays: 10,
+    },
+  },
+  {
     id: "microsoft-us",
     name: {
       en: "Microsoft",
@@ -42,6 +178,43 @@ export const US_COMPANIES: Company[] = [
     },
     region: "US",
     cities: [C.redmond],
+    offices: [
+      {
+        city: C.redmond,
+        district: " Puget Sound / Overlake",
+        address: "1 Microsoft Way, Redmond, WA 98052",
+        description: "Microsoft Global Headquarters",
+        employeeCount: 50000,
+      },
+      {
+        city: C.mountainView,
+        district: "Silicon Valley",
+        address: "1065 La Avenida St, Mountain View, CA 94043",
+        description: "Silicon Valley Campus (Bing, AI Research & Development)",
+        employeeCount: 2000,
+      },
+      {
+        city: C.newYork,
+        district: "Midtown Manhattan",
+        address: "11 Times Square, New York, NY 10036",
+        description: "East Coast Hub (Enterprise Sales, Financial & Media Partnerships)",
+        employeeCount: 1500,
+      },
+      {
+        city: C.reston,
+        district: "Northern Virginia",
+        address: "11951 Freedom Dr, Reston, VA 20190",
+        description: "Federal Cloud & Public Sector Operations Hub",
+        employeeCount: 1200,
+      },
+      {
+        city: C.bellevue,
+        district: "Downtown Bellevue",
+        address: "700 Bellevue Way NE, Bellevue, WA 98004",
+        description: "Satellite Office & Azure/AI Engineering Teams",
+        employeeCount: 4000,
+      },
+    ],
     careerWebsite: "https://www.microsoft.com",
     linkedin: "microsoft",
     params: {
@@ -61,6 +234,29 @@ export const US_COMPANIES: Company[] = [
     },
     region: "US",
     cities: [C.losGatos],
+    offices: [
+      {
+        city: C.losGatos,
+        district: "Silicon Valley",
+        address: "100 Winchester Circle, Los Gatos, CA 95032",
+        description: "Netflix Global Headquarters",
+        employeeCount: 4500,
+      },
+      {
+        city: C.losAngeles,
+        district: "Hollywood / Sunset Bronson",
+        address: "5808 Sunset Boulevard, Los Angeles, CA 90028",
+        description: "Content & Studio Production Hub",
+        employeeCount: 3500,
+      },
+      {
+        city: C.newYork,
+        district: "Manhattan",
+        address: "888 Broadway, New York, NY 10003",
+        description: "East Coast Office (Advertising, PR & Partnerships)",
+        employeeCount: 500,
+      },
+    ],
     careerWebsite: "https://www.netflix.com",
     linkedin: "netflix",
     params: {
@@ -76,10 +272,46 @@ export const US_COMPANIES: Company[] = [
     id: "salesforce-us",
     name: {
       en: "Salesforce",
-      zh: "Salesforce",
     },
     region: "US",
     cities: [C.sanFrancisco],
+    offices: [
+      {
+        city: C.sanFrancisco,
+        district: "SoMa / Financial District",
+        address: "415 Mission Street, San Francisco, CA 94105",
+        description: "Salesforce Global Headquarters (Salesforce Tower)",
+        employeeCount: 10000,
+      },
+      {
+        city: C.newYork,
+        district: "Midtown Manhattan",
+        address: "1095 Avenue of the Americas, New York, NY 10036",
+        description: "New York Office",
+        employeeCount: 800,
+      },
+      {
+        city: C.indianapolis,
+        district: "Downtown",
+        address: "111 Monument Circle, Indianapolis, IN 46204",
+        description: "Regional Hub (Salesforce Tower Indianapolis)",
+        employeeCount: 2000,
+      },
+      {
+        city: C.bellevue,
+        district: "Downtown Bellevue",
+        address: "929 108th Ave NE, Bellevue, WA 98004",
+        description: "Bellevue / Seattle Area Office",
+        employeeCount: 500,
+      },
+      {
+        city: C.atlanta,
+        district: "Buckhead",
+        address: "950 East Paces Ferry Road NE, Atlanta, GA 30326",
+        description: "Atlanta Office",
+        employeeCount: 600,
+      },
+    ],
     careerWebsite: "https://www.salesforce.com",
     linkedin: "salesforce",
     params: {
@@ -99,6 +331,43 @@ export const US_COMPANIES: Company[] = [
     },
     region: "US",
     cities: [C.sanJose],
+    offices: [
+      {
+        city: C.sanJose,
+        district: "Silicon Valley",
+        address: "345 Park Avenue, San Jose, CA 95110-2704",
+        description: "Adobe Corporate Headquarters",
+        employeeCount: 7000,
+      },
+      {
+        city: C.sanFrancisco,
+        district: "SoMa / Mission Bay",
+        address: "601 Townsend Street, San Francisco, CA 94103",
+        description: "San Francisco Office",
+        employeeCount: 1500,
+      },
+      {
+        city: C.seattle,
+        district: "Fremont",
+        address: "801 N. 34th Street, Seattle, WA 98103",
+        description: "Seattle Office",
+        employeeCount: 1000,
+      },
+      {
+        city: C.lehi,
+        district: "Silicon Slopes",
+        address: "3900 Adobe Way, Lehi, UT 84048",
+        description: "Utah Campus",
+        employeeCount: 2000,
+      },
+      {
+        city: C.newYork,
+        district: "Manhattan",
+        address: "1540 Broadway, 18th floor, New York, NY 10036",
+        description: "New York Times Square Office",
+        employeeCount: 800,
+      },
+    ],
     careerWebsite: "https://www.adobe.com",
     linkedin: "adobe",
     params: {
@@ -114,10 +383,18 @@ export const US_COMPANIES: Company[] = [
     id: "github-us",
     name: {
       en: "GitHub",
-      zh: "GitHub",
     },
     region: "US",
     cities: [C.sanFrancisco],
+    offices: [
+      {
+        city: C.sanFrancisco,
+        district: "SoMa",
+        address: "88 Colin P. Kelly Jr. St, San Francisco, CA 94107",
+        description: "GitHub Global Headquarters",
+        employeeCount: 3000,
+      },
+    ],
     careerWebsite: "https://www.github.com",
     linkedin: "github",
     params: {
@@ -126,6 +403,142 @@ export const US_COMPANIES: Company[] = [
       dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 5,
       annualPaidLeaveDays: 30,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "twitter-us",
+    name: {
+      en: "Twitter",
+    },
+    region: "US",
+    cities: [C.sanFrancisco, C.newYork],
+    offices: [
+      {
+        city: C.sanFrancisco,
+        district: "Market Street / SoMa",
+        address: "1355 Market St #900, San Francisco, CA 94103",
+        description: "Twitter Global Headquarters",
+        employeeCount: 4000,
+      },
+      {
+        city: C.newYork,
+        district: "Midtown Manhattan",
+        address: "1290 Avenue of the Americas, New York, NY 10104",
+        description: "New York Office",
+        employeeCount: 1500,
+      },
+    ],
+    careerWebsite: "https://www.twitter.com",
+    linkedin: "twitter",
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 0.5,
+      dailyOutsideWorkCommunicationHours: 0,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 10,
+    },
+  },
+  {
+    id: "linkedin-us",
+    name: {
+      en: "LinkedIn",
+    },
+    region: "US",
+    cities: [C.sunnyvale, C.newYork],
+    offices: [
+      {
+        city: C.sunnyvale,
+        district: "Silicon Valley",
+        address: "2029 Stierlin Court, Mountain View, CA 94043",
+        description: "LinkedIn Silicon Valley Headquarters",
+        employeeCount: 5000,
+      },
+      {
+        city: C.newYork,
+        district: "Midtown Manhattan",
+        address: "222 Broadway, New York, NY 10038",
+        description: "LinkedIn New York Office",
+        employeeCount: 2000,
+      },
+    ],
+    careerWebsite: "https://www.linkedin.com",
+    linkedin: "linkedin",
+    params: {
+      dailyWorkingHours: 7.5,
+      dailyCommuteHours: 0.5,
+      dailyOutsideWorkCommunicationHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 25,
+      annualPaidSickLeaveDays: 15,
+    },
+  },
+  {
+    id: "uber-us",
+    name: {
+      en: "Uber",
+    },
+    region: "US",
+    cities: [C.sanFrancisco, C.austin],
+    offices: [
+      {
+        city: C.sanFrancisco,
+        district: "Mission Bay / SoMa",
+        address: "1455 Market St, San Francisco, CA 94103",
+        description: "Uber Global Headquarters",
+        employeeCount: 6000,
+      },
+      {
+        city: C.austin,
+        district: "Downtown Austin",
+        address: "301 Congress Ave, Austin, TX 78701",
+        description: "Uber Austin Office",
+        employeeCount: 1500,
+      },
+    ],
+    careerWebsite: "https://www.uber.com",
+    linkedin: "uber",
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 1,
+      dailyOutsideWorkCommunicationHours: 1,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 10,
+    },
+  },
+  {
+    id: "airbnb-us",
+    name: {
+      en: "Airbnb",
+    },
+    region: "US",
+    cities: [C.sanFrancisco, C.newYork],
+    offices: [
+      {
+        city: C.sanFrancisco,
+        district: "SoMa / Mission Bay",
+        address: "888 Brannan St, San Francisco, CA 94103",
+        description: "Airbnb Global Headquarters",
+        employeeCount: 4000,
+      },
+      {
+        city: C.newYork,
+        district: "Chelsea / Manhattan",
+        address: "888 Seventh Avenue, New York, NY 10019",
+        description: "Airbnb New York Office",
+        employeeCount: 1500,
+      },
+    ],
+    careerWebsite: "https://www.airbnb.com",
+    linkedin: "airbnb",
+    params: {
+      dailyWorkingHours: 7.5,
+      dailyCommuteHours: 0.5,
+      dailyOutsideWorkCommunicationHours: 0.5,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 25,
       annualPaidSickLeaveDays: 15,
     },
   },
