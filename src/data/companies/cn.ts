@@ -2610,7 +2610,6 @@ export const CN_COMPANIES: Company[] = [
     id: "sap-cn",
     name: {
       en: "SAP",
-      zh: "SAP/思爱普",
     },
     region: "CN",
     offices: [
@@ -2660,7 +2659,6 @@ export const CN_COMPANIES: Company[] = [
     id: "smartnews-cn",
     name: {
       en: "SmartNews",
-      zh: "SmartNews",
     },
     region: "CN",
     offices: [
@@ -2692,7 +2690,6 @@ export const CN_COMPANIES: Company[] = [
     id: "snap-cn",
     name: {
       en: "Snap",
-      zh: "Snap",
     },
     region: "CN",
     offices: [
@@ -2813,7 +2810,6 @@ export const CN_COMPANIES: Company[] = [
     id: "suse-cn",
     name: {
       en: "SUSE",
-      zh: "SUSE",
     },
     region: "CN",
     offices: [
@@ -2989,7 +2985,6 @@ export const CN_COMPANIES: Company[] = [
     id: "tubi-cn",
     name: {
       en: "Tubi",
-      zh: "Tubi",
     },
     region: "CN",
     offices: [
@@ -9170,174 +9165,65 @@ export const CN_COMPANIES: Company[] = [
     },
   },
   {
-    id: "sifang-cn",
+    id: "goodnotes-cn",
     name: {
-      en: "Sifang Automation",
-      zh: "四方继保",
+      en: "Goodnotes",
+      zh: "好笔记",
     },
     region: "CN",
     offices: [
-      {
-        city: C.beijing,
-        district: "海淀区",
-        address: "上地信息产业基地 / 北京四方继保自动化股份有限公司总部",
-        employeeCount: 4500,
-        description:
-          "公司全球与全国总部、国家级智能电网与电力自动化核心研发中心、继电保护、电力系统自动化、特高压输变电控制系统统筹及大型电力工程大客户交付中枢",
-      },
-      {
-        city: C.beijing,
-        district: "海淀区",
-        address: "清河 / 四方继保智能制造与实验基地",
-        employeeCount: 1500,
-        description:
-          "高压继电保护装置、智能变电站测控装置、电力电子与数字仿真实验室、精密制造与工业化品质检验中心",
-      },
       {
         city: C.shanghai,
         district: "浦东新区",
-        address: "张江高科技园区 / 四方继保上海分公司与华东技术中心",
-        employeeCount: 600,
+        address: "张江高科技园区 / 好笔记（Goodnotes）中国研发中心",
+        employeeCount: 200,
         description:
-          "华东大区海上风电、新能源发电并网控制、智慧能源系统集成、大型发电集团与电网公司客户支持中心",
+          "大中华区总部、数字笔记应用软件核心研发中心、跨平台同步技术、手写识别与智能化笔记管理系统统筹及全球运维中枢",
       },
-      {
-        city: C.wuhan,
-        district: "江夏区",
-        address: "光谷核心区 / 武汉四方光电及电力自动化研发基地",
-        employeeCount: 800,
-        description:
-          "中南地区电力传感器、气体分析仪器、配网自动化软硬件协同研发与区域技术支持协作基地",
-      },
-      {
-        city: C.shenzhen,
-        district: "南山区",
-        address: "高新科技园区 / 四方继保深圳办事处",
-        employeeCount: 300,
-        description:
-          "华南大区新型电力系统、虚拟电厂、用户侧综合能源服务及大湾区电力工程项目商务拓展中心",
-      },
-    ],
-    careerWebsite: "https://www.sifang.com.cn",
-    linkedin: "sifang-automation",
-    params: {
-      dailyWorkingHours: 8,
-      dailyCommuteHours: 1,
-      dailyOutsideWorkCommunicationHours: 0,
-      weeklyWorkingDays: 5,
-      annualPaidLeaveDays: 10,
-      annualPaidSickLeaveDays: 15,
-    },
-  },
-  {
-    id: "ctsecurity-cn",
-    name: {
-      en: "CTSecurity",
-      zh: "长亭科技",
-    },
-    region: "CN",
-    offices: [
       {
         city: C.beijing,
         district: "海淀区",
-        address: "中关村软件园 / 北京长亭科技有限责任公司总部",
-        employeeCount: 1200,
+        address: "中关村软件园 / 好笔记北京分公司与人工智能实验室",
+        employeeCount: 100,
         description:
-          "公司全球与全国总部、前沿网络安全攻防技术核心研发中心、Web应用防火墙（SafeLine）、态势感知、漏洞挖掘与人工智能安全实验室统筹及大客户交付中枢",
-      },
-      {
-        city: C.shanghai,
-        district: "徐汇区",
-        address: "漕河泾新兴技术开发区 / 长亭科技上海分公司与华东总部",
-        employeeCount: 500,
-        description:
-          "华东大区金融科技安全、跨国企业、互联网大厂网络安全整体解决方案、威胁情报分析、技术支持与交付基地",
+          "北方大区人工智能与机器学习在数字笔记中的应用研发、自然语言处理、手写识别算法优化与客户体验支持中心",
       },
       {
         city: C.shenzhen,
         district: "南山区",
-        address: "高新科技园区 / 长亭科技深圳分公司",
-        employeeCount: 400,
-        description:
-          "华南大区高新技术企业网络安全保障、大湾区智慧城市与物联网安全、数字化业务安全防护及本地化技术支持中心",
-      },
-      {
-        city: C.hangzhou,
-        district: "滨江区",
-        address: "网商路 / 长亭科技杭州研发与技术支持中心",
-        employeeCount: 300,
-        description:
-          "华东区域安全攻防演练支撑、软件代码安全审计、自动化漏洞扫描引擎研发及区域客户成功服务基地",
-      },
-      {
-        city: C.chengdu,
-        district: "高新区",
-        address: "天府软件园 / 长亭科技成都研发基地",
-        employeeCount: 350,
-        description:
-          "中西部核心安全产品代码编写、大规模漏洞特征库建设、安全服务交付与全国技术支持协作基地",
+        address: "高新科技园区 / 好笔记深圳分公司与移动应用开发中心",
+        employeeCount: 80,
+        description: "华南大区移动应用开发、跨平台同步技术、用户体验优化与本地化技术支持中心",
       },
     ],
-    careerWebsite: "https://www.ctsecurity.com.cn",
-    linkedin: "ctsecurity",
+    careerWebsite: "https://www.goodnotes.com",
+    linkedin: "goodnotes",
     params: {
       dailyWorkingHours: 8,
       dailyCommuteHours: 1,
       dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 5,
-      annualPaidLeaveDays: 10,
-      annualPaidSickLeaveDays: 15,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 0,
     },
   },
   {
-    id: "lenovo-cn",
+    id: "whatnot-cn",
     name: {
-      en: "Lenovo",
-      zh: "联想",
+      en: "Whatnot",
+      zh: "Whatnot",
     },
     region: "CN",
-    offices: [
-      {
-        city: C.beijing,
-        district: "海淀区",
-        address: "上地西路 6 号联想全球总部 / 联想大厦",
-        employeeCount: 15000,
-        description:
-          "联想集团全球总部、中国区总部、全球产品研发中心、个人电脑与智能设备（IDG）核心研发、AI PC 创新孵化基地及重大客户交付统筹中枢",
-      },
-      {
-        city: C.shanghai,
-        district: "浦东新区",
-        address: "张江人工智能岛 / 联想上海研发中心与南方总部",
-        employeeCount: 3000,
-        description:
-          "华东大区研发基地、基础设施方案业务（ISG）服务器与存储核心研发、智能物联网（IoT）及车联网技术创新中心",
-      },
-      {
-        city: C.shenzhen,
-        district: "南山区",
-        address: "高新科技园区 / 联想深圳基地与全球供应链创新中心",
-        employeeCount: 5000,
-        description:
-          "全球智能制造与供应链核心枢纽、移动设备（Moto手机）研发制造、灯塔工厂自动化生产及全球物流调度中心",
-      },
-      {
-        city: C.hongkong,
-        district: "鲗鱼涌",
-        address: "太古坊 / 联想集团有限公司香港办事处与国际业务协同中心",
-        employeeCount: 800,
-        description: "亚太区及港澳台业务枢纽、国际金融结算、全球资本运作支持与海外财税合规管理中心",
-      },
-    ],
-    careerWebsite: "https://www.lenovo.com",
-    linkedin: "lenovo",
+    offices: [],
+    careerWebsite: "https://www.whatnot.com",
+    linkedin: "whatnot",
     params: {
       dailyWorkingHours: 8,
-      dailyCommuteHours: 1,
+      dailyCommuteHours: 0,
       dailyOutsideWorkCommunicationHours: 0,
       weeklyWorkingDays: 5,
-      annualPaidLeaveDays: 10,
-      annualPaidSickLeaveDays: 15,
+      annualPaidLeaveDays: 20,
+      annualPaidSickLeaveDays: 12,
     },
   },
 ];
