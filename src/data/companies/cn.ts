@@ -9226,4 +9226,38 @@ export const CN_COMPANIES: Company[] = [
       annualPaidSickLeaveDays: 12,
     },
   },
+  {
+    id: "mercado-libre-cn",
+    name: {
+      en: "Mercado Libre",
+      zh: "美客多",
+    },
+    region: "CN",
+    offices: [
+      {
+        city: C.shenzhen,
+        district: "龙岗区",
+        address: "天安云谷产业园 / 美客多华南总部与跨境卖家服务中心",
+        employeeCount: 150,
+        description: "中国区华南业务总部、跨境卖家运营支持与生态服务中心",
+      },
+      {
+        city: C.shanghai,
+        district: "浦东新区 / 徐汇区",
+        address: "上海办公室 / 美客多华东商务与运营中心",
+        employeeCount: 100,
+        description: "中国区华东业务总部、品牌出海及生态合作伙伴拓展",
+      },
+    ],
+    careerWebsite: "https://career.mercadolibre.com/en?country=China",
+    linkedin: "mercadolibre",
+    params: {
+      dailyWorkingHours: 8,
+      dailyCommuteHours: 1,
+      dailyOutsideWorkCommunicationHours: 0,
+      weeklyWorkingDays: 5,
+      annualPaidLeaveDays: 15,
+      annualPaidSickLeaveDays: 10,
+    },
+  },
 ];
